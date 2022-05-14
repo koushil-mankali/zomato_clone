@@ -1,0 +1,40 @@
+.heroSection {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodbanner {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../public//images//food5.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bannerBody {
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.bannerTitle {
+    width: 230px;
+    height: 55px;
+    margin: 20px 0px;
+}
+
+.bannerTxt {
+    font-size: 2rem;
+}
+
+.bannerTxtCity {
+    font-weight: 600;
+}

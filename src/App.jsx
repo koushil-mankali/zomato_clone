@@ -1,45 +1,28 @@
 import { useState } from 'react'
-import logo from './logo.svg'
+
+import Hero from './components/home/hero/Hero'
+import SmallCard from './utils/smallCard/SamllCard'
+
 import './App.css'
+
+import img from '../public/images/food1.png'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+  return (<>
+    <Hero />
+    <div className='sec2'>
+      <div className='sec2-container'>
+        <div className='cards'>
+          <SmallCard imgSrc={img} text="Order Online" />
+          <SmallCard imgSrc={img} text="Dining Out" />
+          <SmallCard imgSrc={img} text="Pro and Pro Plus" />
+          <SmallCard imgSrc={img} text="Night Life and Clubs" />
+        </div>
+      </div>
     </div>
-  )
+  </>)
 }
 
 export default App

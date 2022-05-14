@@ -1,0 +1,80 @@
+.navbar {
+    width: 100%;
+    height: 68px;
+    /* background-color: crimson; */
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 2000;
+}
+
+.menuBar {
+    display: none;
+}
+
+.navItem {
+    list-style: none;
+    margin: 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.NavSec2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 426px) {
+    .menuBar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuIcon {
+        color: rgb(105, 105, 105);
+        font-weight: bold;
+    }
+
+    .logoName {
+        width: 130px;
+        height: 30px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navItem {
+        list-style: none;
+        margin: 20px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(105, 105, 105);
+    }
+
+    .NavSec1 {
+        display: none;
+    }
+
+    .NavSec2 {
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
