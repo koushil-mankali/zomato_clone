@@ -1,0 +1,23 @@
+.search {}
+
+.box {
+    width: 100%;
+    position: relative;
+}
+
+.searchbar {
+    padding: 13px 13px 13px 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.locationPin {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

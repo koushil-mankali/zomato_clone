@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import Hero from './components/home/hero/Hero'
 import SmallCard from './utils/smallCard/SamllCard'
+import LocationsComp from './components/home/locations/LocationsComp'
 
 import './App.css'
 
@@ -22,6 +23,7 @@ function App() {
         </div>
       </div>
     </div>
+    <LocationsComp />
   </>)
 }
 

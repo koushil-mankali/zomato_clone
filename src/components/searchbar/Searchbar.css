@@ -1,0 +1,15 @@
+.searchbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.searchBreak {
+    width: 2%;
+    background-color: white;
+    color: rgb(186, 172, 172);
+    padding: 13px 0px 13px 0px;
+}

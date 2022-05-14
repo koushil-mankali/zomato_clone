@@ -1,0 +1,24 @@
+.LocationComp {
+    width: 100%;
+    margin: 30px 0px 20px 0px;
+}
+
+.locationBody {
+    width: 70%;
+    margin: auto;
+}
+
+.locationCompTitle {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.cityName {
+    font-weight: 600;
+}
+
+.locationCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
