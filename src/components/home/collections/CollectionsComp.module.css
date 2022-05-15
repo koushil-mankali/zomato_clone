@@ -1,0 +1,39 @@
+.collectionsSec {
+    width: 70%;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.secTitle {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tagLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t1 {
+    font-size: 1.1rem;
+}
+
+.t2 {
+    color: #E53546;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}

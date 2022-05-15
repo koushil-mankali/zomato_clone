@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Hero from './components/home/hero/Hero'
 import SmallCard from './utils/smallCard/SamllCard'
 import LocationsComp from './components/home/locations/LocationsComp'
+import CollectionsComp from './components/home/collections/CollectionsComp'
+import GetTheApp from './components/home/getTheApp/GetTheAppComp'
 
 import './App.css'
 
@@ -23,7 +25,9 @@ function App() {
         </div>
       </div>
     </div>
+    <CollectionsComp />
     <LocationsComp />
+    <GetTheApp />
   </>)
 }
 
