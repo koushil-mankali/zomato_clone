@@ -8,6 +8,9 @@ import GetTheApp from './components/home/getTheApp/GetTheAppComp'
 import ExploreOptions from './components/home/exploreOptions/ExploreOptions'
 import Footer from './components/footer/Footer'
 
+// import Login from './components/auth/login/Login'
+import Signup from './components/auth/signup/Signup'
+
 import './App.css'
 
 import img from '../public/images/food1.png'
@@ -32,6 +35,8 @@ function App() {
     <GetTheApp />
     <ExploreOptions />
     <Footer />
+    {/* <Login /> */}
+    {/* <Signup /> */}
   </>)
 }
 
