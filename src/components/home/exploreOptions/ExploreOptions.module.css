@@ -1,0 +1,42 @@
+.outerDiv {
+    width: 100%;
+}
+
+.innerDiv {
+    width: 90%;
+    margin: 5rem auto;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.options {
+    margin: 10px 0px;
+}
+
+.option {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1.4px solid rgb(232, 232, 232);
+    border-radius: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ttle {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.body {
+    margin-top: 20px;
+    text-align: justify;
+}

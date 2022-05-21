@@ -1,31 +1,32 @@
-.locationCard {
+.seeMoreCard {
     width: 300px;
     padding: 20px;
     margin: 20px;
     border: 1px solid rgb(232, 232, 232);
     border-radius: 10px;
-    overflow: elipsis;
+    overflow: clip;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
     box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
     /* transition: all 0.3s cubic-bezier(.25, .8, .25, 1); */
 }
 
-.locationCard:hover {
+.seeMoreCard:hover {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.locationName,
-.locationRestCount {
-    font-size: 1.2rem;
+.seeMoreName,
+.seeMoreRestCount {
+    font-size: 1rem;
     margin: 0px 5px;
     color: rgb(28, 28, 28);
 }
 
-.locationCardInner {}
+.seeMoreCardInner {}
 
-.locationRightArrow {
+.seeMoreRightArrow {
+    margin: 5px 0px 0px 5px;
     color: rgb(28, 28, 28);
 }

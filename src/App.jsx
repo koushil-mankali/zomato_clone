@@ -5,6 +5,8 @@ import SmallCard from './utils/smallCard/SamllCard'
 import LocationsComp from './components/home/locations/LocationsComp'
 import CollectionsComp from './components/home/collections/CollectionsComp'
 import GetTheApp from './components/home/getTheApp/GetTheAppComp'
+import ExploreOptions from './components/home/exploreOptions/ExploreOptions'
+import Footer from './components/footer/Footer'
 
 import './App.css'
 
@@ -28,6 +30,8 @@ function App() {
     <CollectionsComp />
     <LocationsComp />
     <GetTheApp />
+    <ExploreOptions />
+    <Footer />
   </>)
 }
 

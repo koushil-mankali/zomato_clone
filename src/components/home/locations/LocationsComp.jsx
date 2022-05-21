@@ -1,4 +1,5 @@
 import LocationCard from './LocationCard';
+import SeeMoreComp from './SeeMoreComp';
 
 import './LocationsComp.css'
 
@@ -15,7 +16,7 @@ let LocationsComp = () => {
                 <LocationCard locationName="Hyderabad" count="20" link="https://www.koushilmankali.com/" />
                 <LocationCard locationName="Hyderabad" count="20" link="https://www.koushilmankali.com/" />
                 <LocationCard locationName="Hyderabad" count="20" link="https://www.koushilmankali.com/" />
-                <LocationCard locationName="Hyderabad" count="20" link="https://www.koushilmankali.com/" />
+                <SeeMoreComp />
             </div>
         </div>
     </div>
