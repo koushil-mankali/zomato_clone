@@ -8,7 +8,7 @@ import GetTheApp from './components/home/getTheApp/GetTheAppComp'
 import ExploreOptions from './components/home/exploreOptions/ExploreOptions'
 import Footer from './components/footer/Footer'
 
-// import Login from './components/auth/login/Login'
+import Login from './components/auth/login/Login'
 import Signup from './components/auth/signup/Signup'
 
 import './App.css'
@@ -17,9 +17,10 @@ import img from '../public/images/food1.png'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [auth, setAuth] = useState("");
 
   return (<>
-    <Hero />
+    <Hero setAuth={setAuth} />
     <div className='sec2'>
       <div className='sec2-container'>
         <div className='cards'>
@@ -35,8 +36,8 @@ function App() {
     <GetTheApp />
     <ExploreOptions />
     <Footer />
-    {/* <Login /> */}
-    {/* <Signup /> */}
+    {auth === "signup" && <Signup setAuth={setAuth} />}
+    {auth === "login" && <Login setAuth={setAuth} />}
   </>)
 }
 

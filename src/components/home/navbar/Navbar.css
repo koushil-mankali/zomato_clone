@@ -26,6 +26,61 @@
 .NavSec2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.profileMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profilePic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profileName {
+    margin: 0px 5px;
+}
+
+.profileBigMenu {
+    width: 150px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    top: 3rem;
+    right: -40px;
+}
+
+.profileTag {
+    padding: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 0.7px;
+    color: rgb(28, 28, 28);
+}
+
+.profileTag:hover {
+    background-color: rgb(211, 202, 202);
+}
+
+.profileTag:hover:first-child {
+    background-color: rgb(211, 202, 202);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.profileTag:hover:last-child {
+    background-color: rgb(211, 202, 202);
+    border-radius: 0px 0px 10px 10px;
+
 }
 
 /* Small devices (landscape phones, 576px and up) */

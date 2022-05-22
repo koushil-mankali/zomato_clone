@@ -1,7 +1,7 @@
 import './SeeMoreComp.css'
 
-let SeeMoreComp = () => {
-    return <div className='seeMoreCard' onClick={console.log('load more...')}>
+let SeeMoreComp = ({ handleLocations }) => {
+    return <div className='seeMoreCard' onClick={() => handleLocations(5)}>
         <span className='seeMoreCardInner'>
             <span className='seeMoreName'>see more</span>
         </span>

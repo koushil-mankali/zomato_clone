@@ -6,12 +6,12 @@ import closeBtn from '../../../../public/images/closeBtn.jpg';;
 
 import loginCss from './Login.module.css';
 
-let Login = () => {
+let Login = ({ setAuth }) => {
     let loginDiv = <div className={loginCss.outerDiv}>
         <div className={loginCss.modal}>
             <div className={loginCss.header}>
                 <span className={loginCss.ttl}>Login</span>
-                <span className={loginCss.closeBtn}>
+                <span className={loginCss.closeBtn} onClick={() => setAuth("")}>
                     <img className={loginCss.closeBtnImg} src={closeBtn} alt="close button" />
                 </span>
             </div>

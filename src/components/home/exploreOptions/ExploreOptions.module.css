@@ -40,3 +40,10 @@
     margin-top: 20px;
     text-align: justify;
 }
+
+.arrow {}
+
+.arrowRot {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}

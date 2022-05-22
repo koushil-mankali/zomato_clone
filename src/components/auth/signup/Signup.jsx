@@ -6,12 +6,12 @@ import closeBtn from '../../../../public/images/closeBtn.jpg';;
 
 import signupCss from './Signup.module.css';
 
-let Signup = () => {
+let Signup = ({ setAuth }) => {
     let loginDiv = <div className={signupCss.outerDiv}>
         <div className={signupCss.modal}>
             <div className={signupCss.header}>
                 <span className={signupCss.ttl}>Signup</span>
-                <span className={signupCss.closeBtn}>
+                <span className={signupCss.closeBtn} onClick={() => setAuth("")}>
                     <img className={signupCss.closeBtnImg} src={closeBtn} alt="close button" />
                 </span>
             </div>

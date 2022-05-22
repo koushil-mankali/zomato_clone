@@ -4,9 +4,9 @@ import Searchbar from '../../searchbar/Searchbar'
 import ZomatoName from '../../../../public/images/zomato1.png'
 import './Hero.css'
 
-function Hero() {
+function Hero({ setAuth }) {
     return <>
-        <Navbar />
+        <Navbar setAuth={setAuth} />
         <div className='heroSection'>
             <div className='foodbanner' />
             <div className='bannerBody'>
