@@ -1,0 +1,68 @@
+:root {
+
+    /* Colors Start */
+
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+    --color-pinky: rgb(255, 126, 139);
+    --color-redish1: rgb(239, 79, 95);
+    --color-redish2: rgb(191, 41, 56);
+    --color-blueish1: rgb(39, 129, 231);
+    --color-blueish2: rgb(37, 111, 239);
+    --color-blueish-light1: rgb(17, 145, 153);
+    --color-orangish: rgb(244, 162, 102);
+    --color-greenish: rgb(58, 183, 87);
+    --color-goldish: rgb(233, 181, 1);
+
+    --color-title-text: rgb(28, 28, 28);
+    --color-text: rgb(54, 54, 54);
+    --color-p1-text: rgb(156, 156, 156);
+    --color-p2-text: rgb(130, 130, 130);
+    --color-p3-text: rgb(105, 105, 105);
+    --color-p4-text: rgb(79, 79, 79);
+    --color-p5-text: rgb(79, 79, 86);
+
+
+    /* Colors End */
+
+    /* Background Colors Start */
+
+    --bg-white: rgb(255, 255, 255);
+    --bg-ash: rgb(232, 232, 232);
+    --bg-greenish: rgb(36, 150, 63);
+    --bg-redish1: rgb(217, 38, 98);
+    --bg-blueish1: rgb(39, 129, 231);
+    --bg-blueish2: rgb(17, 85, 203);
+    --bg-blueish3: rgb(83, 140, 238);
+    --bg-text-bl1: rgb(156, 156, 156);
+
+    --bg-white-op8: rgba(255, 255, 255, 0.8);
+    --bg-blackish-op9: rgba(28, 28, 28, 0.9);
+
+    --bg1: rgb(252, 238, 192);
+
+    /* Background Colors End */
+
+    /* Borders Start */
+
+    --brd-greenish-color: rgb(36, 150, 63);
+    --brd-blueish1-color: rgb(39, 129, 231);
+    --brd-blueish2-color: rgb(37, 111, 239);
+
+    --brd1-color: rgb(207, 207, 207);
+
+    --brd1-: 0.1rem solid rgb(207, 207, 207);
+
+    /* Borders End */
+
+    /* Fonts Start */
+
+    --font-img-title: 4.4rem;
+    --font-title-sz1: 3rem;
+    --font-text-sz1: 3rem;
+    --font-text-sz2: 1.7rem;
+    --font-text-sz3: 1.6rem;
+
+    /* Fonts End */
+
+}
