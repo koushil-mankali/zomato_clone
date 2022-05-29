@@ -1,0 +1,138 @@
+.navbar {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    color: var(--color-white);
+}
+
+.navbarInner {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuBar {
+    width: 20px;
+    height: 20px;
+    display: none;
+    margin: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.mobileMenu {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--bg-white);
+}
+
+.leftSide,
+.rightSide {
+    display: flex;
+    align-items: center;
+}
+
+.leftSide {
+    cursor: pointer;
+}
+
+.img {
+    filter: brightness(0) invert(1);
+    height: 12px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.appTxt {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.menuItem {
+    color: var(--color-white);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profileName {
+    margin: 0px 10px;
+}
+
+.arrow {
+    filter: invert(1);
+    color: white;
+}
+
+.menu {
+    position: absolute;
+    top: 40px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    display: none;
+}
+
+.profile:hover .menu {
+    display: block;
+    background-color: red !important;
+}
+
+.menuItemLink {
+    padding: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.menuItemLink:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.menuItemLink:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.menuItemLink:hover {
+    background-color: var(--bg-ash);
+}
+
+.menuItemLinkTxt {
+    width: 100%;
+    color: var(--color-title-text);
+    font-weight: 350;
+    text-decoration: none;
+}
+
+.dnone {
+    display: none;
+}
+
+@media all and (max-width: 480px) {
+    .navbarInner {
+        display: none;
+    }
+
+    .menuBar {
+        display: block;
+    }
+}

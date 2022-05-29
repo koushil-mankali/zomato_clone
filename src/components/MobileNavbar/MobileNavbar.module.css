@@ -1,0 +1,49 @@
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.menuBar {
+    width: 20px;
+    height: 20px;
+    display: none;
+    margin: 20px;
+}
+
+.navbar {
+    display: none;
+}
+
+.menuItem {
+    display: none;
+}
+
+@media all and (max-width: 480px) {
+    .navbar {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 3rem;
+    }
+
+    .menuItem {
+        color: var(--color-black);
+        font-weight: 400;
+        display: block;
+        text-decoration: none;
+        margin: 1rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .menuBar {
+        display: block;
+    }
+}

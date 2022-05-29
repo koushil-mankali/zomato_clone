@@ -1,0 +1,53 @@
+.banner {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+
+.bannerInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.bannerTxt {
+    position: absolute;
+    color: var(--color-white);
+}
+
+.title {
+    font-size: var(--font-img-title);
+    font-weight: bold;
+    text-align: center;
+}
+
+.tag {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+@media all and (max-width: 480px) {
+    .title {
+        font-size: 1.9;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .tag {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
