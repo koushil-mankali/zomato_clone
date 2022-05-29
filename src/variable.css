@@ -39,6 +39,7 @@
 
     --bg-white-op8: rgba(255, 255, 255, 0.8);
     --bg-blackish-op9: rgba(28, 28, 28, 0.9);
+    --bg-fcfcfc: #FCFCFC;
 
     --bg1: rgb(252, 238, 192);
 
@@ -53,6 +54,7 @@
     --brd1-color: rgb(207, 207, 207);
 
     --brd1: 0.1rem solid rgb(207, 207, 207);
+    --brd2: 1px solid rgb(207, 207, 207);
 
     /* Borders End */
 

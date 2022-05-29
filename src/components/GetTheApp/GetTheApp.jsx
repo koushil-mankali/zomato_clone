@@ -9,6 +9,7 @@ import appstoreImg from '../../../public/icons/playstore.png'
 let GetTheApp = () => {
 
     let [inputType, setInpuutType] = useState(true);
+    let [validInpt, setValidInpt] = useState(true);
 
     return <div className={css.outerDiv}>
         <div className={css.innerDiv}>
@@ -21,25 +22,26 @@ let GetTheApp = () => {
                 <div className={css.inputBoxes}>
                     <div className={css.radiosBtns}>
                         <div className={css.radioBtn} onClick={() => setInpuutType(true)}>
-                            <input className={css.radio} type="radio" name="radio" id="email" checked={inputType} />
-                            <label className={css.label} htmlFor="email">email</label>
+                            <input className={css.radio} type="radio" name="radio" id="email" defaultChecked={inputType} />
+                            <label className={css.label} htmlFor="email">Email</label>
                         </div>
                         <div className={css.radioBtn} onClick={() => setInpuutType(false)}>
                             <input className={css.radio} type="radio" name="radio" id="phone" />
-                            <label className={css.label} htmlFor="phone">phone</label>
+                            <label className={css.label} htmlFor="phone">Phone</label>
                         </div>
                     </div>
                     <div className={css.inputs}>
                         <div className={css.optionInputs}>
                             {inputType ? <div className={css.inputBox}>
-                                <input className={css.input} type="email" name="" id="" />
-                                <div className={css.errMess}>Please enter your email id</div>
+                                <input className={css.input} type="email" name="email" id="email" placeholder='Email...' />
+                                {!validInpt ? <div className={[css.errMess,]}>Please enter your email id</div> : ''}
                             </div> : <div className={css.inputBox}>
-                                <input className={css.input} type="tel" name="" id="" />
-                                <div className={css.errMess}>Please enter your phone number</div>
+                                <input className={css.input} type="tel" name="phone" id="phone" placeholder='type here...' />
+                                {!validInpt ? <div className={css.errMess}>Please enter your phone number</div> : ''}
                             </div>}
                         </div>
                         <button className={css.btn}>Share App Link</button>
+                        {/* <button className={css.btn2} disabled>Share App Link</button> */}
                     </div>
                 </div>
                 <div className={css.appLinks}>

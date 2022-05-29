@@ -1,0 +1,18 @@
+.outerDiv {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: var(--bg-fcfcfc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    width: 70%;
+}
+
+.title {
+    margin: 0.5rem 0;
+    font-size: var(--font-title-sz1);
+    font-weight: var(--font-title-weight);
+}

@@ -3,6 +3,8 @@ import SmallCard from './utils/card1/SmallCard'
 import Collections from './components/Collections/Collections'
 import PopularPlaces from './components/PopularPlaces/PopularPlaces'
 import GetTheApp from './components/GetTheApp/GetTheApp'
+import ExploreOptionsNearMe from './components/ExploreOptionsNearMe/ExploreOptionsNearMe'
+import Footer from './components/Footer/Footer'
 
 import orderOnlineImg from '../public/images/orderonline.jpg'
 
@@ -22,6 +24,8 @@ function App() {
       <PopularPlaces />
     </div>
     <GetTheApp />
+    <ExploreOptionsNearMe />
+    <Footer />
   </>
 }
 

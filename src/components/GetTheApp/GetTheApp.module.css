@@ -13,7 +13,11 @@
     justify-content: center;
 }
 
-.leftSec {}
+.leftSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .mobileImg {
     width: 260px;
@@ -31,27 +35,144 @@
     margin: 10px 0;
     font-weight: 350;
     width: 90%;
+    line-height: 30px;
 }
 
-.inputBoxes {}
+.inputBoxes {
+    margin: 1rem 0;
+}
 
 .radiosBtns {
     display: flex;
+    margin: 1rem 0;
 }
 
 .radioBtn {
     margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radio {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-redish1);
+    cursor: pointer;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+}
+
+.optionInputs {
+    margin-right: 10px;
+}
+
+.inputBox {}
+
+.input {
+    padding: 13px 15px;
+    border: var(--brd2);
+    border-radius: 5px;
+    font-weight: 350;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.input:focus {
+    border: 1px solid var(--color-greenish);
+}
+
+.input:invalid {
+    border: 1px solid var(--color-redish1);
+}
+
+.errMess {
+    color: var(--color-redish2);
+    font-size: 0.8rem;
+}
+
+.btn {
+    background-color: var(--bg-redish1);
+    border: none;
+    padding: 10px 20px;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: var(--bg-ash);
+    cursor: not-allowed;
+}
+
+.appLinks {
+    margin: 2rem 0;
+}
+
+.title2 {
+    margin: 1rem 0;
+    color: var(--color-p1-text);
+    font-weight: 350;
 }
 
 .appImg {
     width: 150px;
     height: 40px;
-    margin: 5px;
-    border-radius: 10px;
+    margin-right: 1.5rem;
+    border-radius: 5px;
     cursor: pointer;
 }
 
+.dnone {
+    display: none;
+}
+
+.dblock {
+    display: block;
+}
+
+@media only screen and (max-width: 550px) {
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .input {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .btn,
+    .btn2 {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .appLinks,
+    .appBoxes {
+        margin-top: -1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .appImg {
+        margin: 10px;
+    }
+}
+
 @media all and (max-width: 720px) {
+    .title {
+        font-size: 2rem;
+    }
+
     .outerDiv {
         padding: 40px 0;
         height: auto;
@@ -62,5 +183,11 @@
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 992px) {
+    .innerDiv {
+        width: 85%;
     }
 }
