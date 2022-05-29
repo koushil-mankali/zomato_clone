@@ -34,6 +34,7 @@
     --bg-blueish1: rgb(39, 129, 231);
     --bg-blueish2: rgb(17, 85, 203);
     --bg-blueish3: rgb(83, 140, 238);
+    --bg-goldish-light: #FFFBF7;
     --bg-text-bl1: rgb(156, 156, 156);
 
     --bg-white-op8: rgba(255, 255, 255, 0.8);
@@ -58,11 +59,29 @@
     /* Fonts Start */
 
     --font-img-title: 4.4rem;
-    --font-title-sz1: 3rem;
+    --font-title-sz1: 2.5rem;
     --font-text-sz1: 3rem;
     --font-text-sz2: 1.7rem;
     --font-text-sz3: 1.6rem;
 
+    --font-title-weight: 450;
+
     /* Fonts End */
 
+
+    /* Box shadows Start */
+    --box-shadow1: rgb(28 28 28 / 8%) 0px 1.42623px 2.85;
+    /* Box shadows End */
+
+}
+
+@media all and (max-width: 480px) {
+    :root {
+        /* Fonts Start */
+
+        --font-title-sz1: 1.8rem;
+
+
+        /* Fonts End */
+    }
 }

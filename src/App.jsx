@@ -1,5 +1,8 @@
 import HomePageBanner from './components/HomePageBanner/HomePageBanner'
 import SmallCard from './utils/card1/SmallCard'
+import Collections from './components/Collections/Collections'
+import PopularPlaces from './components/PopularPlaces/PopularPlaces'
+import GetTheApp from './components/GetTheApp/GetTheApp'
 
 import orderOnlineImg from '../public/images/orderonline.jpg'
 
@@ -15,8 +18,10 @@ function App() {
         <SmallCard imgSrc={orderOnlineImg} text="Pro and Pro Plus" />
         <SmallCard imgSrc={orderOnlineImg} text="Night Life and Clubs" />
       </div>
+      <Collections />
+      <PopularPlaces />
     </div>
-
+    <GetTheApp />
   </>
 }
 

@@ -1,0 +1,34 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.3px solid var(--brd1-color);
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.innerBox {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    font-weight: var(--font-title-weight);
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    filter: invert(0.4);
+}

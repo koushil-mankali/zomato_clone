@@ -1,0 +1,49 @@
+.outerDiv {
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.title {
+    font-size: var(--font-title-sz1);
+    font-weight: var(--font-title-weight);
+    color: var(--color-title-text);
+}
+
+.tagLine {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.desc {
+    font-weight: 350;
+    font-size: 1.2rem;
+}
+
+.collectionPlacesTag {
+    font-size: 1rem;
+    color: var(--color-pinky);
+    cursor: pointer;
+}
+
+.rightArrow {
+    width: 10px;
+    height: 10px;
+    color: var(--color-redish1);
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}
+
+.cards {
+    width: 100%;
+    margin: 2.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media all and (max-width: 480px) {
+    .outerDiv {
+        margin: 2rem 0;
+    }
+}
