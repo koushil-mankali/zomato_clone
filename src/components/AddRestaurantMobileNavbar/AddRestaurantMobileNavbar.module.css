@@ -1,0 +1,98 @@
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.menuBar {
+    width: 20px;
+    height: 20px;
+    display: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: none;
+}
+
+.menuItem {
+    display: none;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profileName {
+    margin: 0px 10px;
+}
+
+.downArrow {
+    width: 20px;
+    height: 20px;
+}
+
+.rightArrow {
+    width: 15px;
+    height: 15px;
+}
+
+.optionsBox {
+    margin-top: 1.5rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 450;
+}
+
+.dnone {
+    display: none;
+}
+
+@media all and (max-width: 480px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin-top: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .menuItem {
+        color: var(--color-black);
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        margin: 1rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .menuBar {
+        display: block;
+    }
+}

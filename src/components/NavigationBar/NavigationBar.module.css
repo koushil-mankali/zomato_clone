@@ -23,6 +23,7 @@
     display: none;
     margin: 20px;
     filter: brightness(0) invert(1);
+    cursor: pointer;
 }
 
 .mobileMenu {

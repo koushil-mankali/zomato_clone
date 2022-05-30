@@ -1,0 +1,118 @@
+.banner {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2rem;
+}
+
+.bannerInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.bannerTxt {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 1rem;
+    position: absolute;
+    color: var(--color-white);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tag {
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn {
+    width: 310px;
+    padding: 15px 20px;
+    margin-right: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--bg-blueish1);
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 450;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media all and (max-width: 480px) {
+    .bannerTxt {
+        display: flex;
+        align-items: center;
+    }
+
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        margin: 0.5rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .title {
+        font-size: 1.9rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .tag {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bannerTxt {
+        display: flex;
+    }
+
+    .btns {
+        display: flex;
+    }
+
+    .btn {
+        width: 290px;
+        padding: 15px;
+        margin-right: 1rem;
+        background-color: var(--bg-blueish1);
+        color: var(--color-white);
+        font-size: 0.8rem;
+        font-weight: 300;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

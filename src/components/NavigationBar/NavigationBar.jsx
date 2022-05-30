@@ -8,7 +8,7 @@ import profilePic from '../../../public/images/profilepic.jpg'
 
 import css from './NavigationBar.module.css';
 
-let NavigationBar = ({ toogleMenu, setToggleMenu }) => {
+let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
     let [loggedIn, setLoggedIn] = useState(false);
 
     return <div className={css.navbar}>
@@ -19,7 +19,7 @@ let NavigationBar = ({ toogleMenu, setToggleMenu }) => {
                 <Link to='/get-the-app' className={css.appTxt}>Get The App</Link>
             </div>
             <div className={css.rightSide}>
-                <Link to='/add-restauarnt' className={css.menuItem} >Add restuarant</Link>
+                {page !== 'add-restaurant' ? <Link to='/add-restaurant' className={css.menuItem} >Add restuarant</Link> : ''}
                 {loggedIn ? (<div className={css.menuItem}>
                     <div className={css.profile}>
                         <img src={profilePic} alt="profile pic" className={css.profilePic} />

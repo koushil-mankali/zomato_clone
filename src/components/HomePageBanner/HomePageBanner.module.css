@@ -41,7 +41,7 @@
 
 @media all and (max-width: 480px) {
     .title {
-        font-size: 1.9;
+        font-size: 1.9rem;
         font-weight: bold;
         text-align: center;
     }
