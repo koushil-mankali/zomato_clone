@@ -1,0 +1,39 @@
+.outerDiv {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: var(--bg-ash);
+}
+
+.innerDiv {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.tagLine {
+    font-size: 1.2rem;
+    word-spacing: 1px;
+    font-weight: 400;
+    color: var(--color-p2-text);
+    margin: 1rem 0;
+}
+
+@media all and (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .tagLine {
+        font-size: 0.9rem;
+    }
+}
