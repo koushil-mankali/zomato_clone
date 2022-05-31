@@ -13,8 +13,9 @@ let HowItWorks = () => {
     return <div className={css.outerDiv}>
         <div className={css.innerDiv}>
             <div className={css.div1}>
-                <img className={css.img} src={backgroundImg} alt="background image" />
-                <div className={css.whiteDiv}></div>
+                <div className={css.imgBox}>
+                    <img className={css.img} src={backgroundImg} alt="background image" />
+                </div>
             </div>
             <div className={css.div2}>
                 <div className={css.title}>How it works?</div>

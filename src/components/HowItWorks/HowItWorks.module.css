@@ -1,8 +1,7 @@
 .outerDiv {
     width: 100%;
-    min-height: 600px;
-    height: auto;
-    margin: 1rem 0;
+    height: 400px;
+    margin: 1rem 0 10rem 0;
 }
 
 .innerDiv {
@@ -19,15 +18,14 @@
     height: 100%;
 }
 
-.img {
+.imgBox {
     width: 100%;
-    height: 70%;
-    object-fit: fill;
+    height: 100%;
 }
 
-.whiteDiv {
+.img {
     width: 100%;
-    height: 30%;
+    height: 100%;
 }
 
 .div2 {
@@ -55,30 +53,27 @@
     align-items: center;
 }
 
+@media all and (max-width: 950px) {
+    .outerDiv {
+        height: 700px;
+    }
+
+    .outerDiv {
+        margin: 1rem 0 15rem 0;
+    }
+}
+
 @media all and (max-width: 480px) {
     .title {
         font-size: 2rem;
         margin: 0;
     }
 
-    .img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media all and (max-width: 950px) {
     .outerDiv {
         height: 900px;
     }
-}
-
-@media all and (max-width: 650px) {
-    .title {
-        margin: 0;
-    }
 
     .outerDiv {
-        height: 1250px;
+        margin: 1rem 0 20rem 0;
     }
 }
