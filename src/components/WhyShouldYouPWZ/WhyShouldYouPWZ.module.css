@@ -1,0 +1,51 @@
+.outerDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.innerDiv {
+    width: 60%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-title-text);
+}
+
+.tagLine {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: var(--color-p1-text);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 780px) {
+    .innerDiv {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .tagLine {
+        font-size: 1.1rem;
+        margin: 1.3rem 0;
+    }
+}

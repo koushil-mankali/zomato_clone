@@ -73,6 +73,7 @@
 
     /* Box shadows Start */
     --box-shadow1: rgb(28 28 28 / 8%) 0px 1.42623px 2.85;
+    --box-shadow2: 0px 4px 16px rgb(28 28 28 / 10%);
     /* Box shadows End */
 
 }
