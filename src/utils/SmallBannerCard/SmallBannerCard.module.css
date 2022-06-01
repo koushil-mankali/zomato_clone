@@ -1,0 +1,119 @@
+.outerDiv {
+    width: 100%;
+    height: 250px;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.imgBox {
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textBox {
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--color-white);
+    z-index: 20;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.tag {
+    margin: 1.4rem 0;
+}
+
+.btn {
+    width: 180px;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-blueish1);
+}
+
+.btnTitle {
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.btnArrow {
+    margin-left: 10px;
+}
+
+.arrow {
+    width: 8px;
+    height: 10px;
+    filter: invert(1);
+}
+
+@media all and (max-width: 1020px) {
+    .innerDiv {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .outerDiv {
+        margin: 2rem 0;
+    }
+
+    .innerDiv {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .tag {
+        margin: 1.5rem 0;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .outerDiv {
+        margin: 1rem 0;
+    }
+
+    .innerDiv {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .tag {
+        margin: 1rem 0;
+    }
+
+}

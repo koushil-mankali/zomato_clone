@@ -1,0 +1,66 @@
+.outerDiv {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: var(--brd2);
+    border-radius: 10px;
+    background-color: var(--bg-white);
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.arrow {
+    width: 18px;
+    height: 18px;
+    transition: all 0.2s;
+}
+
+.arrowRotateUp {
+    transform: rotate(0deg);
+}
+
+.arrowRotateDown {
+    transform: rotate(180deg);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.val {
+    margin: 10px;
+}
+
+.dnone {
+    display: none;
+}
+
+.dblock {
+    display: flex;
+}
+
+@media all and (max-width: 770px) {
+    .title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .content {
+        font-size: 0.9rem;
+    }
+}

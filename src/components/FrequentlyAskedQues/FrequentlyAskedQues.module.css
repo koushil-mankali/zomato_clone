@@ -1,0 +1,56 @@
+.outerDiv {
+    margin: 2rem 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 770px) {
+    .innerDiv {
+        width: 70%;
+        height: 100%;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .outerDiv {
+        margin: 1rem 0;
+    }
+
+    .innerDiv {
+        width: 80%;
+        height: 100%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+}

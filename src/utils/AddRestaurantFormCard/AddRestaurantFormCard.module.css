@@ -1,0 +1,40 @@
+.outerDiv {
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 5px;
+    border: var(--brd2);
+    background-color: var(--bg-white);
+    padding: 1rem;
+}
+
+.innerDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: var(--color-white);
+    background-color: var(--bg-blueish1);
+}
+
+.tag {
+    text-align: center;
+    color: var(--color-p3-text);
+    font-size: 0.8rem;
+}
+
+.link {
+    color: var(--color-blueish1);
+    font-weight: 300;
+    text-decoration: none;
+}
