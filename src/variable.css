@@ -56,6 +56,7 @@
     --brd1: 0.1rem solid rgb(207, 207, 207);
     --brd2: 1px solid rgb(207, 207, 207);
     --brd3: 1px solid rgb(244, 244, 244);
+    --brd4: 1px solid rgb(232, 232, 232);
 
     /* Borders End */
 
@@ -73,8 +74,9 @@
 
 
     /* Box shadows Start */
-    --box-shadow1: rgb(28 28 28 / 8%) 0px 1.42623px 2.85;
+    --box-shadow1: 0px 1.42623px 2.85 rgb(28 28 28 / 8%);
     --box-shadow2: 0px 4px 16px rgb(28 28 28 / 10%);
+    --box-shadow3: 0px 3px 12px rgb(0 0 0 / 8%);
     /* Box shadows End */
 
 }

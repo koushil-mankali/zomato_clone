@@ -1,0 +1,41 @@
+.outerDiv {
+    width: 250px;
+    height: 250px;
+    margin: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.innerDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox {
+    width: 100%;
+    height: 75%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.txtBox {
+    width: 100%;
+    height: 25%;
+    padding: 10px;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 450;
+}
+
+.duration {
+    font-size: 1rem;
+    font-size: 300;
+    color: var(--color-p2-text);
+}

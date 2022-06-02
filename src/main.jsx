@@ -8,12 +8,15 @@ import Book from './pages/Orderings/Book'
 import App from './App'
 import './index.css'
 
+import Testpage from './pages/testpage'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route index element={<App />} />
       <Route path="/" element={<App />} />
       <Route path="/add-restaurant" element={<AddRestaurant />} />
+      <Route path="/test-page" element={<Testpage />} />
     </Routes>
   </BrowserRouter>
 )
