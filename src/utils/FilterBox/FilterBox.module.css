@@ -1,0 +1,32 @@
+.outerDiv {
+    margin: 5px;
+    padding: 6px;
+    border-radius: 7px;
+    border: var(--brd2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-p2-text);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.outerDiv:hover {
+    background-color: rgba(240, 236, 236, 0.8);
+}
+
+.leftIconBox,
+.rightIconBox {
+    width: 15px;
+    height: 15px;
+}
+
+.leftIcon,
+.rightIcon {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    margin: 0 5px;
+}

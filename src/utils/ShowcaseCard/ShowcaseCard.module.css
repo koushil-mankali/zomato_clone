@@ -4,7 +4,7 @@
     min-width: 200px;
     min-height: 300px;
     max-width: 300px;
-    max-height: 400px;
+    max-height: auto;
     margin: 0.5rem;
     padding: 10px;
     border-radius: 10px;
@@ -31,6 +31,51 @@
     border-radius: 10px;
 }
 
+.promoted {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 2px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 0.6rem;
+    border-radius: 5px;
+}
+
+.off {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    padding: 2px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-blueish4);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.offPro {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    padding: 2px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-redish1);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 0px 5px 5px 0px;
+}
+
 .duration {
     position: absolute;
     bottom: 20px;
@@ -44,4 +89,73 @@
     font-weight: 600;
     font-size: 0.7rem;
     border-radius: 5px;
+}
+
+.txtBox {}
+
+.titleBox,
+.tagBox,
+.scroll1,
+.scroll2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.ratingBox {
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: var(--bg-greenish);
+    border-radius: 5px;
+    padding: 1px 4px;
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+    color: var(--color-white);
+    filter: invert(1);
+}
+
+.tagTitle,
+.tagTxt {
+    font-weight: 400;
+    color: var(--color-p5-text);
+}
+
+.tagTxt {
+    font-size: 0.9rem;
+}
+
+.footer {
+    border-top: 1.5px solid #eee;
+    /* height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden; */
+}
+
+.upArrow {
+    width: 20px;
+    height: 20px;
+}
+
+.ordersPlaces {
+    margin: 0px 10px;
+    font-size: 0.8rem;
+    font-weight: 450;
+    color: var(--color-p5-text);
+}
+
+.maxSafety,
+.safeDelivery {
+    width: 40px;
+    height: 20px;
+    border: 5px;
 }

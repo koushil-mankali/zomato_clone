@@ -1,0 +1,29 @@
+.outerDiv {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-redish1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.outerDiv:hover {
+    background-color: var(--bg-redish2);
+}
+
+.innerDiv {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topArrow {
+    width: 15px;
+    height: 15px;
+    filter: invert(1);
+}
