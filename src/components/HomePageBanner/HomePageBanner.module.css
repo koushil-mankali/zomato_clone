@@ -39,6 +39,10 @@
     font-weight: bold;
 }
 
+.searchbar {
+    margin: 1rem 0;
+}
+
 @media all and (max-width: 480px) {
     .title {
         font-size: 1.9rem;

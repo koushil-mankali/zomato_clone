@@ -3,12 +3,13 @@
     height: 50px;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: var(--box-shadow3);
     border: var(--brd4);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    box-shadow: var(--box-shadow3);
+    background-color: var(--bg-white);
 }
 
 .srch1,

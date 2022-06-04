@@ -1,8 +1,13 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import css from './CategorySelectionComp.module.css'
 
+import { orderOnlinePage, diningOutPage, proAndProPlusPage, nightLifePage } from '../../helpers/constants'
+
 let CategorySelectionComp = ({ imgSrc, imgSrc2, title, color, isActive, setIsActive, comp }) => {
+
+    let navigate = useNavigate();
 
     let outerClass = isActive[comp] ? css.outerDivActive : css.outerDiv;
     let titleClass = isActive[comp] ? css.titleActive : css.title;
@@ -17,6 +22,9 @@ let CategorySelectionComp = ({ imgSrc, imgSrc2, title, color, isActive, setIsAct
                 [comp]: !val[comp]
             }
         });
+
+        let param = comp === "delivery" ? orderOnlinePage : comp === "dinning" ? diningOutPage : nightLifePage;
+        navigate('/show-case/?page=' + param);;
     }
 
     return <div className={outerClass} onClick={changeState}>
