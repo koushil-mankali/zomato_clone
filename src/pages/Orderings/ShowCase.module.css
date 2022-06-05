@@ -1,5 +1,5 @@
-.w8 {
-    width: 80%;
+.w7 {
+    width: 70%;
     margin: auto;
 }
 
@@ -13,12 +13,7 @@
 
 .innerDiv {
     margin-top: 100px;
-    width: 80%;
-    height: 100%;
-}
-
-.innerDiv2 {
-    width: 80%;
+    width: 70%;
     height: 100%;
 }
 
@@ -28,20 +23,109 @@
     color: var(--color-p5-text);
 }
 
-.showcaseComps {
-    margin: 0.5rem 0;
-    display: flex;
-    padding: -10px 0;
+.showCaseDiv {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    background-color: var(--bg-white);
+    z-index: 2;
 }
 
-.hr {
-    width: 100%;
-    margin-top: -13px;
-    border-top: 1px solid #eee;
+.showcaseComps {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: -2px 0;
 }
 
 .innerDiv2 {
     width: 100%;
     margin-top: -10px;
     background-color: var(--bg-f8f8f8);
+}
+
+.innerDiv3 {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-white);
+    padding: 0.7rem 0;
+    z-index: 3;
+}
+
+.filtersDiv {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.innerDiv4,
+.innerDiv5 {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-f8f8f8);
+}
+
+.innerDiv4Title,
+.innerDiv5Title {
+    font-size: 2rem;
+    font-weight: 450;
+    margin: -0.5rem 0 1rem 0;
+    color: var(--color-title-text);
+}
+
+.rollerCarosuel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.cardW {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.innerDiv5 {
+    background-color: var(--bg-white);
+}
+
+.innerDiv6 {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+}
+
+.innerDiv6Title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 450;
+    color: var(--color-title-text);
+}
+
+.innerDiv6Body {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+    .showCaseDiv {
+        display: none;
+    }
+
+    .innerDiv3 {
+        overflow: scroll;
+    }
 }

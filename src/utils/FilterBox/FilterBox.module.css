@@ -1,4 +1,6 @@
 .outerDiv {
+    width: max-content;
+    height: 25px;
     margin: 5px;
     padding: 6px;
     border-radius: 7px;

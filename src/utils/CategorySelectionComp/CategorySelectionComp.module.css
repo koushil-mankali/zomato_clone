@@ -1,7 +1,8 @@
 .outerDiv {
     margin: 5px;
     width: 200px;
-    height: 90px;
+    height: 70px;
+    border: none;
     cursor: pointer;
     text-decoration: none;
 }
@@ -9,7 +10,7 @@
 .outerDivActive {
     margin: 5px;
     width: 200px;
-    height: 90px;
+    height: 70px;
     cursor: pointer;
     border-bottom: 3px solid var(--color-pinky);
 }
@@ -33,8 +34,8 @@
 }
 
 .img {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 80%;
     object-fit: fill;
 }
 
