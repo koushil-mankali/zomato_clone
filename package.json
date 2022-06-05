@@ -12,7 +12,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "6",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
