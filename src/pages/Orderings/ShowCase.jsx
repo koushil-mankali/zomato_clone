@@ -32,9 +32,9 @@ let ShowCase = () => {
     const page = urlParams.get('page');
 
     let [isActive, setIsActive] = useState({
-        delivery: true,
-        dinning: false,
-        nightlife: false
+        delivery: page === orderOnlinePage,
+        dinning: page === diningOutPage,
+        nightlife: page === nightLifePage
     });
     let filterBoxes;
 
