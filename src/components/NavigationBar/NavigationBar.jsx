@@ -6,10 +6,19 @@ import menuBar from '../../../public/icons/menu.png'
 import downArrow from '../../../public/icons/down-arrow.png'
 import profilePic from '../../../public/images/profilepic.jpg'
 
+import Login from '../Auth/Login/Login'
+import Signup from '../Auth/Signup/Signup'
+import EnterOTP from '../Auth/EnterOTP/EnterOTP'
+
 import css from './NavigationBar.module.css';
 
 let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
     let [loggedIn, setLoggedIn] = useState(false);
+    let [auth, setAuth] = useState({
+        closed: true,
+        login: false,
+        signup: false
+    });
 
     return <div className={css.navbar}>
         <img className={css.menuBar} src={menuBar} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
@@ -20,7 +29,7 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
             </div>
             <div className={css.rightSide}>
                 {page !== 'add-restaurant' ? <Link to='/add-restaurant' className={css.menuItem} >Add restuarant</Link> : ''}
-                {loggedIn ? (<div className={css.menuItem}>
+                {auth?.login ? (<div className={css.menuItem}>
                     <div className={css.profile}>
                         <img src={profilePic} alt="profile pic" className={css.profilePic} />
                         <div className={css.profileName}>Profile</div>
@@ -53,11 +62,16 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
                         </div>
                     </div>
                 </div>) : (<>
-                    <div className={css.menuItem} onClick={setLoggedIn}>Log in</div>
-                    <div className={css.menuItem}>Sign up</div>
+                    <div className={css.menuItem} onClick={() => setAuth({ closed: false, login: true, signup: false })}>Log in</div>
+                    <div className={css.menuItem} onClick={() => setAuth({ closed: false, login: false, signup: true })}>Sign up</div>
                 </>)}
             </div>
         </div>
+        <div>
+            {auth?.login ? <Login setAuth={setAuth} /> : null}
+            {auth?.signup ? <Signup setAuth={setAuth} /> : null}
+        </div>
+        {/* <EnterOTP /> */}
     </div>
 }
 

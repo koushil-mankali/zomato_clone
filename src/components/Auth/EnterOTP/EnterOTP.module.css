@@ -1,0 +1,118 @@
+.outerDiv {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 8000;
+    background-color: rgba(28, 28, 28, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    width: 300px;
+    height: auto;
+    padding: 20px 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-title-text);
+}
+
+.closeBtn {
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.closeBtnImg {
+    width: 100%;
+    height: 100%;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt1 {
+    font-size: 0.9rem;
+    color: var(--color-p5-text);
+}
+
+.OTPBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.otpNumBox {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-white);
+    border-radius: 5px;
+}
+
+.inpBox {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    font-weight: 400;
+    color: var(--color-title-text);
+    border-radius: 5px;
+    border: var(--brd5);
+}
+
+.inpBox:focus {
+    border: 1px solid var(--color-blueish1);
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-title-text);
+}
+
+.footerTxt {
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    font-weight: 350;
+    color: var(--color-p5-text);
+}
+
+.resendTxt {
+    letter-spacing: 0.5px;
+    margin: 0 5px;
+    font-weight: 300;
+    color: var(--color-p5-text);
+    cursor: pointer;
+}
