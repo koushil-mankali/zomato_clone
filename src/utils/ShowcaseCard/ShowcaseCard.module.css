@@ -12,7 +12,7 @@
 }
 
 .outerDiv:hover {
-    border: var(--brd4);
+    outline: var(--brd4);
     background-color: var(--bg-white);
     box-shadow: var(--box-shadow3);
 }
