@@ -1,0 +1,218 @@
+.outerDiv{
+    width: 100%;
+    height: 220px;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgSec{
+    width: 70%;
+    height: 220px;
+    position: absolute;
+}
+
+.bannerImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: inset 2px 2px 190px black;
+}
+
+.txtBox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.profileImgBox{
+    width: 165px;
+    height: 165px;
+    margin: 0 1rem;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImg{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.name{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+}
+
+.rightBox{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+.editBtn{
+    width: 120px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 8px;
+    color: var(--color-white);
+    background-color: var(--bg-redish3);
+    cursor: pointer;
+}
+
+.editProfileIconBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editProfileIcon{
+    width: 10px;
+    height: 10px;
+    filter: invert(1);
+    margin: 10px;
+}
+
+.locationIcon{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    margin-left: 0;
+    filter: brightness(0) invert(1);
+}
+
+.editBtn:hover{
+    background-color: var(--bg-redish1);
+}
+/* .editBtn:hover .locationIcon{
+    margin-left: -20px;
+    filter: brightness(0) invert(0);
+} */
+
+.rightBoxInner{
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    color: var(--color-white)
+}
+
+.boxTxt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.count{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.countTxt{
+    font-weight: 350;
+    font-size: 1.1rem;
+}
+
+.bar{
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    border-right: 1px solid white;
+    height: 100%;
+}
+
+@media all and (max-width: 780px){
+    .outerDiv{
+        width: 100%;
+        height: 300px;
+    }
+
+    .imgSec{
+        height: 300px;
+    }
+
+    .innerDiv{
+        height: 100%;
+    }
+
+    .txtBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .leftBox, .rightBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .profileImgBox{
+        width: 105px;
+        height: 105px;
+      
+    }
+    
+    .profileImg{
+        width: 100px;
+        height: 100px;
+    }
+
+    .profileDetails{
+        text-align: center;
+    }
+
+    .count{
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .countTxt{
+        font-weight: 350;
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width: 420px){
+    .imgSec{
+        width: 100%;
+    }
+}

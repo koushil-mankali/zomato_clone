@@ -1,0 +1,15 @@
+.outerDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    width:100%;
+    height: 80px;
+}
+
+.box{
+    width: 70%;
+}
