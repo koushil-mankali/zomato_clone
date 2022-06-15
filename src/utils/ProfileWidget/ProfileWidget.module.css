@@ -98,3 +98,18 @@
     height: 10px;
     filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
 }
+
+@media all and (max-width: 1024px){
+    .outerDiv{
+        width: 100%;
+    }   
+    .txtBox{
+        padding: 4px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .outerDiv{
+        width: 290px;
+    }   
+}

@@ -48,3 +48,15 @@
     align-items: center;
     margin-left: 10px;
 }
+
+@media all and (max-width: 1024px){
+    .outerDiv{
+        width: 100%;
+    }   
+}
+
+@media all and (max-width: 768px){
+    .outerDiv{
+        width: 290px;
+    }   
+}

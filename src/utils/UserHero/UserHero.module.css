@@ -211,6 +211,13 @@
     }
 }
 
+@media all and (max-width: 1024px){
+    .imgSec{
+        width: 80%;
+    }
+    
+}
+
 @media all and (max-width: 420px){
     .imgSec{
         width: 100%;

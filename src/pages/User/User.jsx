@@ -1,8 +1,9 @@
 import css from './User.module.css'
 
 import Navbar from '../../components/NavigationBar2/NavigationBar2'
-import UserHero from '../../utils/UserHero/UserHero'
+import UserProfileRightsideBar from '../../components/UserProfileRightsideBar/UserProfileRightsideBar'
 
+import UserHero from '../../utils/UserHero/UserHero'
 import LeftSideCardPanel from '../../utils/LeftSideCardPanel/LeftSideCardPanel'
 import SuggestedFollowCard from '../../utils/SuggestedFollowCard/SuggestedFollowCard'
 import ProfileWidget from '../../utils/ProfileWidget/ProfileWidget'
@@ -53,7 +54,9 @@ const User = () => {
           <SuggestedFollowCard name='SUGGESTED FOODIES TO FOLLOW' data={data3} />
           <ProfileWidget name='ZOMATO PROFILE WIDGET' tag="Showcase your Zomato profile on your blog." data={data4} />
         </div>
-        <div className={css.rightBox}>hello</div>
+        <div className={css.rightBox}>
+          <UserProfileRightsideBar />
+        </div>
       </div>
     </div>
   </div>)

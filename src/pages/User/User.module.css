@@ -18,20 +18,42 @@
     width: 100%;
     height: auto;
     display: flex;
-
 }
 
 .leftBox{
-    width: 32%;
+    width: 33%;
 }
 
 .rightBox{
-    width: 68%;
+    width: 67%;
+}
+
+@media all and (max-width: 1024px){
+    .box{
+        width: 80%;
+    }
+    
+}
+
+@media all and (max-width: 768px){
+    .mainbody{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .leftBox{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rightBox{
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 420px){
     .box{
         width: 100%;
-    }
-    
+    } 
 }
