@@ -1,5 +1,7 @@
 import css from './ProfileWidget.module.css'
 
+import rightArrowImg from '../../../public/icons/right-arrow.png';
+
 let ProfileWidget = ({name, tag, data}) => {
 
     return <div className={css.outerDiv}>
@@ -7,34 +9,33 @@ let ProfileWidget = ({name, tag, data}) => {
             <div className={css.title}>{name}</div>
             <div className={css.tag}>{tag}</div>
             <div className={css.body}>
-            <div className={css.userTab}>
-                <div className={css.leftBox}>
+                <div className={css.mainBox}>
                     <div className={css.detBox}>
                         <div className={css.imgBox}>
-                            <img className={css.profileImg} src={data?.imgSrc} alt='profile picture' />
+                            <img className={css.profileImg} src={data?.profilePic} alt='profile picture' />
                         </div>
                         <div className={css.userName}>{data?.userName}</div>
                     </div>
                     <div className={css.detBox2}>
-                        <div>
-                            <div>0</div>
-                            <div>Reviews</div>
+                        <div className={css.txtBox}>
+                            <div className={css.count}>0</div>
+                            <div className={css.txt}>Reviews</div>
                         </div>
-                        <div>
-                            <div>0</div>
-                            <div>Photos</div>
+                        <div className={css.txtBox}>
+                            <div className={css.count}>0</div>
+                            <div className={css.txt}>Photos</div>
                         </div>
-                        <div>
-                            <div>0</div>
-                            <div>Followers</div>
+                        <div className={css.txtBox}>
+                            <div className={css.count}>0</div>
+                            <div className={css.txt}>Followers</div>
                         </div>
                     </div>
                 </div>
                 <div className={css.footer}>
-                    <div>Tomato</div>
+                    Tomato
                 </div>
             </div>
-            </div>
+            <div className={css.gtw}>Get this widget <img src={rightArrowImg} className={css.rightArrowImg} alt='right arrow' /></div>
         </div>
     </div>
 }

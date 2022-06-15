@@ -13,3 +13,25 @@
 .box{
     width: 70%;
 }
+
+.mainbody{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+.leftBox{
+    width: 32%;
+}
+
+.rightBox{
+    width: 68%;
+}
+
+@media all and (max-width: 420px){
+    .box{
+        width: 100%;
+    }
+    
+}
