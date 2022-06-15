@@ -8,8 +8,8 @@ let SuggestedFollowCard = ({name, data}) => {
         <div className={css.innerDiv}>
             <div className={css.title}>{name}</div>
             <div className={css.body}>
-                {data?.map(val => {
-                    return <UsersTab data={val} />
+                {data?.map((val, index) => {
+                    return <UsersTab data={val} key={index} />
                 })}
             </div>
         </div>

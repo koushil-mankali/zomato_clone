@@ -13,9 +13,9 @@ let UserProfileRightsideBar = () => {
     return <div className={css.outerDiv}>
         <div className={css.innerDiv}>
             <div className={css.title}>Reviews</div>
-            <dvi className={css.contectBox}>
+            <div className={css.contectBox}>
                     <UserReviewedCard />
-            </dvi>
+            </div>
         </div>
     </div>
 }
