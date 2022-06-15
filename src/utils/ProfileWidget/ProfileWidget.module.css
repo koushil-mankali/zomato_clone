@@ -1,0 +1,102 @@
+.outerDiv{
+    width: 300px;
+    height: min-content;
+    margin: 0.5rem;
+    padding: 10px 20px;
+    border: var(--brd3);
+    border-radius: 10px;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-white);
+}
+
+.title{
+    color: var(--color-p5-text);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 10px 0;
+}
+
+.tag{
+    color: var(--color-p4-text);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 3px 0;
+}
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.userTab{
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftBox{
+    display: flex;
+}
+
+.imgBox1{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.profileImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.userData{
+    margin: 0 10px;
+}
+
+.userName{
+    font-size: 1rem;
+    font-weight: 450;
+    cursor: pointer;
+    color: var(--color-title-text);
+}
+
+.txt1::after{
+    content: "•";
+    margin: 0 0.4rem;
+}
+
+.userDet{
+    display: flex;
+}
+
+.txtBox{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--color-p3-text);
+}
+
+.imgBox2{
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background-color: var(--bg-redish4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.followImg{
+    width: 25px;
+    height: 25px;
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}

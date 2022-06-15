@@ -9,6 +9,8 @@ import FilterBox from '../utils/FilterBox/FilterBox'
 import SearchBar from '../utils/SearchBar/SearchBar'
 import CategorySelectionComp from '../utils/CategorySelectionComp/CategorySelectionComp'
 import LeftSideCardPanel from '../utils/LeftSideCardPanel/LeftSideCardPanel'
+import SuggestedFollowCard from '../utils/SuggestedFollowCard/SuggestedFollowCard'
+import ProfileWidget from '../utils/ProfileWidget/ProfileWidget'
 
 import downArrow from '../../public/icons/down-arrow.png'
 import food from '../../public/images/fortheloveofbiryani.jpg'
@@ -18,24 +20,40 @@ import delivery1 from '../../public/icons/delivery1.png';
 import delivery2 from '../../public/icons/delivery2.png';
 import nightlife1 from '../../public/icons/nightlife1.png';
 import nightlife2 from '../../public/icons/nightlife2.png';
+import userImg from '../../public/images/koushil.jpg';
 
 import css from './testpage.module.css'
 
 let Testpage = () => {
 
-    let data1 = [ 
-        {title: "Reviews", hash: "reviews"},
-        {title: "Photos", hash: "photos"},
-        {title: "Followers", hash: "followers"},
-        {title: "Recently Viewed", hash: "recently-viewed"},
-        {title: "Bookmarks", hash: "bookmarks"},
-        {title: "Blog Posts", hash: "blog-posts"}
-    ];
-    let data2 = [ 
-        {title: "Order History", hash: "order-history"},
-        {title: "My Address", hash: "my-address"},
-        {title: "Favorite Orders", hash: "favorite-orders"},
-    ];
+    // let data1 = [ 
+    //     {title: "Reviews", hash: "reviews"},
+    //     {title: "Photos", hash: "photos"},
+    //     {title: "Followers", hash: "followers"},
+    //     {title: "Recently Viewed", hash: "recently-viewed"},
+    //     {title: "Bookmarks", hash: "bookmarks"},
+    //     {title: "Blog Posts", hash: "blog-posts"}
+    // ];
+    // let data2 = [ 
+    //     {title: "Order History", hash: "order-history"},
+    //     {title: "My Address", hash: "my-address"},
+    //     {title: "Favorite Orders", hash: "favorite-orders"},
+    // ];
+
+    // let data1 = [
+    //     {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"},
+    //     {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"},
+    //     {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"},
+    //     {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"}
+    // ]
+
+    let data1 = {
+        profilePic: userImg,
+        userName: "Koushil",
+        reviews: 1,
+        photos: 1,
+        followers: 200
+    }
 
     let [isActive, setIsActive] = useState({
         dinning: true,
@@ -78,9 +96,15 @@ let Testpage = () => {
             <FilterBox text="filter: 11" leftIcon={downArrow} />
             <FilterBox text="filter: 11" rightIcon={downArrow} />
         </div> */}
-        <div className={css.styleClass}>
+        {/* <div className={css.styleClass}>
             <LeftSideCardPanel name='ACTIVITY' data={data1} />
             <LeftSideCardPanel name='ONLINE ORDERING' data={data2} />
+        </div> */}
+        {/* <div className={css.styleClass}>
+            <SuggestedFollowCard name='SUGGESTED FOODIES TO FOLLOW' data={data1} />
+        </div> */}
+        <div className={css.styleClass}>
+            <ProfileWidget name='ZOMATO PROFILE WIDGET' tag="Showcase your Zomato profile on your blog." data={data1} />
         </div>
         <div className={css.styleClass}>
             <GoTopArrow />
