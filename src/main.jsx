@@ -20,7 +20,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/add-restaurant" element={<AddRestaurant />} />
       <Route path="/show-case" element={<ShowCase />} />
       <Route path="/test-page" element={<Testpage />} />
+      <Route path="/test-page/:hashId" element={<Testpage />} />
       <Route path="/user/:userId" element={<User />} />
+      <Route path="/user/:userId/:hashId" element={<User />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   </BrowserRouter>
