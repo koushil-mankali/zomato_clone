@@ -25,6 +25,9 @@ const User = () => {
         {title: "My Address", hash: "my-address"},
         {title: "Favorite Orders", hash: "favorite-orders"},
     ];
+    let data5 = [ 
+        {title: "Yours Booking", hash: "bookings"},
+    ];
 
     let data3 = [
         {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"},
@@ -51,6 +54,7 @@ const User = () => {
         <div className={css.leftBox}>
           <LeftSideCardPanel name='ACTIVITY' data={data1} />
           <LeftSideCardPanel name='ONLINE ORDERING' data={data2} />
+          <LeftSideCardPanel name='TABLE BOOKING' data={data5} />
           <SuggestedFollowCard name='SUGGESTED FOODIES TO FOLLOW' data={data3} />
           <ProfileWidget name='ZOMATO PROFILE WIDGET' tag="Showcase your Zomato profile on your blog." data={data4} />
         </div>
