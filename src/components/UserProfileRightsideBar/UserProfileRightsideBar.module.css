@@ -20,3 +20,15 @@
     height: auto;
     margin: 0.4rem 0;
 }
+
+@media all and (max-width: 1024px){
+    .outerDiv{
+        margin-left: 20px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .outerDiv{
+        margin-left: 0px;
+    }
+}

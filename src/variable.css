@@ -12,6 +12,7 @@
     --color-blueish-light1: rgb(17, 145, 153);
     --color-orangish: rgb(244, 162, 102);
     --color-greenish: rgb(58, 183, 87);
+    --color-greenish2: #24963F;
     --color-goldish: rgb(233, 181, 1);
 
     --color-title-text: rgb(28, 28, 28);
@@ -30,6 +31,8 @@
     --bg-white: rgb(255, 255, 255);
     --bg-ash: rgb(232, 232, 232);
     --bg-greenish: rgb(36, 150, 63);
+    --bg-greenish2: #D0F0C0;
+    --bg-dark-greenish: rgb(14, 80, 32);
     --bg-redish1: rgb(217, 38, 98);
     --bg-redish2: rgb(199, 35, 90);
     --bg-redish3: rgb(239, 79, 95);
