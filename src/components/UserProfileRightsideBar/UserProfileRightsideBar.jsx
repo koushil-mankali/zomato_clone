@@ -3,7 +3,7 @@ import {useParams } from 'react-router-dom'
 
 import css from './UserProfileRightsideBar.module.css'
 
-import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage, blogpostsPage, orderhistoryPage, myaddressPage, avoriteordersPage, bookingsPage} from '../../helpers/constants'
+import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage, blogpostsPage, orderhistoryPage, myaddressPage, favoriteordersPage, bookingsPage} from '../../helpers/constants'
 
 import ImgSrc from '../../../public/images/proandproplus.jpg';
 
@@ -11,7 +11,7 @@ import UserReviewedCard from '../../utils/UserReviewedCard/UserReviewedCard'
 
 let UserProfileRightsideBar = () => {
 
-    let [currComp, setCurrComp] = useState();
+    let [currComp, setCurrComp] = useState(<h1>Some thing Went Wrong!</h1>);
 
     let {userId, hashId} = useParams(); 
 
@@ -131,7 +131,7 @@ let UserProfileRightsideBar = () => {
         case myaddressPage:
             setCurrComp(<h1>No myaddressPage!</h1>);
             break;
-        case avoriteordersPage:
+        case favoriteordersPage:
             setCurrComp(<h1>No PagavoriteordersPagee!</h1>);
             break;
         case bookingsPage:

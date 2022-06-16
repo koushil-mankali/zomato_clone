@@ -11,6 +11,7 @@ import CategorySelectionComp from '../utils/CategorySelectionComp/CategorySelect
 import LeftSideCardPanel from '../utils/LeftSideCardPanel/LeftSideCardPanel'
 import SuggestedFollowCard from '../utils/SuggestedFollowCard/SuggestedFollowCard'
 import ProfileWidget from '../utils/ProfileWidget/ProfileWidget'
+import UserProfileNoData from '../utils/UserProfileNoData/UserProfileNoData'
 
 import downArrow from '../../public/icons/down-arrow.png'
 import food from '../../public/images/fortheloveofbiryani.jpg'
@@ -103,8 +104,11 @@ let Testpage = () => {
         {/* <div className={css.styleClass}>
             <SuggestedFollowCard name='SUGGESTED FOODIES TO FOLLOW' data={data1} />
         </div> */}
-        <div className={css.styleClass}>
+        {/* <div className={css.styleClass}>
             <ProfileWidget name='ZOMATO PROFILE WIDGET' tag="Showcase your Zomato profile on your blog." data={data1} />
+        </div> */}
+        <div className={css.styleClass}>
+            <UserProfileNoData hashId="my-address"/>
         </div>
         <div className={css.styleClass}>
             <GoTopArrow />
