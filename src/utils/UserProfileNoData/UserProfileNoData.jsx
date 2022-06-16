@@ -13,63 +13,36 @@ import followers from '../../../public/icons/nofollowers.png'
 
 const UserProfileNoData = ({hashId}) => {
 
-  let [page, setPage] = useState("no Data")
+  let [page, setPage] = useState(photos)
 
   useEffect(() => {
     switch(hashId){
       case reviewPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={photos} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(photos)
         break;
       case photosPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={photos} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(photos)
         break;
       case followersPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={followers} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(followers)
         break;
       case recentlyviewedPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={photos} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(photos)
         break;
       case bookmarksPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={bookmarks} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(bookmarks)
         break;
       case blogpostsPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={blogpost} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(blogpost)
         break;
       case orderhistoryPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={reservations} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(reservations)
         break;
       case myaddressPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={reservations} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(reservations)
         break;
       case favoriteordersPage: 
-        setPage(<div className={css.imgBox}>
-          <img src={favorders} className={css.img} />
-          <div className={css.txt}>No Data Found!</div>
-        </div>)
+        setPage(favorders)
         break;
       default: null
     }
@@ -78,7 +51,10 @@ const UserProfileNoData = ({hashId}) => {
   return (
     <div className={css.outerDiv}>
         <div className={css.innerDiv}>
-          {page}
+          <div className={css.imgBox}>
+            <img src={page} className={css.img} />
+            <div className={css.txt}>No Data Found!</div>
+          </div>
         </div>
     </div>
   )
