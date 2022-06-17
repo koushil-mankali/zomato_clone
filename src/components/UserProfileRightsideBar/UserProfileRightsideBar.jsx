@@ -7,7 +7,9 @@ import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage
 
 import ImgSrc from '../../../public/images/proandproplus.jpg';
 
-import UserReviewedCard from '../../utils/UserReviewedCard/UserReviewedCard'
+import UserReviewedCard from '../../utils/UserProfile/UserReviewedCard/UserReviewedCard'
+import UserPhotosCard from '../../utils/UserProfile/UserPhotosCard/UserPhotosCard'
+import UserFollowersCard from '../../utils/UserProfile/UserFollowersCard/UserFollowersCard'
 
 let UserProfileRightsideBar = () => {
 
@@ -111,10 +113,10 @@ let UserProfileRightsideBar = () => {
    useEffect(() => {
     switch(hashId){
         case photosPage:
-            setCurrComp(<h1>No photos!</h1>);
+            setCurrComp(<UserPhotosCard hashId={hashId} />);
             break;
         case followersPage:
-            setCurrComp(<h1>No followersPage!</h1>);
+            setCurrComp(<UserFollowersCard hashId={hashId} userData={{following: 0, followers: 0}} />);
             break;
         case recentlyviewedPage:
             setCurrComp(<h1>No recentlyviewedPage!</h1>);

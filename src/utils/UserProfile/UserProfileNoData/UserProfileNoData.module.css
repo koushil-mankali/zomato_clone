@@ -1,7 +1,8 @@
 .outerDiv{
     width: 100%;
-    min-height: 300px;
+    min-height: 250px;
     height: auto;
+    margin: 2rem 0;
 }
 
 .innerDiv{

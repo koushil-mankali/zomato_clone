@@ -11,7 +11,7 @@ import CategorySelectionComp from '../utils/CategorySelectionComp/CategorySelect
 import LeftSideCardPanel from '../utils/LeftSideCardPanel/LeftSideCardPanel'
 import SuggestedFollowCard from '../utils/SuggestedFollowCard/SuggestedFollowCard'
 import ProfileWidget from '../utils/ProfileWidget/ProfileWidget'
-import UserProfileNoData from '../utils/UserProfileNoData/UserProfileNoData'
+import UserProfileNoData from '../utils/UserProfile/UserProfileNoData/UserProfileNoData'
 
 import downArrow from '../../public/icons/down-arrow.png'
 import food from '../../public/images/fortheloveofbiryani.jpg'
