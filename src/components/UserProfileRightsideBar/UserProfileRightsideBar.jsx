@@ -10,6 +10,7 @@ import ImgSrc from '../../../public/images/proandproplus.jpg';
 import UserReviewedCard from '../../utils/UserProfile/UserReviewedCard/UserReviewedCard'
 import UserPhotosCard from '../../utils/UserProfile/UserPhotosCard/UserPhotosCard'
 import RecentlyViewed from '../../utils/UserProfile/RecentlyViewed/RecentlyViewed'
+import UserBookmarks from '../../utils/UserProfile/UserBookmarks/UserBookmarks'
 import UserFollowersCard from '../../utils/UserProfile/UserFollowersCard/UserFollowersCard'
 
 let UserProfileRightsideBar = () => {
@@ -123,7 +124,7 @@ let UserProfileRightsideBar = () => {
             setCurrComp(<RecentlyViewed hashId={hashId} />);
             break;
         case bookmarksPage:
-            setCurrComp(<h1>No bookmarksPage!</h1>);
+            setCurrComp(<UserBookmarks hashId={hashId} />);
             break;
         case blogpostsPage:
             setCurrComp(<h1>No blogpostsPage!</h1>);

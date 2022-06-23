@@ -1,0 +1,43 @@
+.outerDiv{
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.innerDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn1, .btn2{
+    padding: 7px 10px;
+    background-color: var(--bg-white);
+    border-radius: 5px;
+    border: var(--brd2);
+    margin: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--color-p5-text);
+}
+
+.btn2{
+    color: var(--color-white);
+    background-color: var(--bg-redish3);
+}
+
+.btn1:hover{
+    background-color: var(--bg-f8f8f8);
+}
+
+.btn2:hover{
+    background-color: var(--bg-redish2);
+}

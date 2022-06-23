@@ -15,15 +15,15 @@ const UserPhotosCard = ({ hashId }) => {
       imgSrc: happyHoursImg,
     },
     {
-      id: 1,
+      id: 2,
       imgSrc: happyHoursImg,
     },
     {
-      id: 1,
+      id: 3,
       imgSrc: happyHoursImg,
     },
     {
-      id: 1,
+      id: 4,
       imgSrc: happyHoursImg,
     },
   ]);
@@ -34,7 +34,7 @@ const UserPhotosCard = ({ hashId }) => {
       {isData ? (
         <div className={css.innerDiv}>
           {data.map((item) => {
-            return <SmallCardImg imgSrc={item.imgSrc} />;
+            return <SmallCardImg imgSrc={item.imgSrc} key={item.id} />;
           })}
         </div>
       ) : (
