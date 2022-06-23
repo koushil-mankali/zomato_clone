@@ -27,7 +27,7 @@ const UserPhotosCard = ({ hashId }) => {
       imgSrc: happyHoursImg,
     },
   ]);
-  let [isData, setIsData] = useState(false);
+  let [isData, setIsData] = useState(true);
 
   return (
     <div className={css.outerDiv}>
