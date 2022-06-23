@@ -32,7 +32,7 @@ const UserBlogPosts = ({ hashId }) => {
       {isData ? (
         <div className={css.innerDiv}>
           {data.map((item) => {
-            return <BlogPostCard udata={item} />;
+            return <BlogPostCard udata={item} key={item?.id} />;
           })}
         </div>
       ) : (

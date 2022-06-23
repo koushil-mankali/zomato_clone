@@ -12,6 +12,7 @@ import UserPhotosCard from '../../utils/UserProfile/UserPhotosCard/UserPhotosCar
 import RecentlyViewed from '../../utils/UserProfile/RecentlyViewed/RecentlyViewed'
 import UserBookmarks from '../../utils/UserProfile/UserBookmarks/UserBookmarks'
 import UserBlogPosts from '../../utils/UserProfile/UserBlogPosts/UserBlogPosts'
+import OrderHistory from '../../utils/UserProfile/OnlineOrdering/OrderHistory/OrderHistory'
 import UserFollowersCard from '../../utils/UserProfile/UserFollowersCard/UserFollowersCard'
 
 let UserProfileRightsideBar = () => {
@@ -131,7 +132,7 @@ let UserProfileRightsideBar = () => {
             setCurrComp(<UserBlogPosts hashId={hashId} />);
             break;
         case orderhistoryPage:
-            setCurrComp(<h1>No orderhistoryPage!</h1>);
+            setCurrComp(<OrderHistory hashId={hashId} />);
             break;
         case myaddressPage:
             setCurrComp(<h1>No myaddressPage!</h1>);

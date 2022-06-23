@@ -144,7 +144,7 @@ const RecentlyViewed = ({ hashId }) => {
       {isData ? (
         <div className={css.innerDiv}>
           {data.map((item) => {
-            return <RecentlyViewedCard udata={item} />;
+            return <RecentlyViewedCard udata={item} key={item?.id} />;
           })}
         </div>
       ) : (
