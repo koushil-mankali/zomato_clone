@@ -1,0 +1,16 @@
+.outerDiv{
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    max-height: 300px;
+    margin: 0.5rem;
+    border: var(--brd2);
+    border-radius: 5px;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
