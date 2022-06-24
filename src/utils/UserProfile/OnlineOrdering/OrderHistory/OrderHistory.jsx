@@ -6,8 +6,12 @@ import orderonlineImg from '/images/orderonline.jpg'
 
 import OrderHistoryCard from '../../../OrderHistoryCard/OrderHistoryCard'
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
+import OrderDetails from '../../../../Modals/OrderDetailsModal/OrderDetails'
 
 const OrderHistory = () => {
+    let [viewDet, setViewDet] = useState(false);
+    let [orderId, setOrderId] = useState();
+
     let [data, setData] = useState([
         {
             id:1,
@@ -99,8 +103,9 @@ const OrderHistory = () => {
       {isData ? (
         <div className={css.innerDiv}>
           {data.map((item) => {
-            return <OrderHistoryCard udata={item} key={item?.id} />;
+            return <OrderHistoryCard udata={item} key={item?.id} setViewDet={setViewDet} setOrderId={setOrderId} viewDet={viewDet} />
           })}
+          {viewDet ? <OrderDetails id={orderId} setViewDet={setViewDet} /> : ""}
         </div>
       ) : (
         <UserProfileNoData hashId={hashId} />

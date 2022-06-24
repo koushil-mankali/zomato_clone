@@ -6,7 +6,7 @@ import GetTheApp from './components/GetTheApp/GetTheApp'
 import ExploreOptionsNearMe from './components/ExploreOptionsNearMe/ExploreOptionsNearMe'
 import Footer from './components/Footer/Footer'
 
-import orderOnlineImg from '../public/images/orderonline.jpg'
+import orderOnlineImg from '/images/orderonline.jpg'
 
 import css from './App.module.css'
 

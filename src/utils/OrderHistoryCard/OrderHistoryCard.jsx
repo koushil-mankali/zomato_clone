@@ -2,7 +2,9 @@ import { useState } from "react";
 
 import css from "./OrderHistoryCard.module.css";
 
-const OrderHistoryCard = ({ udata }) => {
+import OrderDetails from '../../Modals/OrderDetailsModal/OrderDetails'
+
+const OrderHistoryCard = ({ udata, setViewDet, setOrderId }) => {
   const {
     id,
     imgSrc,
@@ -24,8 +26,6 @@ const OrderHistoryCard = ({ udata }) => {
     fav,
     summaryLinkId,
   } = udata;
-
-  let [viewDet, setViewDet] = useState(false);
 
   return (
     <>
@@ -56,8 +56,8 @@ const OrderHistoryCard = ({ udata }) => {
               <div className={css.titleTxt}>ITEMS</div>
               {items?.map((val) => {
                 <>
-                  <span className={css.qtyTxt}>{val.qty} X</span>
-                  <div className={css.vlaTxt}>{val.itemName}</div>
+                  <span className={css.qtyTxt}>{val?.qty} X</span>
+                  <div className={css.vlaTxt}>{val?.itemName}</div>
                 </>;
               })}
             </div>
@@ -69,7 +69,7 @@ const OrderHistoryCard = ({ udata }) => {
           <div className={css.footerBar}>
             <button
               className={css.viewBtn}
-              onClick={() => setViewDet((val) => !val)}
+              onClick={() => {setViewDet((val) => !val); setOrderId(id)}}
             >
               View Details
             </button>
