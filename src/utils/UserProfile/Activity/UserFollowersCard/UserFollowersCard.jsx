@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import css from "./UserFollowersCard.module.css";
 
-import happyHoursImg from "../../../../../public/images/happyhours.jpg";
+import happyHoursImg from "/images/happyhours.jpg";
 
 import UserDetCard from "../../../UserDetCard/UserDetCard";
 

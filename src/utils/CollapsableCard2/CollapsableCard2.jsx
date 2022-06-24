@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import css from './CollapsableCard2.module.css';
 
-import downArrow from '../../../public/icons/down-arrow.png';
+import downArrow from '/icons/down-arrow.png';
 
 let CollapsableCard = ({ title, content }) => {
     let [state, setState] = useState(`${css.content} ${css.dnone}`);

@@ -1,6 +1,6 @@
 import css from './ProfileWidget.module.css'
 
-import rightArrowImg from '../../../public/icons/right-arrow.png';
+import rightArrowImg from '/icons/right-arrow.png';
 
 let ProfileWidget = ({name, tag, data}) => {
 

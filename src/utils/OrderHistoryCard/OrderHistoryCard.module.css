@@ -1,8 +1,8 @@
 .outerDiv{
     width: auto;
-    max-width: 250px;
+    max-width: 310px;
     height: auto;
-    max-height: 300px;
+    max-height: 350px;
     margin: 0.5rem;
     border: var(--brd2);
     border-radius: 5px;
@@ -12,5 +12,92 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    padding: 10px;
 }
 
+.topBar{
+    width: 100%;
+    height: 50px;
+    border-bottom: var(--brd2);
+    border-spacing: 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftHead{
+    display: flex;
+}
+
+.imgBox{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.det{
+    margin: 0 0.5rem;
+}
+
+.name{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+}
+
+.address{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-p5-text);
+    text-overflow: ellipsis;
+}
+
+.status{
+    font-size: 0.9rem;
+    color: var(--color-text);
+    font-weight: 400;
+}
+
+.midBar{
+}
+
+.txtBox{
+    margin: 10px 0;
+}
+
+.titleTxt{
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color:var(--color-p5-text);
+}
+
+.vlaTxt{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.footerBar{
+    width: 100%;
+}
+
+.viewBtn{
+    padding: 10px;
+    margin:10px;
+    float: right;
+    border: var(--brd-redish-color);
+    color:var(--color-redish1);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color-white);
+}
+
+.viewBtn:hover{
+    background-color: var(--bg-redish4);
+}

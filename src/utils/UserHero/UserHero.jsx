@@ -1,9 +1,9 @@
 import css from './UserHero.module.css'
 
-import HeroBanner from '../../../public/images/profilebanner.jpg'
-import user from '../../../public/icons/biryaniC.png'
-import edit from '../../../public/icons/edit.png'
-import location from '../../../public/icons/location.png'
+import HeroBanner from '/images/profilebanner.jpg'
+import user from '/icons/biryaniC.png'
+import edit from '/icons/edit.png'
+import location from '/icons/location.png'
 
 const UserHero = () => {
   return (

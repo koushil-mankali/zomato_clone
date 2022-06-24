@@ -2,8 +2,8 @@ import {useState} from 'react'
 
 import css from './SuggestedFollowCard.module.css'
 
-import addUserImg from '../../../public/icons/add-user.png';
-import friendImg from '../../../public/icons/friend.png';
+import addUserImg from '/icons/add-user.png';
+import friendImg from '/icons/friend.png';
 
 const UsersTab = ({data}) => {
     let [follow, setFollow] = useState(false);

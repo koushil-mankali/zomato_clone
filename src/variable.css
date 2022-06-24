@@ -37,6 +37,7 @@
     --bg-redish2: rgb(199, 35, 90);
     --bg-redish3: rgb(239, 79, 95);
     --bg-redish4: rgb(255, 246, 247);
+    --bg-redish5: rgb(255, 126, 139);
     --bg-blueish1: rgb(39, 129, 231);
     --bg-blueish2: rgb(17, 85, 203);
     --bg-blueish3: rgb(83, 140, 238);
@@ -60,9 +61,11 @@
     --brd-greenish-color: rgb(36, 150, 63);
     --brd-blueish1-color: rgb(39, 129, 231);
     --brd-blueish2-color: rgb(37, 111, 239);
+    
+    --brd-redish-color: 1px solid rgb(239, 79, 95);
 
     --brd1-color: rgb(207, 207, 207);
-
+    
     --brd1: 0.1rem solid rgb(207, 207, 207);
     --brd2: 1px solid rgb(207, 207, 207);
     --brd3: 1px solid rgb(244, 244, 244);

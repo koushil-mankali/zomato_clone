@@ -1,7 +1,7 @@
 import css from './SmallBannerCard.module.css';
 
-import SmallBanner from '../../../public/banners/smallbanner1.jpg';
-import rightArrow from '../../../public/icons/right-arrow.png';
+import SmallBanner from '/banners/smallbanner1.jpg';
+import rightArrow from '/icons/right-arrow.png';
 
 let SmallBannerCard = () => {
     return <div className={css.outerDiv}>

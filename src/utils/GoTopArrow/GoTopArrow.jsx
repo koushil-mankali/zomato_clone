@@ -1,6 +1,6 @@
 import css from './GoTopArrow.module.css';
 
-import topArrow from '../../../public/icons/up-arrow.png';
+import topArrow from '/icons/up-arrow.png';
 
 let GoTopArrow = () => {
     return <div className={css.outerDiv} onClick={() => scrollTo({ top: 0, behavior: 'smooth' })}>

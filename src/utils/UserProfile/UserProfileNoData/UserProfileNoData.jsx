@@ -4,12 +4,12 @@ import css from './UserProfileNoData.module.css'
 
 import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage, blogpostsPage, orderhistoryPage, myaddressPage, favoriteordersPage, bookingsPage} from '../../../helpers/constants'
 
-import photos from '../../../../public/icons/nophotos.png'
-import blogpost from '../../../../public/icons/noblogposts.png'
-import bookmarks from '../../../../public/icons/nobookmarks.png'
-import favorders from '../../../../public/icons/nofavorders.png'
-import reservations from '../../../../public/icons/noreservations.png'
-import followers from '../../../../public/icons/nofollowers.png'
+import photos from '/icons/nophotos.png'
+import blogpost from '/icons/noblogposts.png'
+import bookmarks from '/icons/nobookmarks.png'
+import favorders from '/icons/nofavorders.png'
+import reservations from '/icons/noreservations.png'
+import followers from '/icons/nofollowers.png'
 
 const UserProfileNoData = ({hashId}) => {
 

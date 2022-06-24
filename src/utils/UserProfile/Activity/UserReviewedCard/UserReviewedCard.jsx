@@ -2,13 +2,13 @@ import {useState} from 'react'
 
 import css from './UserReviewedCard.module.css'
 
-import downArrowImg from '../../../../../public/icons/down-arrow.png'
-import starImg from '../../../../../public/icons/star.png'
-import shareImg from '../../../../../public/icons/share.png'
-import likeImg from '../../../../../public/icons/like.png'
-import likedImg from '../../../../../public/icons/liked.png'
-import comment from '../../../../../public/icons/message.png'
-import close from '../../../../../public/icons/close.png'
+import downArrowImg from '/icons/down-arrow.png'
+import starImg from '/icons/star.png'
+import shareImg from '/icons/share.png'
+import likeImg from '/icons/like.png'
+import likedImg from '/icons/liked.png'
+import comment from '/icons/message.png'
+import close from '/icons/close.png'
 
 const UserReviewedCard = (props) => {
     let {imgSrc, title, address, stars, days, votes, comments, id, userImg} = props?.data;

@@ -1,10 +1,10 @@
 import css from './ShowcaseCard.module.css';
 
-import biryani from '../../../public/images/profilebanner.jpg'
-import upArrowIcon from '../../../public/icons/up-arrow-icon.png';
-import maxSAfety from '../../../public/icons/maxsafty.png';
-import safeDelivery from '../../../public/icons/safe-delivery.png';
-import star from '../../../public/icons/star.png';
+import biryani from '/images/profilebanner.jpg'
+import upArrowIcon from '/icons/up-arrow-icon.png';
+import maxSAfety from '/icons/maxsafty.png';
+import safeDelivery from '/icons/safe-delivery.png';
+import star from '/icons/star.png';
 
 let ShowcaseCard = () => {
     return <div className={css.outerDiv}>

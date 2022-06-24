@@ -1,8 +1,8 @@
 import css from './SearchBar.module.css'
 
-import downArrow from '../../../public/icons/down-arrow1.png'
-import locationIcon from '../../../public/icons/location.png'
-import searchIcon from '../../../public/icons/search.png'
+import downArrow from '/icons/down-arrow1.png'
+import locationIcon from '/icons/location.png'
+import searchIcon from '/icons/search.png'
 
 let SearchBar = () => {
     return <div className={css.outerDiv}>

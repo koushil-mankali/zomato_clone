@@ -1,6 +1,6 @@
 import css from './OrderAgainCard.module.css'
 
-import img from '../../../public/images/orderonline.jpg'
+import img from '/images/orderonline.jpg'
 
 let OrderAgainCard = () => {
     return <div className={css.outerDiv}>
