@@ -13,15 +13,15 @@ import SuggestedFollowCard from '../utils/SuggestedFollowCard/SuggestedFollowCar
 import ProfileWidget from '../utils/ProfileWidget/ProfileWidget'
 import UserProfileNoData from '../utils/UserProfile/UserProfileNoData/UserProfileNoData'
 
-import downArrow from '../../public/icons/down-arrow.png'
-import food from '../../public/images/fortheloveofbiryani.jpg'
-import dinning1 from '../../public/icons/dinning1.png';
-import dinning2 from '../../public/icons/dinning2.png';
-import delivery1 from '../../public/icons/delivery1.png';
-import delivery2 from '../../public/icons/delivery2.png';
-import nightlife1 from '../../public/icons/nightlife1.png';
-import nightlife2 from '../../public/icons/nightlife2.png';
-import userImg from '../../public/images/koushil.jpg';
+import downArrow from '/icons/down-arrow.png'
+import food from '/images/fortheloveofbiryani.jpg'
+import dinning1 from '/icons/dinning1.png';
+import dinning2 from '/icons/dinning2.png';
+import delivery1 from '/icons/delivery1.png';
+import delivery2 from '/icons/delivery2.png';
+import nightlife1 from '/icons/nightlife1.png';
+import nightlife2 from '/icons/nightlife2.png';
+import userImg from '/images/koushil.jpg';
 
 import css from './testpage.module.css'
 
