@@ -2,11 +2,11 @@ import { useState } from "react";
 
 import css from "./UserBlogPosts.module.css";
 
-import happyHoursImg from "../../../../public/images/happyhours.jpg";
+import happyHoursImg from "../../../../../public/images/happyhours.jpg";
 
-import BlogPostCard from "../../BlogPostCard/BlogPostCard";
+import BlogPostCard from "../../../BlogPostCard/BlogPostCard";
 
-import UserProfileNoData from "../UserProfileNoData/UserProfileNoData";
+import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 
 const UserBlogPosts = ({ hashId }) => {
   let [data, setData] = useState([

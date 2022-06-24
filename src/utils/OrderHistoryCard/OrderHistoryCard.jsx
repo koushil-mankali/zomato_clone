@@ -2,7 +2,7 @@ import React from "react";
 
 import css from "./OrderHistoryCard.module.css";
 
-const OrderHistoryCard = ({ data }) => {
+const OrderHistoryCard = ({ udata }) => {
   const {
     id,
     imgSrc,
@@ -22,7 +22,7 @@ const OrderHistoryCard = ({ data }) => {
     fssaiNo,
     fav,
     summaryLinkId,
-  } = data;
+  } = udata;
   return (
     <div className={css.outerDiv}>
       <div className={css.innerDiv}>

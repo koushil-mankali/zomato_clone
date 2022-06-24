@@ -7,13 +7,13 @@ import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage
 
 import ImgSrc from '../../../public/images/proandproplus.jpg';
 
-import UserReviewedCard from '../../utils/UserProfile/UserReviewedCard/UserReviewedCard'
-import UserPhotosCard from '../../utils/UserProfile/UserPhotosCard/UserPhotosCard'
-import RecentlyViewed from '../../utils/UserProfile/RecentlyViewed/RecentlyViewed'
-import UserBookmarks from '../../utils/UserProfile/UserBookmarks/UserBookmarks'
-import UserBlogPosts from '../../utils/UserProfile/UserBlogPosts/UserBlogPosts'
+import UserReviewedCard from '../../utils/UserProfile/Activity/UserReviewedCard/UserReviewedCard'
+import UserPhotosCard from '../../utils/UserProfile/Activity/UserPhotosCard/UserPhotosCard'
+import RecentlyViewed from '../../utils/UserProfile/Activity/RecentlyViewed/RecentlyViewed'
+import UserBookmarks from '../../utils/UserProfile/Activity/UserBookmarks/UserBookmarks'
+import UserBlogPosts from '../../utils/UserProfile/Activity/UserBlogPosts/UserBlogPosts'
+import UserFollowersCard from '../../utils/UserProfile/Activity/UserFollowersCard/UserFollowersCard'
 import OrderHistory from '../../utils/UserProfile/OnlineOrdering/OrderHistory/OrderHistory'
-import UserFollowersCard from '../../utils/UserProfile/UserFollowersCard/UserFollowersCard'
 
 let UserProfileRightsideBar = () => {
 

@@ -2,11 +2,11 @@ import { useState } from "react";
 
 import css from "./UserPhotosCard.module.css";
 
-import happyHoursImg from "../../../../public/images/happyhours.jpg";
+import happyHoursImg from "../../../../../public/images/happyhours.jpg";
 
-import SmallCardImg from "../../card6/SmallCardImg";
+import SmallCardImg from "../../../card6/SmallCardImg";
 
-import UserProfileNoData from "../UserProfileNoData/UserProfileNoData";
+import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 
 const UserPhotosCard = ({ hashId }) => {
   let [data, setData] = useState([
