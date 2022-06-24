@@ -52,20 +52,20 @@ let OrderDetails = ({setViewDet}) => {
                             <div className={css.orderPrice}>
                                 <div className={css.leftPrice}>
                                     <span className={css.qty}>1</span>
-                                    <span className={css.priceTxt}>X ₹149</span>
+                                    <span className={css.priceTxt}>X ₹38</span>
                                 </div>
                                 <div className={css.rightPrice}>
-                                    <span className={css.priceTxt}>₹149.00</span>
+                                    <span className={css.priceTxt}>₹38.00</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className={css.order}>
                         <div className={css.foodTypeImgBox}>
-                            <img className={css.foodTypeImg} src={vegIcon} alt="food type icon" />
+                            <img className={css.foodTypeImg} src={nonvegIcon} alt="food type icon" />
                         </div>
                         <div className={css.orderTtlBox}>
-                            <div className={css.orderTtl}>Coke Pet - 750 Ml</div>
+                            <div className={css.orderTtl}>Chiken Biryani - 500mg</div>
                             <div className={css.orderPrice}>
                                 <div className={css.leftPrice}>
                                     <span className={css.qty}>1</span>
@@ -78,14 +78,39 @@ let OrderDetails = ({setViewDet}) => {
                         </div>
                     </div>
                 </div>
+                <div className={css.calArea}>
+                    <div className={css.orderCalcDet}>
+                        <div className={css.leftTxt}>Item Total</div>
+                        <div className={css.rightTxt}>₹187.00</div>
+                    </div>
+                    <div className={[css.orderCalcDet, css.couponTxt]?.join(" ")}>
+                        <div className={css.leftTxt}>Coupon - (TASTY)</div>
+                        <div className={css.rightTxt}>you saved ₹74.50</div>
+                    </div>
+                    <div className={css.orderCalcDet}>
+                        <div className={css.leftTxt}>Taxes & charges</div>
+                        <div className={css.rightTxt}>₹30.19</div>
+                    </div>
+                    <div className={[css.orderCalcDet, css.savings]?.join(" ")}>
+                        <div className={css.leftTxt}>Your total savings</div>
+                        <div className={css.rightTxt}>₹74.50</div>
+                    </div>
+                    <hr className={css.hr} />
+                    <div className={css.orderCalcDet}>
+                        <div className={css.leftTxt}>Grand Total</div>
+                        <div className={css.rightTxt}>₹171.68</div>
+                    </div>
+                </div>
             </div>
             <div className={css.footer}>
-                <div className={css.fav}>
+                <div className={css.fav} onClick={() => setLike(val => !val)}>
                     <div className={css.favImg}>
                         {like ? <img className={css.likedImg} src={heartO} alt='liked icon' />
                          : <img className={css.likedImg} src={heartF} alt='liked icon' />}
                     </div>
-                    <div className={css.favTxt} onClick={() => setLike(val => !val)}>Mark as Favorite</div>
+                    <div className={css.favTxt}>
+                        {like ? "Mark as Favorite" :  "Remove from Favorites"}
+                    </div>
                 </div>
             </div>
         </div>

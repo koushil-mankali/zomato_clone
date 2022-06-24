@@ -12,10 +12,10 @@
 }
 
 .innerDiv {
+    padding: 20px 0;
     max-width: auto;
     width: 600px;
     height: auto;
-    padding: 20px 25px;
     background-color: white;
     border-radius: 10px;
 }
@@ -26,6 +26,7 @@
 }
 
 .header {
+    padding: 0px 25px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -111,9 +112,23 @@
     border-bottom: var(--brd1);
 }
 
+.statusBar{
+    padding: 0 25px;
+}
+
+.orders{
+    padding: 0 25px;
+}
+
 .order{
     display: flex;
     margin: 0.5rem 0;
+}
+
+.orderTxt{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: var(--color-p5-text);
 }
 
 .foodTypeImg{
@@ -142,6 +157,46 @@
     font-size: 0.9rem;
 }
 
+.qty{
+    margin-right: 5px;
+}
+
+.calArea{
+    width: 100%;
+    margin: 1rem 0 0.5rem 0;
+    background-color: var(--bg-goldish-light);
+}
+
+.orderCalcDet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.couponTxt{
+    color: var(--color-greenish);
+    font-size: 0.8rem;
+}
+
+.savings{
+    margin: 10px;
+    padding: 5px;
+    color: var(--color-greenish);
+    font-size: 0.8rem;
+    background-color: var(--bg-greenish2);
+    border: 1px solid var(--brd-greenish-color);
+    border-radius: 5px;
+}
+
+.hr{
+    margin: 10px;
+    border: none;
+    border-bottom: var(--brd2) ;
+}
+
 .footer{
     width: 100%;
     padding: 1rem;
@@ -152,9 +207,16 @@
 }
 
 .fav{
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
     color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fav:hover{
     background-color: var(--bg-ash);
 }
 
