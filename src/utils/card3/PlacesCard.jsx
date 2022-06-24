@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import css from './PlacesCard.module.css';
 
-import rightArrow from '../../../public/icons/right-arrow.png';
+import rightArrow from '/icons/right-arrow.png';
 
 let PlacesCard = ({ place, count, link }) => {
     return <Link to={link} className={css.card}>

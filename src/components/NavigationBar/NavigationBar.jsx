@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-import mobileHand from '../../../public/icons/smartphone.png'
-import menuBar from '../../../public/icons/menu.png'
-import downArrow from '../../../public/icons/down-arrow.png'
-import profilePic from '../../../public/images/profilepic.jpg'
+import mobileHand from '/icons/smartphone.png'
+import menuBar from '/icons/menu.png'
+import downArrow from '/icons/down-arrow.png'
+import profilePic from '/images/profilepic.jpg'
 
 import Login from '../Auth/Login/Login'
 import Signup from '../Auth/Signup/Signup'

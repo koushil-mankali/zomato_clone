@@ -2,9 +2,9 @@ import { useState } from 'react'
 
 import css from './GetTheApp.module.css'
 
-import mobileImg from '../../../public/images/mobile.png'
-import playstoreImg from '../../../public/icons/appstore.png'
-import appstoreImg from '../../../public/icons/playstore.png'
+import mobileImg from '/images/mobile.png'
+import playstoreImg from '/icons/appstore.png'
+import appstoreImg from '/icons/playstore.png'
 
 let GetTheApp = () => {
 

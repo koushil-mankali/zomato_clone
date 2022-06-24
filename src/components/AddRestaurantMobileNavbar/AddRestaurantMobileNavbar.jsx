@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import close from '../../../public/icons/close.png'
-import downArrow from '../../../public/icons/down-arrow.png'
-import rightArrow from '../../../public/icons/right-arrow1.png'
-import profilePic from '../../../public/images/profilepic.jpg'
+import close from '/icons/close.png'
+import downArrow from '/icons/down-arrow.png'
+import rightArrow from '/icons/right-arrow1.png'
+import profilePic from '/images/profilepic.jpg'
 
 import css from './AddRestaurantMobileNavbar.module.css';
 

@@ -1,5 +1,5 @@
 
-import bgImg from '../../../public/images/addressbackground.jpg'
+import bgImg from '/images/addressbackground.jpg'
 
 import css from './AddRestaurantSec.module.css';
 

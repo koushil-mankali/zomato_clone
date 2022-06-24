@@ -12,15 +12,15 @@ import ShowcaseCard from '../../utils/ShowcaseCard/ShowcaseCard'
 import ExploreOptionsNearMe from '../../components/ExploreOptionsNearMe/ExploreOptionsNearMe'
 import Footer from '../../components/Footer/Footer'
 
-import dinning1 from '../../../public/icons/dinning1.png';
-import dinning2 from '../../../public/icons/dinning2.png';
-import delivery1 from '../../../public/icons/delivery1.png';
-import delivery2 from '../../../public/icons/delivery2.png';
-import nightlife1 from '../../../public/icons/nightlife1.png';
-import nightlife2 from '../../../public/icons/nightlife2.png';
-import filtersIcon from '../../../public/icons/filter.png';
-import deliveryTimeIcon from '../../../public/icons/delivery-time.png';
-import downArrowIcon from '../../../public/icons/down-arrow.png';
+import dinning1 from '/icons/dinning1.png';
+import dinning2 from '/icons/dinning2.png';
+import delivery1 from '/icons/delivery1.png';
+import delivery2 from '/icons/delivery2.png';
+import nightlife1 from '/icons/nightlife1.png';
+import nightlife2 from '/icons/nightlife2.png';
+import filtersIcon from '/icons/filter.png';
+import deliveryTimeIcon from '/icons/delivery-time.png';
+import downArrowIcon from '/icons/down-arrow.png';
 
 import { orderOnlinePage, diningOutPage, nightLifePage } from '../../helpers/constants'
 

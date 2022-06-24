@@ -1,6 +1,6 @@
 import css from './CircleCard1.module.css'
 
-import biryaniC from '../../../../public/icons/biryaniC.png'
+import biryaniC from '/icons/biryaniC.png'
 
 let CircleCard1 = () => {
     return <div className={css.outerDiv}>

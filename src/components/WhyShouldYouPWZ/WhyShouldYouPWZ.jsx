@@ -1,6 +1,6 @@
-import globIcon from '../../../public/icons/glob.png'
-import calenderIcon from '../../../public/icons/calenderIcon.png'
-import restaurantIcon from '../../../public/icons/restaurantIcon.png'
+import globIcon from '/icons/glob.png'
+import calenderIcon from '/icons/calenderIcon.png'
+import restaurantIcon from '/icons/restaurantIcon.png'
 
 import Card4 from '../../utils/card4/Card4'
 

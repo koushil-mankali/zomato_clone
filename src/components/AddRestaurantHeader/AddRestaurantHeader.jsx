@@ -6,7 +6,7 @@ import AddRestaurantMobileNavbar from '../AddRestaurantMobileNavbar/AddRestauran
 
 import css from './AddRestaurantHeader.module.css'
 
-import banner from '../../../public/banners/banner2.jpg'
+import banner from '/banners/banner2.jpg'
 
 let AddRestaurantHeader = () => {
     let [toogleMenu, setToggleMenu] = useState(true);

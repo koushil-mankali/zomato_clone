@@ -6,7 +6,7 @@ import SearchBar from '../../utils/SearchBar/SearchBar'
 
 import css from './HomePageBanner.module.css'
 
-import banner from '../../../public/banners/banner1.jpg'
+import banner from '/banners/banner1.jpg'
 
 let HomePageBanner = () => {
     let [toogleMenu, setToggleMenu] = useState(true);

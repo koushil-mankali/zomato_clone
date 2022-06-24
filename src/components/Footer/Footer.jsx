@@ -1,14 +1,14 @@
 import footerCss from './Footer.module.css';
 
-import Gstore from '../../../public/icons/playstore.png';
-import Appstore from '../../../public/icons/appstore.png';
-import indianFlag from '../../../public/images/indiaflag.png';
+import Gstore from '/icons/playstore.png';
+import Appstore from '/icons/appstore.png';
+import indianFlag from '/images/indiaflag.png';
 
-import Facebook from '../../../public/images/facebook.png'
-import Twitter from '../../../public/images/twitter.png'
-import Instagram from '../../../public/images/instagram.png'
-import Linkedin from '../../../public/images/linkedin.png'
-import Youtube from '../../../public/images/youtube.png'
+import Facebook from '/images/facebook.png'
+import Twitter from '/images/twitter.png'
+import Instagram from '/images/instagram.png'
+import Linkedin from '/images/linkedin.png'
+import Youtube from '/images/youtube.png'
 
 let Footer = () => {
     return <div className={footerCss.footer}>

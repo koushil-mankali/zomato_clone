@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import close from '../../../public/icons/close.png'
+import close from '/icons/close.png'
 
 import css from './MobileNavbar.module.css';
 

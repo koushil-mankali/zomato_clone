@@ -8,7 +8,7 @@ import LeftSideCardPanel from '../../utils/LeftSideCardPanel/LeftSideCardPanel'
 import SuggestedFollowCard from '../../utils/SuggestedFollowCard/SuggestedFollowCard'
 import ProfileWidget from '../../utils/ProfileWidget/ProfileWidget'
 
-import userImg from '../../../public/images/koushil.jpg';
+import userImg from '/images/koushil.jpg';
 
 const User = () => {
 

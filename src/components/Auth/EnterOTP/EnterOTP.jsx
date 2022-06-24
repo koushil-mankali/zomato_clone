@@ -1,6 +1,6 @@
 import { createPortal } from 'react-dom'
 
-import closeBtn from '../../../../public/images/closeBtn.jpg';
+import closeBtn from '/images/closeBtn.jpg';
 
 import css from './EnterOTP.module.css'
 

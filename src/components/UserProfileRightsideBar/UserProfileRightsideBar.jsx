@@ -5,7 +5,7 @@ import css from './UserProfileRightsideBar.module.css'
 
 import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage, blogpostsPage, orderhistoryPage, myaddressPage, favoriteordersPage, bookingsPage} from '../../helpers/constants'
 
-import ImgSrc from '../../../public/images/proandproplus.jpg';
+import ImgSrc from '/images/proandproplus.jpg';
 
 import UserReviewedCard from '../../utils/UserProfile/Activity/UserReviewedCard/UserReviewedCard'
 import UserPhotosCard from '../../utils/UserProfile/Activity/UserPhotosCard/UserPhotosCard'

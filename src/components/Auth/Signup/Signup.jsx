@@ -1,8 +1,8 @@
 import { createPortal } from 'react-dom';
 
-import gLogo from '../../../../public/images/google.png';
-import mailLogo from '../../../../public/images/emailIcon.jpg';
-import closeBtn from '../../../../public/images/closeBtn.jpg';
+import gLogo from '/images/google.png';
+import mailLogo from '/images/emailIcon.jpg';
+import closeBtn from '/images/closeBtn.jpg';
 
 import signupCss from './Signup.module.css';
 

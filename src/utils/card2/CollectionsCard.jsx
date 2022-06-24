@@ -1,6 +1,6 @@
 import css from './CollectionsCard.module.css'
 
-import rightArrow from '../../../public/icons/right-arrow.png'
+import rightArrow from '/icons/right-arrow.png'
 
 let CollectionsCard = ({ imgSrc, title, places }) => {
     return <div className={css.card}>
@@ -11,7 +11,7 @@ let CollectionsCard = ({ imgSrc, title, places }) => {
                 <img className={css.rightArrow} src={rightArrow} alt="right arrow" />
             </span></div>
         </div>
-    </div >
+    </div>
 }
 
 export default CollectionsCard;

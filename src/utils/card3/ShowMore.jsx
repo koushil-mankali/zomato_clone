@@ -1,6 +1,6 @@
 import css from './ShowMore.module.css';
 
-import downArrow from '../../../public/icons/down-arrow.png';
+import downArrow from '/icons/down-arrow.png';
 
 let ShowMore = ({ setShowMore }) => {
     return <div onClick={() => setShowMore(val => !val)} className={css.card}>

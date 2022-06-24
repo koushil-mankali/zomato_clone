@@ -1,9 +1,9 @@
 import css from './HowItWorks.module.css';
 
-import backgroundImg from '../../../public/images/addressbackground.jpg';
-import bookIcon from '../../../public/icons/book.png';
-import bikeIcon from '../../../public/icons/bike.png';
-import packageIcon from '../../../public/icons/package.png';
+import backgroundImg from '/images/addressbackground.jpg';
+import bookIcon from '/icons/book.png';
+import bikeIcon from '/icons/bike.png';
+import packageIcon from '/icons/package.png';
 
 import Card5 from '../../utils/card5/Card5';
 
