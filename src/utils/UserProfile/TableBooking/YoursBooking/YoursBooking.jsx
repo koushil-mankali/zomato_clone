@@ -3,6 +3,7 @@ import { useState } from 'react';
 import css from './YoursBooking.module.css'
 
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
+import BookingsCard from '../../../BookingsCard/BookingsCard'
 
 import WhiteButton from '../../../Buttons/WhiteButton/WhiteButton'
 import RedButton from '../../../Buttons/RedButton/RedButton'
@@ -25,13 +26,16 @@ const YoursBooking = ({hashId}) => {
     ]
 
   return (<div className={css.outerDiv}>
-  {isData ? (
-    <>
-        <div className={css.btns}>  
+   <div className={css.btns}>  
             <RedButton  txt="Past" count="0" />
             <WhiteButton txt="Upcoming" count="0" />
-        </div>
-    </>
+    </div>
+  {isData ? (
+    <div className={css.bdy}>
+       {data?.map(val => {
+          return <BookingsCard key={val?.id} title={val?.title} address={val?.address} />
+       })}
+    </div>
   ) : (
     <UserProfileNoData hashId={hashId} />
   )}
