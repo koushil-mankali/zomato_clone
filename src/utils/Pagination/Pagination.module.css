@@ -1,0 +1,38 @@
+.pagination{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nums{
+    display: flex;
+}
+
+.count, .img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.active{
+    border: 2px solid var(--bg-blueish1);
+    background-color: var(--bg-blueish1);
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.imgBox{
+    width: 25px;
+    height: 25px;
+}
+
+.img{
+    border: 2px solid var(--bg-blueish1);
+}

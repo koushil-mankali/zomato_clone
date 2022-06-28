@@ -8,6 +8,8 @@ import OrderHistoryCard from '../../../OrderHistoryCard/OrderHistoryCard'
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 import OrderDetails from '../../../../Modals/OrderDetailsModal/OrderDetails'
 
+import Pagination from '../../../Pagination/Pagination'
+
 const OrderHistory = () => {
     let [viewDet, setViewDet] = useState(false);
     let [orderId, setOrderId] = useState();
@@ -118,12 +120,15 @@ const OrderHistory = () => {
   return (
     <div className={css.outerDiv}>
       {isData ? (
-        <div className={css.innerDiv}>
-          {data.map((item) => {
-            return <OrderHistoryCard udata={item} key={item?.id} setViewDet={setViewDet} setOrderId={setOrderId} viewDet={viewDet} />
-          })}
-          {viewDet ? <OrderDetails id={orderId} setViewDet={setViewDet} /> : ""}
-        </div>
+        <>
+          <div className={css.innerDiv}>
+            {data.map((item) => {
+              return <OrderHistoryCard udata={item} key={item?.id} setViewDet={setViewDet} setOrderId={setOrderId} viewDet={viewDet} />
+            })}
+            {viewDet ? <OrderDetails id={orderId} setViewDet={setViewDet} /> : ""}
+          </div>
+          <Pagination page="1" total="31" size="10" />
+        </>
       ) : (
         <UserProfileNoData hashId={hashId} />
       )}
