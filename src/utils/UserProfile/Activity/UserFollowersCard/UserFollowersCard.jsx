@@ -8,6 +8,9 @@ import UserDetCard from "../../../UserDetCard/UserDetCard";
 
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 
+import WhiteButton from '../../../Buttons/WhiteButton/WhiteButton'
+import RedButton from '../../../Buttons/RedButton/RedButton'
+
 const UserFollowersCard = ({ hashId, userData }) => {
   let {followers, following} = userData;
   let [data, setData] = useState([
@@ -87,8 +90,8 @@ const UserFollowersCard = ({ hashId, userData }) => {
   return (
     <div className={css.outerDiv}>
       <div className={css.btns}>
-        <div className={css.btn1}>Following <span className={css.count}>({following})</span></div>
-        <div className={css.btn2}>Followers <span className={css.count}>({followers})</span></div>
+        <WhiteButton txt="Following" count={following} />
+        <RedButton txt="Followers" count={followers}/>
       </div>
       {isData ? (
         <div className={css.innerDiv}>

@@ -10,7 +10,7 @@ import OrderDetails from '../../../../Modals/OrderDetailsModal/OrderDetails'
 
 import Pagination from '../../../Pagination/Pagination'
 
-const OrderHistory = () => {
+const OrderHistory = ({hashId}) => {
     let [viewDet, setViewDet] = useState(false);
     let [orderId, setOrderId] = useState();
 

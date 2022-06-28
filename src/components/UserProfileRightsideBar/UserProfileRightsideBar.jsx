@@ -16,6 +16,7 @@ import UserFollowersCard from '../../utils/UserProfile/Activity/UserFollowersCar
 import OrderHistory from '../../utils/UserProfile/OnlineOrdering/OrderHistory/OrderHistory'
 import MyAddresses from '../../utils/UserProfile/OnlineOrdering/MyAddresses/MyAddresses'
 import FavoriteOrders from '../../utils/UserProfile/OnlineOrdering/FavoriteOrders/FavoriteOrders'
+import YoursBooking from '../../utils/UserProfile/TableBooking/YoursBooking/YoursBooking'
 
 let UserProfileRightsideBar = () => {
 
@@ -141,7 +142,7 @@ let UserProfileRightsideBar = () => {
             setCurrComp(<FavoriteOrders hashId={hashId} />);
             break;
         case bookingsPage:
-            setCurrComp(<h1>No bookingsPage!</h1>);
+            setCurrComp(<YoursBooking hashId={hashId} />);
             break;
         default:
             setCurrComp(data?.map((val, index) => {

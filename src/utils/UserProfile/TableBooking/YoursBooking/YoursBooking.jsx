@@ -1,12 +1,13 @@
 import { useState } from 'react';
 
-import css from './MyAddresses.module.css'
+import css from './YoursBooking.module.css'
 
-import AddressCard from '../../../AddressCard/AddressCard';
-import AddAddressCard from '../../../AddressCard/AddAddressCard';
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 
-const MyAddresses = ({hashId}) => {
+import WhiteButton from '../../../Buttons/WhiteButton/WhiteButton'
+import RedButton from '../../../Buttons/RedButton/RedButton'
+
+const YoursBooking = ({hashId}) => {
 
     let [isData, setIsData] = useState(true)
 
@@ -26,10 +27,10 @@ const MyAddresses = ({hashId}) => {
   return (<div className={css.outerDiv}>
   {isData ? (
     <>
-    <AddAddressCard />
-      {data?.map(val => {
-          return <AddressCard title={val?.title} address={val?.address} key={val?.id} />
-      }) }
+        <div className={css.btns}>  
+            <RedButton  txt="Past" count="0" />
+            <WhiteButton txt="Upcoming" count="0" />
+        </div>
     </>
   ) : (
     <UserProfileNoData hashId={hashId} />
@@ -37,4 +38,4 @@ const MyAddresses = ({hashId}) => {
 </div>);
 }
 
-export default MyAddresses
+export default YoursBooking

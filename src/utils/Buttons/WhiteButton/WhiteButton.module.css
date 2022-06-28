@@ -1,0 +1,20 @@
+.btn{
+    padding: 7px 10px;
+    background-color: var(--bg-white);
+    border-radius: 5px;
+    border: var(--brd2);
+    margin: 0.5rem;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--color-p5-text);
+}
+
+.btn:hover{
+    background-color: var(--bg-f8f8f8);
+}
+
+.count{
+    margin: 0 5px;
+}
