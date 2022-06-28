@@ -11,7 +11,8 @@ import SearchBar from '../../utils/SearchBar/SearchBar'
 import css from './NavigationBar2.module.css';
 
 let NavigationBar = ({ toogleMenu, setToggleMenu }) => {
-    let [loggedIn, setLoggedIn] = useState(false);
+    let [menuDisplay, setMenuDisplay] = useState(false);
+    let [loggedIn, setLoggedIn] = useState(true);
 
     return <div className={css.navbar}>
         <img className={css.menuBar} src={menuBar} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
@@ -24,36 +25,52 @@ let NavigationBar = ({ toogleMenu, setToggleMenu }) => {
             </div>
             <div className={css.rightSide}>
                 {loggedIn ? (<div className={css.menuItem}>
-                    <div className={css.profile}>
+                    <div className={css.profile} onClick={() => setMenuDisplay(val => !val)}>
                         <img src={profilePic} alt="profile pic" className={css.profilePic} />
                         <div className={css.profileName}>Profile</div>
                         <img src={downArrow} alt="arrow" className={css.arrow} />
                     </div>
-                    <div className={css.menu}>
-                        <div className={css.menuItemLink}>
-                            <Link to='/profile' className={css.menuItemLinkTxt}>Profile</Link>
-                        </div>
-                        <div className={css.menuItemLink}>
-                            <Link to='/notifications' className={css.menuItemLinkTxt}>Notifications</Link>
-                        </div>
-                        <div className={css.menuItemLink}>
-                            <Link to='/bookmarks' className={css.menuItemLinkTxt}>Bookmarks</Link>
-                        </div>
-                        <div className={css.menuItemLink}>
-                            <Link to='/reviews' className={css.menuItemLinkTxt}>Reviews</Link>
-                        </div>
-                        <div className={css.menuItemLink}>
-                            <Link to='/network' className={css.menuItemLinkTxt}>Network</Link>
-                        </div>
-                        <div className={css.menuItemLink}>
-                            <Link to='/find-friends' className={css.menuItemLinkTxt}>Find Friends</Link>
-                        </div>
-                        <div className={css.menuItemLink}>
-                            <Link to='/settings' className={css.menuItemLinkTxt}>Settings</Link>
-                        </div>
-                        <div className={css.menuItemLink}>
-                            <Link to='/logout' className={css.menuItemLinkTxt} onClick={() => setLoggedIn(false)}>Logout</Link>
-                        </div>
+                    <div className={css.menu} style={{display: menuDisplay ? "block" : ""}}>
+                    <Link to='/user/ll/reviews' className={css.menuItemLinkTxt}>
+                            <div className={css.menuItemLink}>
+                                Profile
+                            </div>
+                        </Link>
+                        <Link to='/notifications' className={css.menuItemLinkTxt}>
+                            <div className={css.menuItemLink}>
+                                Notifications
+                            </div>
+                        </Link>
+                        <Link to='/user/ll/bookmarks' className={css.menuItemLinkTxt}>
+                            <div className={css.menuItemLink}>
+                                Bookmarks
+                            </div>
+                        </Link>
+                        <Link to='/user/ll/reviews' className={css.menuItemLinkTxt}>
+                            <div className={css.menuItemLink}>
+                                Reviews
+                            </div>
+                        </Link>
+                        <Link to='/network' className={css.menuItemLinkTxt}>
+                            <div className={css.menuItemLink}>
+                                Network
+                            </div>
+                        </Link>
+                        <Link to='/find-friends' className={css.menuItemLinkTxt}>
+                            <div className={css.menuItemLink}>
+                                Find Friends
+                            </div>
+                        </Link>
+                        <Link to='/settings' className={css.menuItemLinkTxt}>
+                            <div className={css.menuItemLink}>
+                                Settings
+                            </div>
+                        </Link>
+                        <Link to='/logout' className={css.menuItemLinkTxt} onClick={() => setLoggedIn(false)}>
+                            <div className={css.menuItemLink}>
+                                Logout
+                            </div>
+                        </Link>
                     </div>
                 </div>) : (<>
                     <div className={css.menuItem} onClick={setLoggedIn}>Log in</div>

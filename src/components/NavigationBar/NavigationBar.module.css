@@ -87,16 +87,11 @@
 
 .menu {
     position: absolute;
-    top: 40px;
+    top: 60px;
     width: 200px;
     border-radius: 10px;
     background-color: var(--color-white);
     display: none;
-}
-
-.profile:hover .menu {
-    display: block;
-    background-color: red !important;
 }
 
 .menuItemLink {
@@ -105,11 +100,11 @@
     font-size: 1rem;
 }
 
-.menuItemLink:first-child {
+.menuItemLinkTxt:first-child > .menuItemLink {
     border-radius: 10px 10px 0 0;
 }
 
-.menuItemLink:last-child {
+.menuItemLinkTxt:last-child > .menuItemLink {
     border-radius: 0 0 10px 10px;
 }
 
