@@ -1,0 +1,18 @@
+.outerDiv{
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.innerDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 420px){
+    .outerDiv{
+        margin: 0.5rem 0;
+    }
+}
