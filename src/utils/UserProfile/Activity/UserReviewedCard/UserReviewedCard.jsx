@@ -17,8 +17,6 @@ const UserReviewedCard = (props) => {
     let [toggleDropDown, setToggleDropDown] = useState(false);
     let [toggleCommentBox, setToggleCommentBox] = useState(false);
 
-    console.log(toggleCommentBox, 'toggleCommentBox');
-
     let toggleDropdown = () => {
         setToggleDropDown(val=>!val);
     }

@@ -1,0 +1,39 @@
+.outerDiv{
+    position: fixed;
+    top: 100px;
+    left: calc(50% - 150px);
+    width: max-content;
+    min-width: 300px;
+    max-width: 300px;
+    height: max-content;
+    max-height: auto;
+    border-radius: 5px;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--color-greenish);
+}
+
+.green{
+    background-color: var(--bg-greenish-3);
+}
+
+.imgBox{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+}

@@ -4,6 +4,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
+    margin: auto;
     z-index: 8000;
     background-color: rgba(28, 28, 28, 0.9);
     display: flex;
@@ -15,9 +16,14 @@
     padding: 20px 0;
     max-width: auto;
     width: 600px;
-    height: auto;
+    height: 90%;
     background-color: white;
     border-radius: 10px;
+    overflow-y: auto;
+}
+
+.innerDiv::-webkit-scrollbar{
+    display: none;
 }
 
 .headerLeft{
@@ -195,6 +201,79 @@
     margin: 10px;
     border: none;
     border-bottom: var(--brd2) ;
+}
+
+.orderDetailsDiv{
+    margin: 1rem;
+}
+
+.ottl{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-title-text);
+}
+
+.obdy{
+}
+
+.obdyBox{
+    margin: 1rem 0;
+}
+
+.obdyttl{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-p1-text);
+}
+
+.obytxt{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-text);
+    display: flex;
+}
+
+.obyCon{
+    max-width: 80%;
+    width: max-content;
+    text-align: justify;
+}
+
+.obyIcBox{
+    margin: 0 0.5rem;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-redish6);
+    cursor: pointer;
+}
+
+.obyIc{
+    width: 50%;
+    height: 50%;
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}
+
+.ofooter{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-p1-text);
+}
+
+.oimgBox{
+    margin: 0.5rem 0;
+    width: 50px;
+    height: 30px;
+}
+
+.oImgFssai{
+    width: 100%;
+    height: 100%;
 }
 
 .footer{

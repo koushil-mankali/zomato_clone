@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom'
 
 import closeBtn from '/images/closeBtn.jpg';
@@ -8,19 +8,41 @@ import heartO from '/icons/heartO.png'
 import heartF from '/icons/heartF.png'
 import vegIcon from '/icons/veg.png'
 import nonvegIcon from '/icons/nonveg.png'
+import fssaiIcon from '/icons/fssai.png'
+import copyIcon from '/icons/copy.png'
+import viewIcon from '/icons/view.png'
+import hiddenIcon from '/icons/hidden.png'
 
 import css from './OrderDetails.module.css'
+import AlertBox from '../../utils/Alerts/AlertBox/AlertBox'
 
 let OrderDetails = ({setViewDet}) => {
 
     let [like, setLike] = useState(false);
+    let [curState, setCurState] = useState({
+        orderId: false,
+        phone: true,
+        deliverTo: true
+    });
 
     let data = {
         imgSrc:orderonlineImg,
+        cname: "Samosa Party",
+        licNo: "13622036000120",
+        phone: "411730709312",
     }
+
+    useEffect(()=>{
+        if(curState?.orderId){
+            setTimeout(()=>{
+                setCurState(val => {return {...val, orderId: false}})
+            }, 5000)
+        }
+    }, [curState?.orderId])
 
     const domObj = <div className={css.outerDiv}>
         <div className={css.innerDiv}>
+            {curState?.orderId ? <AlertBox text="Order ID copied to clipboard!" setClose={setCurState} stateVal="orderId" /> : ""}
             <div className={css.header}>
                 <div className={css.headerLeft}>
                     <div className={css.title}>Order Details</div>
@@ -99,6 +121,52 @@ let OrderDetails = ({setViewDet}) => {
                     <div className={css.orderCalcDet}>
                         <div className={css.leftTxt}>Grand Total</div>
                         <div className={css.rightTxt}>₹171.68</div>
+                    </div>
+                </div>
+                <div className={css.orderDetailsDiv}>
+                    <div className={css.ottl}>Order Details</div>
+                    <div className={css.obdy}>
+                        <div className={css.obdyBox}>
+                            <div className={css.obdyttl}>ORDER ID</div>
+                            <div className={css.obytxt}>
+                                <span>4117307093</span>
+                                <div className={css.obyIcBox}  onClick={() => setCurState(val => {return {...val, orderId: true}})}>
+                                    <img className={css.obyIc} src={copyIcon} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className={css.obdyBox}>
+                            <div className={css.obdyttl}>PAYMENT</div>
+                            <div className={css.obytxt}>
+                                <span className={css.obytxt}>Paid : </span>
+                                <span className={css.obytxt}>4117307093</span>
+                            </div>
+                        </div>
+                        <div className={css.obdyBox}>
+                            <div className={css.obdyttl}>DATE</div>
+                            <div className={css.obytxt}>4117307093</div>
+                        </div>
+                        <div className={css.obdyBox}>
+                            <div className={css.obdyttl}>PHONE NUMBER</div>
+                            <div className={css.obytxt}>
+                                {curState?.phone ? <span>{data?.phone?.slice(0, -3) + "XXX"}</span>
+                                : <span>{data?.phone}</span>}
+                                <div className={css.obyIcBox} onClick={() => setCurState(val => {return {...val, phone: !val.phone}})}>{curState?.phone ? <img className={css.obyIc} src={viewIcon} alt='View Icon' /> : <img className={css.obyIc} src={hiddenIcon} alt='Hidden Icon' />}</div>
+                            </div>
+                        </div>
+                        <div className={css.obdyBox}>
+                            <div className={css.obdyttl}>DELIVER TO</div>
+                            <div className={css.obytxt}>
+                                {curState?.deliverTo ? <div>XXXXXXXXXXXXXXXXXXXXXXXXX</div>
+                                : <span className={css.obyCon}>address </span>}
+                                <div className={css.obyIcBox} onClick={() => setCurState(val => {return {...val, deliverTo: !val.deliverTo}})}>{curState?.deliverTo ? <img className={css.obyIc} src={viewIcon} alt='View Icon' /> : <img className={css.obyIc} src={hiddenIcon} alt='Hidden Icon' />}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={css.ofooter}>
+                        <div className={css.octtl}>{data.cname}</div>
+                        <div className={css.oimgBox}><img src={fssaiIcon} className={css.oImgFssai} alt="fssai" /></div>
+                        <div className={css.onum}>Lic. No. <span className={css.onum}>{data.licNo}</span></div>
                     </div>
                 </div>
             </div>

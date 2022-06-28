@@ -112,8 +112,6 @@ let UserProfileRightsideBar = () => {
         userId: userId,
     }]
 
-    console.log(userId, hashId, "user and hash id");
-
    useEffect(() => {
     switch(hashId){
         case photosPage:
@@ -148,7 +146,6 @@ let UserProfileRightsideBar = () => {
                 return <UserReviewedCard data={val} key={index}/>
             }))
     }
-    console.log(hashId, photosPage)
    }, [hashId])
    
 
