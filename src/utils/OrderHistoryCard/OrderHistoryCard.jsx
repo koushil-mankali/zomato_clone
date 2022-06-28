@@ -54,11 +54,12 @@ const OrderHistoryCard = ({ udata, setViewDet, setOrderId }) => {
             </div>
             <div className={css.txtBox}>
               <div className={css.titleTxt}>ITEMS</div>
-              {items?.map((val) => {
-                <>
-                  <span className={css.qtyTxt}>{val?.qty} X</span>
+              {items?.map((val,i) => {
+                return <div className={css.itemDet} key={i}>
+                  <span className={css.qtyTxt}>{val?.qty}</span>
+                  <span className={css.cross}>X</span>
                   <div className={css.vlaTxt}>{val?.itemName}</div>
-                </>;
+                </div>;
               })}
             </div>
             <div className={css.txtBox}>

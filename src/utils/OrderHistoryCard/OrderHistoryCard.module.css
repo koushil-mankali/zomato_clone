@@ -1,6 +1,5 @@
 .outerDiv{
-    width: auto;
-    max-width: 310px;
+    width: 300px;
     height: auto;
     max-height: 350px;
     margin: 0.5rem;
@@ -77,10 +76,24 @@
     color:var(--color-p5-text);
 }
 
+.itemDet{
+    display: flex;
+    align-items: center;
+}
+
+.cross{
+    margin: 0 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
 .vlaTxt{
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--color-title-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .footerBar{
@@ -100,4 +113,10 @@
 
 .viewBtn:hover{
     background-color: var(--bg-redish4);
+}
+
+@media all and (max-width: 420px){
+    .outerDiv{
+        width: 300px;
+    }
 }

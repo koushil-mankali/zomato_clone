@@ -32,3 +32,9 @@
         margin-left: 0px;
     }
 }
+
+@media all and (max-width: 420px){
+    .outerDiv{
+        padding: 0px;
+    }
+}

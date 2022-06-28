@@ -22,8 +22,15 @@ const OrderHistory = () => {
             items:[{
                 itemName: "Panner Biryani",
                 qty: 1
+            },
+            {
+              itemName: "Mini chicken Biryani ( Serves - Small Hunger)",
+              qty: 1
             }],
-            orderedOn: new Date()?.toString(),
+            orderedOn: new Intl.DateTimeFormat("en" , {
+              timeStyle: "medium",
+              dateStyle: "short"
+            })?.format(new Date()),
             itemTotal:"150.00",
             coupon: {
                 couponName:"TryNew",
@@ -49,8 +56,15 @@ const OrderHistory = () => {
           items:[{
               itemName: "Panner Biryani",
               qty: 1
+          },
+          {
+            itemName: "Mini chicken Biryani ( Serves - Small Hunger)",
+            qty: 1
           }],
-          orderedOn: new Date()?.toString(),
+          orderedOn: new Intl.DateTimeFormat("en" , {
+            timeStyle: "medium",
+            dateStyle: "short"
+          })?.format(new Date()),
           itemTotal:"150.00",
           coupon: {
               couponName:"TryNew",
@@ -77,7 +91,10 @@ const OrderHistory = () => {
             itemName: "Panner Biryani",
             qty: 1
         }],
-        orderedOn: new Date()?.toString(),
+        orderedOn: new Intl.DateTimeFormat("en" , {
+          timeStyle: "medium",
+          dateStyle: "short"
+        })?.format(new Date()),
         itemTotal:"150.00",
         coupon: {
             couponName:"TryNew",
