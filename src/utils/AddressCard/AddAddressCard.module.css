@@ -1,0 +1,36 @@
+.outerDiv{
+    width: 200px;
+    height: 150px;
+    max-height: 300px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: var(--brd4);
+}
+
+.outerDiv:hover{
+    background-color: var(--bg-ash);
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+    margin: 0.5rem 0;
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}
+
+.txt{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-p5-text);
+}

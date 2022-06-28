@@ -1,0 +1,59 @@
+.outerDiv{
+    width: 200px;
+    height: 150px;
+    max-height: 300px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: var(--brd4);
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ttl{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-p5-text);
+}
+
+.address{
+    margin: 0.5rem 0;
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--color-p2-text);
+}
+
+.btns{
+    display: flex;
+}
+
+.btn1{
+    background-color: var(--bg-white);
+    border: none;
+    color: var(--color-redish1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2{
+    background-color: var(--bg-white);
+    border: none;
+    margin: 0 0.2rem;
+    color: var(--color-p2-text);
+    cursor: pointer;
+}
+
+.rightArrow{
+    width: 7px;
+    height: 10px;
+    margin: 0 0.5rem;
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}
