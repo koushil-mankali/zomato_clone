@@ -36,7 +36,7 @@ let AddRestaurantMobileNavbar = ({ toogleMenu, setToggleMenu }) => {
                 <img src={rightArrow} className={css.rightArrow} alt='right arrow' />
             </Link>
         </div>
-    </div >
+    </div>
 }
 
 export default AddRestaurantMobileNavbar;

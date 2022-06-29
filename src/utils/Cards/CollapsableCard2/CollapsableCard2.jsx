@@ -33,7 +33,7 @@ let CollapsableCard = ({ title, content }) => {
         <div className={state}>
             <div className={css.val}>{content}</div>
         </div>
-    </div >
+    </div>
 }
 
 export default CollapsableCard;

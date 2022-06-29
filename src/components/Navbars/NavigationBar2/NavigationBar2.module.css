@@ -1,11 +1,12 @@
 .navbar {
     width: 100%;
-    height: 60px;
-    margin: 0.5rem 0;
-    position: absolute;
-    top: 0;
+    height: 70px;
+    /* margin: 0.5rem 0; */
+    /* position: absolute; */
+    /* top: 0; */
     z-index: 5;
     color: var(--color-white);
+    border-bottom: var(--brd2);
 }
 
 .navbarInner {
@@ -96,6 +97,7 @@
     border-radius: 10px;
     background-color: var(--color-white);
     display: none;
+    z-index: 1;
 }
 
 .profile:hover .menu {
@@ -133,11 +135,16 @@
 }
 
 @media all and (max-width: 480px) {
-    .navbarInner {
+    .searchBar{
         display: none;
     }
+}
 
-    .menuBar {
-        display: block;
+@media all and (max-width: 1024px) {
+    .navbarInner{
+        width: 90%;
+    }
+    .searchBar{
+        width: 50%;
     }
 }

@@ -227,7 +227,7 @@ let ShowCase = () => {
         </div>
         <ExploreOptionsNearMe />
         <Footer />
-    </div >
+    </div>
 }
 
 export default ShowCase;

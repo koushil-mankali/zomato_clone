@@ -35,7 +35,7 @@ let CollapsableCard = ({ title, content }) => {
                 return <div key={index} className={css.val}>{val}</div>
             })}
         </div>
-    </div >
+    </div>
 }
 
 export default CollapsableCard;
