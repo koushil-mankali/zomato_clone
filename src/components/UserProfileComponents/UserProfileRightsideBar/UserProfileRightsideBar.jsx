@@ -3,20 +3,20 @@ import {useParams } from 'react-router-dom'
 
 import css from './UserProfileRightsideBar.module.css'
 
-import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage, blogpostsPage, orderhistoryPage, myaddressPage, favoriteordersPage, bookingsPage} from '../../helpers/constants'
+import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage, blogpostsPage, orderhistoryPage, myaddressPage, favoriteordersPage, bookingsPage} from '../../../helpers/constants'
 
 import ImgSrc from '/images/proandproplus.jpg';
 
-import UserReviewedCard from '../../utils/UserProfile/Activity/UserReviewedCard/UserReviewedCard'
-import UserPhotosCard from '../../utils/UserProfile/Activity/UserPhotosCard/UserPhotosCard'
-import RecentlyViewed from '../../utils/UserProfile/Activity/RecentlyViewed/RecentlyViewed'
-import UserBookmarks from '../../utils/UserProfile/Activity/UserBookmarks/UserBookmarks'
-import UserBlogPosts from '../../utils/UserProfile/Activity/UserBlogPosts/UserBlogPosts'
-import UserFollowersCard from '../../utils/UserProfile/Activity/UserFollowersCard/UserFollowersCard'
-import OrderHistory from '../../utils/UserProfile/OnlineOrdering/OrderHistory/OrderHistory'
-import MyAddresses from '../../utils/UserProfile/OnlineOrdering/MyAddresses/MyAddresses'
-import FavoriteOrders from '../../utils/UserProfile/OnlineOrdering/FavoriteOrders/FavoriteOrders'
-import YoursBooking from '../../utils/UserProfile/TableBooking/YoursBooking/YoursBooking'
+import UserReviewedCard from '../../../utils/UserProfile/Activity/UserReviewedCard/UserReviewedCard'
+import UserPhotosCard from '../../../utils/UserProfile/Activity/UserPhotosCard/UserPhotosCard'
+import RecentlyViewed from '../../../utils/UserProfile/Activity/RecentlyViewed/RecentlyViewed'
+import UserBookmarks from '../../../utils/UserProfile/Activity/UserBookmarks/UserBookmarks'
+import UserBlogPosts from '../../../utils/UserProfile/Activity/UserBlogPosts/UserBlogPosts'
+import UserFollowersCard from '../../../utils/UserProfile/Activity/UserFollowersCard/UserFollowersCard'
+import OrderHistory from '../../../utils/UserProfile/OnlineOrdering/OrderHistory/OrderHistory'
+import MyAddresses from '../../../utils/UserProfile/OnlineOrdering/MyAddresses/MyAddresses'
+import FavoriteOrders from '../../../utils/UserProfile/OnlineOrdering/FavoriteOrders/FavoriteOrders'
+import YoursBooking from '../../../utils/UserProfile/TableBooking/YoursBooking/YoursBooking'
 
 let UserProfileRightsideBar = () => {
 

@@ -4,6 +4,14 @@
     justify-content: space-between;
 }
 
+.mobileMenu{
+    height: 100vh;
+    position: sticky;
+    top:0;
+    background-color: var(--bg-white);
+    z-index: 1;
+}
+
 .title {
     margin: 0.5rem;
     font-size: 2.5rem;

@@ -1,5 +1,5 @@
 import css from './FrequentlyAskedQues.module.css';
-import CollapsableCard2 from '../../utils/CollapsableCard2/CollapsableCard2'
+import CollapsableCard2 from '../../../utils/CollapsableCard2/CollapsableCard2'
 
 let FrequentlyAskedQues = () => {
     return <div className={css.outerDiv}>

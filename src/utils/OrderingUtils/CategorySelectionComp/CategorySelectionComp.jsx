@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import css from './CategorySelectionComp.module.css'
 
-import { orderOnlinePage, diningOutPage, proAndProPlusPage, nightLifePage } from '../../helpers/constants'
+import { orderOnlinePage, diningOutPage, proAndProPlusPage, nightLifePage } from '../../../helpers/constants'
 
 let CategorySelectionComp = ({ imgSrc, imgSrc2, title, color, isActive, setIsActive, comp }) => {
 
@@ -36,7 +36,7 @@ let CategorySelectionComp = ({ imgSrc, imgSrc2, title, color, isActive, setIsAct
                 <div className={titleClass}>{title}</div>
             </div>
         </div>
-    </div >
+    </div>
 }
 
 export default CategorySelectionComp;

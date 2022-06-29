@@ -14,7 +14,7 @@ let AddRestaurantMobileNavbar = ({ toogleMenu, setToggleMenu }) => {
 
     let dropdownOptions = state ? css.optionsBox : `${css.optionsBox} ${css.dnone}`;
 
-    return <div>
+    return <div className={css.navbarH}>
         <div className={css.menu}>
             <img className={css.menuBar} src={close} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
             <div className={css.title}>Tomato</div>

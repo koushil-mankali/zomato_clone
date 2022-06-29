@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import PlacesCard from '../../utils/card3/PlacesCard'
-import ShowMore from '../../utils/card3/ShowMore'
+import PlacesCard from '../../../utils/card3/PlacesCard'
+import ShowMore from '../../../utils/card3/ShowMore'
 
 import css from './PopularPlaces.module.css';
 

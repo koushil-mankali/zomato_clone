@@ -5,7 +5,7 @@ import close from '/icons/close.png'
 import css from './MobileNavbar.module.css';
 
 let MobileNavbar = ({ toogleMenu, setToggleMenu }) => {
-    return <div>
+    return <div className={css.mobileMenu}>
         <div className={css.menu}>
             <img className={css.menuBar} src={close} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
             <div className={css.title}>Tomato</div>
