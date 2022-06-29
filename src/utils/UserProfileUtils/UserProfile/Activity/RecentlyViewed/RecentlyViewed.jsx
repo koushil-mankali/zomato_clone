@@ -4,7 +4,7 @@ import css from "./RecentlyViewed.module.css";
 
 import happyHoursImg from "/images/happyhours.jpg";
 
-import RecentlyViewedCard from "../../../RecentlyViewedCard/RecentlyViewedCard";
+import RecentlyViewedCard from "../../../../Cards/RecentlyViewedCard/RecentlyViewedCard";
 
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 

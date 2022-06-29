@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import Navbar from '../NavigationBar/NavigationBar'
-import MobileNavbar from '../MobileNavbar/MobileNavbar';
+import Navbar from '../../Navbars/NavigationBar/NavigationBar'
+import MobileNavbar from '../../Navbars/MobileNavbar/MobileNavbar';
 import SearchBar from '../../../utils/SearchBar/SearchBar'
 
 import css from './HomePageBanner.module.css'

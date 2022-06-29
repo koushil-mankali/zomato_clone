@@ -6,7 +6,7 @@ import menuBar from '/icons/menu.png'
 import downArrow from '/icons/down-arrow.png'
 import profilePic from '/images/profilepic.jpg'
 
-import SearchBar from '../../utils/SearchBar/SearchBar'
+import SearchBar from '../../../utils/SearchBar/SearchBar'
 
 import css from './NavigationBar2.module.css';
 

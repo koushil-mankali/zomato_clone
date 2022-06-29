@@ -4,7 +4,7 @@ import css from "./UserPhotosCard.module.css";
 
 import happyHoursImg from "/images/happyhours.jpg";
 
-import SmallCardImg from "../../../card6/SmallCardImg";
+import SmallCardImg from "../../../../Cards/card6/SmallCardImg";
 
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 

@@ -6,7 +6,7 @@ import NewInTownImg from '/images/newintown.jpg'
 import TrendingThisWeekImg from '/images/trendingthisweek.jpg'
 import CallingBarHoppersImg from '/images/callingallbarhoppers.jpg'
 
-import CollectionsCard from '../../utils/card2/CollectionsCard'
+import CollectionsCard from '../../../utils/Cards/card2/CollectionsCard'
 
 let Collections = () => {
     return <div className={css.outerDiv}>

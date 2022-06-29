@@ -5,9 +5,7 @@ import bookIcon from '/icons/book.png';
 import bikeIcon from '/icons/bike.png';
 import packageIcon from '/icons/package.png';
 
-import Card5 from '../../../utils/card5/Card5';
-
-
+import Card5 from '../../../utils/Cards/card5/Card5';
 
 let HowItWorks = () => {
     return <div className={css.outerDiv}>

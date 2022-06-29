@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import css from "./OrderHistoryCard.module.css";
 
-import OrderDetails from '../../Modals/OrderDetailsModal/OrderDetails'
+import OrderDetails from '../../../Modals/OrderDetailsModal/OrderDetails'
 
 const OrderHistoryCard = ({ udata, setViewDet, setOrderId }) => {
   const {

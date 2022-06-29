@@ -1,4 +1,4 @@
-import CollapsableCard from '../../utils/CollapsableCard/CollapsableCard'
+import CollapsableCard from '../../../utils/Cards/CollapsableCard/CollapsableCard'
 
 import css from './ExploreOptionsNearMe.module.css';
 

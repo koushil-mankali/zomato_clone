@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import css from './MyAddresses.module.css'
 
-import AddressCard from '../../../AddressCard/AddressCard';
-import AddAddressCard from '../../../AddressCard/AddAddressCard';
+import AddressCard from '../../../../Cards/AddressCard/AddressCard';
+import AddAddressCard from '../../../../Cards/AddressCard/AddAddressCard';
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 
 const MyAddresses = ({hashId}) => {

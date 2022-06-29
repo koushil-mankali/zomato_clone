@@ -3,10 +3,10 @@ import { useState } from 'react';
 import css from './YoursBooking.module.css'
 
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
-import BookingsCard from '../../../BookingsCard/BookingsCard'
+import BookingsCard from '../../../../Cards/BookingsCard/BookingsCard'
 
-import WhiteButton from '../../../Buttons/WhiteButton/WhiteButton'
-import RedButton from '../../../Buttons/RedButton/RedButton'
+import WhiteButton from '../../../../Buttons/WhiteButton/WhiteButton'
+import RedButton from '../../../../Buttons/RedButton/RedButton'
 
 const YoursBooking = ({hashId}) => {
 

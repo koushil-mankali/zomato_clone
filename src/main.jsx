@@ -10,8 +10,6 @@ import ErrorPage from './pages/ErrorPage/ErrorPage'
 import App from './App'
 import './index.css'
 
-import Testpage from './pages/testpage'
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
@@ -19,8 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/" element={<App />} />
       <Route path="/add-restaurant" element={<AddRestaurant />} />
       <Route path="/show-case" element={<ShowCase />} />
-      <Route path="/test-page" element={<Testpage />} />
-      <Route path="/test-page/:hashId" element={<Testpage />} />
       <Route path="/user/:userId" element={<User />} />
       <Route path="/user/:userId/:hashId" element={<User />} />
       <Route path="*" element={<ErrorPage />} />

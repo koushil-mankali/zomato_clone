@@ -7,16 +7,16 @@ import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage
 
 import ImgSrc from '/images/proandproplus.jpg';
 
-import UserReviewedCard from '../../../utils/UserProfile/Activity/UserReviewedCard/UserReviewedCard'
-import UserPhotosCard from '../../../utils/UserProfile/Activity/UserPhotosCard/UserPhotosCard'
-import RecentlyViewed from '../../../utils/UserProfile/Activity/RecentlyViewed/RecentlyViewed'
-import UserBookmarks from '../../../utils/UserProfile/Activity/UserBookmarks/UserBookmarks'
-import UserBlogPosts from '../../../utils/UserProfile/Activity/UserBlogPosts/UserBlogPosts'
-import UserFollowersCard from '../../../utils/UserProfile/Activity/UserFollowersCard/UserFollowersCard'
-import OrderHistory from '../../../utils/UserProfile/OnlineOrdering/OrderHistory/OrderHistory'
-import MyAddresses from '../../../utils/UserProfile/OnlineOrdering/MyAddresses/MyAddresses'
-import FavoriteOrders from '../../../utils/UserProfile/OnlineOrdering/FavoriteOrders/FavoriteOrders'
-import YoursBooking from '../../../utils/UserProfile/TableBooking/YoursBooking/YoursBooking'
+import UserReviewedCard from '../../../utils/UserProfileUtils/UserProfile/Activity/UserReviewedCard/UserReviewedCard'
+import UserPhotosCard from '../../../utils/UserProfileUtils/UserProfile/Activity/UserPhotosCard/UserPhotosCard'
+import RecentlyViewed from '../../../utils/UserProfileUtils/UserProfile/Activity/RecentlyViewed/RecentlyViewed'
+import UserBookmarks from '../../../utils/UserProfileUtils/UserProfile/Activity/UserBookmarks/UserBookmarks'
+import UserBlogPosts from '../../../utils/UserProfileUtils/UserProfile/Activity/UserBlogPosts/UserBlogPosts'
+import UserFollowersCard from '../../../utils/UserProfileUtils/UserProfile/Activity/UserFollowersCard/UserFollowersCard'
+import OrderHistory from '../../../utils/UserProfileUtils/UserProfile/OnlineOrdering/OrderHistory/OrderHistory'
+import MyAddresses from '../../../utils/UserProfileUtils/UserProfile/OnlineOrdering/MyAddresses/MyAddresses'
+import FavoriteOrders from '../../../utils/UserProfileUtils/UserProfile/OnlineOrdering/FavoriteOrders/FavoriteOrders'
+import YoursBooking from '../../../utils/UserProfileUtils/UserProfile/TableBooking/YoursBooking/YoursBooking'
 
 let UserProfileRightsideBar = () => {
 

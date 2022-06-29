@@ -6,9 +6,9 @@ import menuBar from '/icons/menu.png'
 import downArrow from '/icons/down-arrow.png'
 import profilePic from '/images/profilepic.jpg'
 
-import Login from '../Auth/Login/Login'
-import Signup from '../Auth/Signup/Signup'
-import EnterOTP from '../Auth/EnterOTP/EnterOTP'
+import Login from '../../Auth/Login/Login'
+import Signup from '../../Auth/Signup/Signup'
+import EnterOTP from '../../Auth/EnterOTP/EnterOTP'
 
 import css from './NavigationBar.module.css';
 

@@ -8,8 +8,8 @@ import UserDetCard from "../../../UserDetCard/UserDetCard";
 
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 
-import WhiteButton from '../../../Buttons/WhiteButton/WhiteButton'
-import RedButton from '../../../Buttons/RedButton/RedButton'
+import WhiteButton from '../../../../Buttons/WhiteButton/WhiteButton'
+import RedButton from '../../../../Buttons/RedButton/RedButton'
 
 const UserFollowersCard = ({ hashId, userData }) => {
   let {followers, following} = userData;

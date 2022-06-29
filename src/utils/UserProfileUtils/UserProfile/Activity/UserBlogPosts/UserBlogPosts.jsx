@@ -4,7 +4,7 @@ import css from "./UserBlogPosts.module.css";
 
 import happyHoursImg from "/images/happyhours.jpg";
 
-import BlogPostCard from "../../../BlogPostCard/BlogPostCard";
+import BlogPostCard from "../../../../Cards/BlogPostCard/BlogPostCard";
 
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
 

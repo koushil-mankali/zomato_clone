@@ -1,12 +1,12 @@
 import css from './User.module.css'
 
-import Navbar from '../../components/NavigationBar2/NavigationBar2'
-import UserProfileRightsideBar from '../../components/UserProfileRightsideBar/UserProfileRightsideBar'
+import Navbar from '../../components/Navbars/NavigationBar2/NavigationBar2'
+import UserProfileRightsideBar from '../../components/UserProfileComponents/UserProfileRightsideBar/UserProfileRightsideBar'
 
-import UserHero from '../../utils/UserHero/UserHero'
-import LeftSideCardPanel from '../../utils/LeftSideCardPanel/LeftSideCardPanel'
-import SuggestedFollowCard from '../../utils/SuggestedFollowCard/SuggestedFollowCard'
-import ProfileWidget from '../../utils/ProfileWidget/ProfileWidget'
+import UserHero from '../../utils/UserProfileUtils/UserHero/UserHero'
+import LeftSideCardPanel from '../../utils/Cards/LeftSideCardPanel/LeftSideCardPanel'
+import SuggestedFollowCard from '../../utils/UserProfileUtils/SuggestedFollowCard/SuggestedFollowCard'
+import ProfileWidget from '../../utils/UserProfileUtils/ProfileWidget/ProfileWidget'
 
 import userImg from '/images/koushil.jpg';
 

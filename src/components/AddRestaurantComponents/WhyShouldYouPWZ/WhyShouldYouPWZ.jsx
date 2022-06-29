@@ -2,7 +2,7 @@ import globIcon from '/icons/glob.png'
 import calenderIcon from '/icons/calenderIcon.png'
 import restaurantIcon from '/icons/restaurantIcon.png'
 
-import Card4 from '../../../utils/card4/Card4'
+import Card4 from '../../../utils/Cards/card4/Card4'
 
 import css from './WhyShouldYouPWZ.module.css';
 

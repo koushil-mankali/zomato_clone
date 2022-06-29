@@ -4,11 +4,11 @@ import css from './FavoriteOrders.module.css'
 
 import orderonlineImg from '/images/orderonline.jpg'
 
-import OrderHistoryCard from '../../../OrderHistoryCard/OrderHistoryCard'
+import OrderHistoryCard from '../../../../Cards/OrderHistoryCard/OrderHistoryCard'
 import UserProfileNoData from "../../UserProfileNoData/UserProfileNoData";
-import OrderDetails from '../../../../Modals/OrderDetailsModal/OrderDetails'
+import OrderDetails from '../../../../../Modals/OrderDetailsModal/OrderDetails'
 
-import Pagination from '../../../Pagination/Pagination'
+import Pagination from '../../../../Pagination/Pagination'
 
 const FavoriteOrders = () => {
     let [viewDet, setViewDet] = useState(false);

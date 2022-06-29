@@ -3,7 +3,7 @@ import bgImg from '/images/addressbackground.jpg'
 
 import css from './AddRestaurantSec.module.css';
 
-import AddRestaurantFormCard from '../../utils/AddRestaurantFormCard/AddRestaurantFormCard'
+import AddRestaurantFormCard from '../../../utils/Cards/AddRestaurantFormCard/AddRestaurantFormCard'
 
 let AddRestaurantSec = () => {
     return <div className={css.outerDiv}>

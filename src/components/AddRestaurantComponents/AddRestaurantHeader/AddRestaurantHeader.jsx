@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-import Navbar from '../NavigationBar/NavigationBar'
-import AddRestaurantMobileNavbar from '../AddRestaurantMobileNavbar/AddRestaurantMobileNavbar';
+import Navbar from '../../Navbars/NavigationBar/NavigationBar'
+import AddRestaurantMobileNavbar from '../../Navbars/AddRestaurantMobileNavbar/AddRestaurantMobileNavbar';
 
 import css from './AddRestaurantHeader.module.css'
 

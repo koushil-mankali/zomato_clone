@@ -4,7 +4,7 @@ import css from './AddressCard.module.css'
 
 import rightArrow from '/icons/right-arrow.png'
 
-import DeleteModal from '../../Modals/DeleteModal/DeleteModal'
+import DeleteModal from '../../../Modals/DeleteModal/DeleteModal'
 
 const AddressCard = ({title, address}) => {
 
