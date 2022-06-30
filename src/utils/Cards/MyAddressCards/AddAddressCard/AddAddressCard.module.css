@@ -1,0 +1,311 @@
+.outerDiv {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 8000;
+    background-color: rgba(28, 28, 28, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    padding: 20px 0;
+    max-width: auto;
+    width: 600px;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.innerDiv::-webkit-scrollbar{
+    display: none;
+}
+
+.headerLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 0px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerDet{
+    display: flex;
+    margin: 10px 0;
+}
+
+.imgBox{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.img{
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+}
+
+.txtContent{
+    margin: 0 0.5rem;
+}
+
+.ttl{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.address{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-p5-text);
+}
+
+.ttlr{
+    display: flex;
+    font-size: 1rem;
+    color: var(--color-redish1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon{
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.iconImg{
+    width: 100%;
+    height:100%;
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-title-text);
+}
+
+.closeBtn {
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.closeBtnImg {
+    width: 100%;
+    height: 100%;
+}
+
+.body{
+    margin: 5px 0;
+    border-top: var(--brd1);
+    border-bottom: var(--brd1);
+}
+
+.statusBar{
+    padding: 0 25px;
+}
+
+.orders{
+    padding: 0 25px;
+}
+
+.order{
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.orderTxt{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: var(--color-p5-text);
+}
+
+.foodTypeImg{
+    width: 15px;
+    height: 15px;
+}
+
+.orderTtlBox{
+    width: 100%;
+    margin: 0 0.5rem;
+}
+
+.orderTtl{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+    margin-bottom: 0.5rem;
+}
+
+.orderPrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.qty{
+    margin-right: 5px;
+}
+
+.calArea{
+    width: 100%;
+    margin: 1rem 0 0.5rem 0;
+    background-color: var(--bg-goldish-light);
+}
+
+.orderCalcDet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.couponTxt{
+    color: var(--color-greenish);
+    font-size: 0.8rem;
+}
+
+.savings{
+    margin: 10px;
+    padding: 5px;
+    color: var(--color-greenish);
+    font-size: 0.8rem;
+    background-color: var(--bg-greenish2);
+    border: 1px solid var(--brd-greenish-color);
+    border-radius: 5px;
+}
+
+.hr{
+    margin: 10px;
+    border: none;
+    border-bottom: var(--brd2) ;
+}
+
+.orderDetailsDiv{
+    margin: 1rem;
+}
+
+.ottl{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-title-text);
+}
+
+.obdy{
+}
+
+.obdyBox{
+    margin: 1rem 0;
+}
+
+.obdyttl{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-p1-text);
+}
+
+.obytxt{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-text);
+    display: flex;
+}
+
+.obyCon{
+    max-width: 80%;
+    width: max-content;
+    text-align: justify;
+}
+
+.obyIcBox{
+    margin: 0 0.5rem;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-redish6);
+    cursor: pointer;
+}
+
+.obyIc{
+    width: 50%;
+    height: 50%;
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}
+
+.ofooter{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-p1-text);
+}
+
+.oimgBox{
+    margin: 0.5rem 0;
+    width: 50px;
+    height: 30px;
+}
+
+.oImgFssai{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav{
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fav:hover{
+    background-color: var(--bg-ash);
+}
+
+.favImg{
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+.likedImg{
+    width: 100%;
+    height: 100%;
+}
