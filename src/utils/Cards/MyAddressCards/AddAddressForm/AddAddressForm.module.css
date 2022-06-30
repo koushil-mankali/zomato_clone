@@ -1,0 +1,108 @@
+.outerDiv{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ttl{
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.imgBox{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.closeIcon{
+    width: 100%;
+    height: 100%;
+}
+
+.bdy{
+    width: 100%;
+    height: auto;
+}
+
+.labelTxt{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-p5-text);
+}
+
+.addBox{
+    width: 100%;
+    height: auto;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    border: var(--brd2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.addressBx{
+    display: flex;
+}
+
+.addIcon{
+    margin: 0 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+.rightArrIcon{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(69%) saturate(2662%) hue-rotate(207deg) brightness(94%) contrast(99%);
+}
+
+.address{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.chgTxt{
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-redish1);
+}
+
+.ftr{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--bg-redish3);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.btn:hover{
+    background-color: var(--bg-redish1);
+}
