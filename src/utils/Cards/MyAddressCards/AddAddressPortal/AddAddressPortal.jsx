@@ -6,8 +6,10 @@ import css from './AddAddressPortal.module.css'
 import SetDeliveryLocation from '../SetDeliveryLocation/SetDeliveryLocation'
 import AddAddressForm from '../AddAddressForm/AddAddressForm'
 import SearchLocation from '../SearchLocation/SearchLocation'
+import MapComponent from '../MapComponent/MapComponent'
 
 let AddAddressPortal = ({setAddressModal}) => {
+
 
     let [page, setPage] = useState(1);
     let [searchComp, setSearchComp] = useState(false);
@@ -19,7 +21,9 @@ let AddAddressPortal = ({setAddressModal}) => {
             ): (
             <>
                 <div className={css.mapBox}>
-                    map
+                    <div style={{width: "400px"}}>
+                        <MapComponent />
+                    </div>
                 </div>
                 <div className={css.formBox}>
                     {page === 1 ? (

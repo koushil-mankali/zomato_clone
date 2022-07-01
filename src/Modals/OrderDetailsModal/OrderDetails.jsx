@@ -17,7 +17,7 @@ import css from './OrderDetails.module.css'
 import AlertBox from '../../utils/Alerts/AlertBox/AlertBox'
 
 let OrderDetails = ({setViewDet}) => {
-
+    
     let [like, setLike] = useState(false);
     let [curState, setCurState] = useState({
         orderId: false,
