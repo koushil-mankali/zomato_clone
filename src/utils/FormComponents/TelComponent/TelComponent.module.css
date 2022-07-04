@@ -1,0 +1,17 @@
+.fieldBox{
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.field{
+    width: 100%;
+    padding: 1rem;
+    border: var(--brd2);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.errorMessage{
+    color: red;
+}

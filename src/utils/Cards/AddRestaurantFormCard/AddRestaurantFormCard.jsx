@@ -1,11 +1,53 @@
+import {useState} from 'react'
 import { Link } from 'react-router-dom'
+
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+
+import TextComponent from '../../FormComponents/TextComponent/TextComponent'
+import TelComponent from '../../FormComponents/TelComponent/TelComponent'
+import TextAreaComponent from '../../FormComponents/TextAreaComponent/TextAreaComponent'
 
 import css from './AddRestaurantFormCard.module.css';
 
 let AddRestaurantFormCard = () => {
+
+    let [initialValues, setInitialValues] = useState({ 
+        restName: '',
+        location: '',
+        phone: '',
+        message: '' 
+    })
+    let validationSchema = Yup.object({
+        restName: Yup.string()
+        .min(5, 'Minimum 5 characters required')
+        .max(15, 'Must be less than 15 characters')
+        .required('Required'),
+        location: Yup.string().required('Required'),
+        phone: Yup.string(),
+        message: Yup.string(),
+    })
+
+    let submitForm = (values, { setSubmitting }) => {
+        console.log(values, "submited");
+    }
+
     return <div className={css.outerDiv}>
         <div className={css.innerDiv}>
-            <button className={css.btn}>Submit</button>
+            <Formik
+                initialValues={initialValues}
+                validationSchema={validationSchema}
+                onSubmit={submitForm}
+                className={css.formikForm}
+            >
+                <Form className={css.form}>
+                    <TextComponent name="restName" placeholder="Restaurant name*"/>
+                    <TextComponent name="location" placeholder="Restaurant location*"/>
+                    <TelComponent name="phone" placeholder="Restaurant contact number"/>
+                    <TextAreaComponent name="message" placeholder="What do you like about the Restaurant?" />
+                    <button type='submit' className={css.btn}>Submit</button>
+                </Form>
+            </Formik>
             <div className={css.tag}>Restaurant owners can <Link to='' className={css.link}>add restaurant from here</Link></div>
         </div>
     </div>
