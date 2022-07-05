@@ -56,9 +56,146 @@
     height: 100%;
 }
 
-.btns{
+.banner{
+    width: 100%;
+    position: relative;
+}
+
+.BGImgBox{
+    width: 100%;
+}
+
+.bgImg{
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.overlayImg{
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top:0;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--bg-blackish-op4);
+}
+
+.profilePicBox{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    outline: 3px solid white;
+}
+
+.profilePic{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.cameraIconBox, .cameraIconBox2{
+    width: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.cameraIconBox2{
+    width: 100%;
+}
+
+.bgCssImg{
+    padding: 0.4rem 0.5rem;
+    border-radius: 50%;
+    background-color: var(--bg-blackish-op7);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.cameraIcon{
+    filter: invert(1);
+}
+
+.dropdownCam{
+    position: absolute;
+    top: 4rem;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow2);
+}
+
+.dropdownCam::before{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    z-index: 100;
+    position: absolute;
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid rgb(255, 255, 255);
+    border-right: 1rem solid transparent;
+    left: calc(50% - 1rem);
+    top: -1rem;
+}
+
+.opt{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-p4-text);
+    cursor: pointer;
+}
+
+.opt:first-child{
+    border-radius: 5px 5px 0;
+}
+
+.opt:last-child{
+    border-radius: 0 0 5px 5px;
+}
+
+.opt:hover{
+    background-color: var(--bg-ash);
+}
+
+.bdy{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 
+.formikForm{
+    width: 100%;
+    height: 100%;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formTxt{
+    font-size: 0.7rem;
+    color: var(--color-p2-text);
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+::placeholder{
+    color: var(--color-p1-text);
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

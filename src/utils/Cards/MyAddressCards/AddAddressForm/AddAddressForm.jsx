@@ -33,6 +33,11 @@ const AddAddressForm = ({setPage, setAddressModal, setSearchComp}) => {
         setAddressModal(false);
     }
 
+    const changeFieldValues = (formik) => {
+        formik.setFieldValue("addressType", "");
+        formik.setFieldValue("addressTypeOther", "");
+    }
+
   return <div className={css.outerDiv}>
         <div className={css.innerDiv}>
         <div className={css.header}>
@@ -69,7 +74,7 @@ const AddAddressForm = ({setPage, setAddressModal, setSearchComp}) => {
                         <div className={css.otherRadio}>
                             <RadioComponent label="Other" name="addressType" value="other" />
                             <div className={css.txtCancelField}>
-                                <TextComponentWithCancel name="addressTypeOther" placeholder="Add tag" formik={formik} />
+                                <TextComponentWithCancel txt="CANCEL" name="addressTypeOther" placeholder="Add tag" formik={formik} changeHandler={changeFieldValues} />
                             </div>
                         </div>
                         }

@@ -3,17 +3,13 @@ import { Field, ErrorMessage, Formik } from 'formik';
 
 import css from './TextComponentWithCancel.module.css'
 
-const TextComponentWithCancel = ({name, placeholder, formik}) => {
-
-  const changeFieldValues = () => {
-    formik.setFieldValue("addressType", "");
-    formik.setFieldValue("addressTypeOther", "");
-  }
+const TextComponentWithCancel = (props) => {
+  const {txt, name, placeholder, formik, changeHandler, ...restProps} = props;
 
   return  <div className={css.fieldBox}>
     <div className={css.txtField}>
-      <Field name={name} type="text" placeholder={placeholder} className={css.field} />
-      <div className={css.cnlBtn} onClick={changeFieldValues}>CANCEL</div>
+      <Field name={name} type="text" placeholder={placeholder} className={css.field} {...restProps} />
+      <div className={css.cnlBtn} onClick={() => changeHandler(formik)}>{txt}</div>
     </div>
     <ErrorMessage name={name}>
         {msg => <div className={css.errorMessage}>{msg}</div>}

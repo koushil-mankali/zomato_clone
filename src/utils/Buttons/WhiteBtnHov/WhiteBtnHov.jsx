@@ -2,9 +2,10 @@ import React from 'react'
 
 import css from './WhiteBtnHov.module.css'
 
-const WhiteBtnHov = ({txt}) => {
+const WhiteBtnHov = (props) => {
+  const {txt, ...restProps} = props;
   return (
-    <div className={css.btn}>{txt}</div>
+    <div className={css.btn} {...restProps}>{txt}</div>
   )
 }
 

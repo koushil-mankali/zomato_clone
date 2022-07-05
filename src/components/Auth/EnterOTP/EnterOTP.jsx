@@ -4,12 +4,12 @@ import closeBtn from '/images/closeBtn.jpg';
 
 import css from './EnterOTP.module.css'
 
-let EnterOTP = () => {
+let EnterOTP = ({setModal}) => {
     const domObj = <div className={css.outerDiv}>
         <div className={css.innerDiv}>
             <div className={css.header}>
                 <div className={css.title}>Enter OTP</div>
-                <span className={css.closeBtn} onClick={console.log("close")}>
+                <span className={css.closeBtn} onClick={() => setModal(false)}>
                     <img className={css.closeBtnImg} src={closeBtn} alt="close button" />
                 </span>
             </div>

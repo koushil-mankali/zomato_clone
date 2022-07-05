@@ -2,9 +2,10 @@ import React from 'react'
 
 import css from './RedBtnHov.module.css'
 
-const RedBtnHov = ({txt}) => {
+const RedBtnHov = (props) => {
+  const {txt, ...restProps} = props;
   return (
-    <div className={css.btn}>{txt}</div>
+    <div className={css.btn} {...restProps}>{txt}</div>
   )
 }
 
