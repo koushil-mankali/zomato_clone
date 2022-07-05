@@ -1,0 +1,36 @@
+.fieldBox{
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.txtField{
+    display: flex;
+    align-items: center;
+    border: var(--brd2);
+    border-radius: 5px;
+}
+
+.cnlBtn{
+    font-size: 0.9rem;
+    padding: 1rem;
+    font-weight: 500;
+    color: var(--color-redish1);
+    cursor: pointer;
+}
+
+.cnlBtn:hover{
+    color: var(--color-redish2);
+}
+
+.field{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.errorMessage{
+    color: red;
+}
