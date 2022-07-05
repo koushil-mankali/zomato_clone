@@ -1,0 +1,16 @@
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-white);
+    border-radius: 5px;
+    border: var(--brd-redish-color);
+    margin: 0.5rem;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--color-redish1);
+}
+
+.btn:hover{
+    background-color: var(--bg-redish4);
+}
