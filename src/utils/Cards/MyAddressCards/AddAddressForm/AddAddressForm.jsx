@@ -30,7 +30,7 @@ const AddAddressForm = ({setPage, setAddressModal, setSearchComp}) => {
 
     let submitForm = (values) => {
         console.log(values, 'form values');
-        // setAddressModal(false);
+        setAddressModal(false);
     }
 
   return <div className={css.outerDiv}>
@@ -47,10 +47,6 @@ const AddAddressForm = ({setPage, setAddressModal, setSearchComp}) => {
                     <div className={css.address}>Malkajgiri, Mir Alam Mandi, Pathar Gatti</div>
                 </div>
                 <div className={css.chgTxt} onClick={()=> setSearchComp(true)}>CHANGE</div>
-            </div>
-            <div className={css.form}>
-        
-                    
             </div>
         </div>
         <Formik

@@ -48,18 +48,33 @@
 .addBox{
     width: 100%;
     height: auto;
-    padding: 0.2rem;
     margin: 0.5rem 0;
     border: var(--brd2);
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
 }
 
-.addressBx{
+.iconImgBox{
+    width: 8%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lcticon{
+    width: 25px;
+    height: 25px;
+}
+
+.inptBox{
+    width: 92%;
+    outline: none;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: var(--color-p5-text);
 }
 
 .results{
@@ -90,4 +105,9 @@
     font-size: 1rem;
     font-weight: 300;
     color: var(--color-p5-text);
+}
+
+::placeholder{
+    font-size: 1rem ;
+    color: var(--color-p1-text);
 }

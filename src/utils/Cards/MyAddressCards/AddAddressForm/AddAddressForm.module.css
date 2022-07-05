@@ -60,6 +60,7 @@
 }
 
 .addressBx{
+    padding: 0.5rem;
     display: flex;
 }
 
@@ -115,7 +116,9 @@
 }
 
 .radioBtns{
+    margin: 1rem 0;
     display: flex;
+    margin-left:-1rem;
 }
 
 .txtCancelField{
