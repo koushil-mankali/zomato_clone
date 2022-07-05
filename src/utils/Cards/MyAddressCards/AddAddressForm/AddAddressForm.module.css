@@ -100,9 +100,24 @@
     color: var(--color-white);
     background-color: var(--bg-redish3);
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
+    outline: none;
+    border: none;
 }
 
 .btn:hover{
     background-color: var(--bg-redish1);
+}
+
+.form{
+    width: 100%;
+    height: auto;
+}
+
+.radioBtns{
+    display: flex;
+}
+
+.errorMessage{
+    color: red;
 }
