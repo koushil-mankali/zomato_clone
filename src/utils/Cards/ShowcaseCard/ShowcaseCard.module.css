@@ -9,6 +9,7 @@
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .outerDiv:hover {
@@ -105,6 +106,7 @@
 .title {
     font-size: 1.1rem;
     font-weight: 500;
+    color: var(--color-title-text);
 }
 
 .ratingBox {

@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 import css from './ShowcaseCard.module.css';
 
 import biryani from '/images/profilebanner.jpg'
@@ -6,8 +8,10 @@ import maxSAfety from '/icons/maxsafty.png';
 import safeDelivery from '/icons/safe-delivery.png';
 import star from '/icons/star.png';
 
-let ShowcaseCard = () => {
-    return <div className={css.outerDiv}>
+let ShowcaseCard = (props) => {
+    const {link2} = props;
+    let link = "/" + "hyderabad/paraside/order";
+    return <Link className={css.outerDiv} to={link}>
         <div className={css.innerDiv}>
             <div className={css.imgBox}>
                 <div className={css.promoted}>Promoted</div>
@@ -39,7 +43,7 @@ let ShowcaseCard = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </Link>
 }
 
 export default ShowcaseCard;
