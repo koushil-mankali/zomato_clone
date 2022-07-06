@@ -11,7 +11,14 @@ import GrayBtn from '../../utils/Buttons/GrayBtn/GrayBtn'
 
 const UploadPhotosModal = ({setModal}) => {
 
-  let [anyUpload, setAnyUpload] = useState(false);
+  const [anyUpload, setAnyUpload] = useState(false);
+  const [files, setFiles] = useState([]);
+  let [isError, setIsError] = useState({});
+  let [errorMessage, setErrorMessage] = useState({});
+
+  const submitFiles = () => {
+    console.log(files, "submit form");
+  }
 
   const domObj = <div className={css.outerDiv}>
     <div className={css.innerDiv}>
@@ -24,11 +31,11 @@ const UploadPhotosModal = ({setModal}) => {
           </span>
       </div>
       <div className={css.bdy}>
-          <UploadPhotoCard setAnyUpload={setAnyUpload} />
+          <UploadPhotoCard setAnyUpload={setAnyUpload} setFiles={setFiles} files={files} isError={isError} setIsError={setIsError} setErrorMessage={setErrorMessage} errorMessage={errorMessage} />
       </div>
       <div className={css.btns}>
-          {anyUpload ? <RedBtnHov txt="Upload" /> :
-          <GrayBtn txt="Upload" disabled /> }
+          {/* {anyUpload && Object.values(isError)?.some(val => val === true) ? <RedBtnHov txt="Upload" onClick={submitFiles} /> : 
+           <GrayBtn txt="Upload" disabled /> } */}
       </div>
     </div>
   </div>

@@ -6,8 +6,7 @@ import uploadImage from "/images/upload-image.png";
 
 import ViewUploadedCard from "../ViewUploadedCard/ViewUploadedCard";
 
-const UploadPhotoCard = ({ setAnyUpload }) => {
-  const [files, setFiles] = useState([]);
+const UploadPhotoCard = ({ setAnyUpload, files, setFiles, isError, setIsError, setErrorMessage, errorMessage }) => {
 
   useEffect(() => {
     if (files?.length > 0) {
@@ -31,6 +30,14 @@ const UploadPhotoCard = ({ setAnyUpload }) => {
         }
       });
     });
+
+    setIsError(val => {
+      // return val?.filter(fv => fv !== idVal)
+    })
+
+    setErrorMessage(val => {
+      // return val?.filter(fv => fv !== idVal)
+    })
   };
 
   return (
@@ -52,7 +59,8 @@ const UploadPhotoCard = ({ setAnyUpload }) => {
         <div className={css.bdyBox}>
           <div className={css.viewCards}>
             {files?.map((val, id) => {
-              return <ViewUploadedCard file={val} id={id} key={id} removeFromFiles={removeFromFiles} />;
+              console.log(id, "files id")
+              return <ViewUploadedCard file={val} id={id} key={id} removeFromFiles={removeFromFiles} isError={isError} setIsError={setIsError} setErrorMessage={setErrorMessage} errorMessage={errorMessage}/>;
             })}
           </div>
           <label className={css.imgBox} htmlFor="browse2">
