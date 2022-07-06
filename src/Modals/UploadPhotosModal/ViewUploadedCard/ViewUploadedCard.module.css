@@ -1,0 +1,92 @@
+.outerDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgBox{
+    width: 170px;
+    height: 170px;
+    margin: 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cancelIconBox{
+    position: absolute;
+    top:-8px;
+    right:-5px;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}
+
+.cancelIcon{
+    width: 100%;
+    height: 100%;
+}
+
+.messageBox{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.textArea{
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    border: var(--brd1);
+    border-radius: 5px;
+    outline: none;
+    resize: vertical;
+}
+
+.textArea2{
+    border: 1px solid var(--brd-greenish-color);
+}
+
+.labelCaption{
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    font-size: 1rem;
+    color: var(--color-p1-text);
+}
+
+.labelCaption2{
+    top: -12px;
+    left: 10px;
+    color: var(--color-greenish2);
+    background-color: var(--bg-white);
+    transition-duration: 300ms;
+}
+
+.error{
+    border: var(--brd-redish-color);
+    border-radius: 5px;
+}
+
+.errorTxt{
+    width: 170px;
+    font-size: 0.8rem;
+    color: var(--color-redish1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
