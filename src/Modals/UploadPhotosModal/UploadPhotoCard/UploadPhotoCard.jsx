@@ -27,8 +27,11 @@ const UploadPhotoCard = ({setAnyUpload}) => {
           <input type='file' id="browse" name="browse" className={css.browseInpt} onChange={e => fileUplaod(e)} />
           <label htmlFor="browse" className={css.browseTxt}>Browse</label>
         </div>
-        <div className={css.imgBox}>
-            <img src={uploadImage} className={css.img} alt="upload image" />
+        <div className={css.bdyBox}>
+          <label className={css.imgBox} htmlFor="browse2">
+              <input type='file' id="browse2" name="browse2" className={css.browseInpt} onChange={e => fileUplaod(e)} />
+              <img src={uploadImage} className={css.img} alt="upload image" />
+          </label>
         </div>
     </div>
   </div>

@@ -64,7 +64,7 @@
 
 .btns{
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: flex-end;
 }
