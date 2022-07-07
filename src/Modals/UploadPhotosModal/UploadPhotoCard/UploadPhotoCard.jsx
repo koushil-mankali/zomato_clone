@@ -33,17 +33,37 @@ const UploadPhotoCard = ({ setAnyUpload, files, setFiles, isError, setIsError, s
       });
     });
 
-    setIsError(val => {
-      return { ...val, [idVal]: false}
-    })
+      if(isError[idVal]){
+        setIsError(val => {
+          return { ...val, [idVal]: false}
+        })
+    
+        setErrorMessage(val => {
+          return { ...val, [idVal]: null}
+        })
+      }
 
-    setErrorMessage(val => {
-      return { ...val, [idVal]: null}
-    })
   };
 
+  const dragOverHandler = (e)=>{
+    e.preventDefault();
+  }
+
+  const dropHandler = (e)=>{
+    e.preventDefault();
+
+    const image = e.dataTransfer?.files[0];
+
+    if(image){
+      setFiles((val) => {
+        return [...val, image];
+      });
+    }
+
+  }
+
   return (
-    <div className={css.outerDiv}>
+    <div className={css.outerDiv}  onDragOver={dragOverHandler} onDrop={dropHandler}>
       <div className={css.innerDiv}>
         <div className={css.txt}>
           Drag & Drop to upload or
