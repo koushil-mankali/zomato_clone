@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import AddRestaurant from './pages/AddRestaurant/AddRestaurant'
-import ShowCase from './pages/Orderings/ShowCase/ShowCase'
-import OrderPage from './pages/Orderings/OrderPage/OrderPage'
+import ShowCase from './pages/ShowCase/ShowCase'
+import RestaurantPage from './pages/RestaurantPage/RestaurantPage'
 import User from './pages/User/User'
 import GetTheApp from './pages/GetTheApp/GetTheApp'
 import ErrorPage from './pages/ErrorPage/ErrorPage'
@@ -19,10 +19,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/" element={<App />} />
       <Route path="/add-restaurant" element={<AddRestaurant />} />
       <Route path="/show-case" element={<ShowCase />} />
-      <Route path="/:city/:hotel/order" element={<OrderPage />} />
       <Route path="/user/:userId" element={<User />} />
       <Route path="/user/:userId/:hashId" element={<User />} />
       <Route path="/get-the-app" element={<GetTheApp />} />
+      <Route path="/:city/:hotel" element={<RestaurantPage />} />
+      <Route path="/:city/:hotel/order" element={<RestaurantPage />} />
+      <Route path="/:city/:hotel/reviews" element={<RestaurantPage />} />
+      <Route path="/:city/:hotel/photos" element={<RestaurantPage />} />
+      <Route path="/:city/:hotel/menu" element={<RestaurantPage />} />
+      <Route path="/:city/:hotel/book" element={<RestaurantPage />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   </BrowserRouter>

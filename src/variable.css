@@ -44,6 +44,7 @@
     --bg-blueish2: rgb(17, 85, 203);
     --bg-blueish3: rgb(83, 140, 238);
     --bg-blueish4: rgb(37, 111, 239);
+    --bg-blackish: rgb(28, 28, 28);
     --bg-goldish-light: #FFFBF7;
     --bg-text-bl1: rgb(156, 156, 156);
 
@@ -100,6 +101,7 @@
     --box-shadow2: 0px 4px 16px rgb(28 28 28 / 10%);
     --box-shadow3: 0px 3px 12px rgb(0 0 0 / 8%);
     --box-shadow4: 8px 46px 50px rgb(228 233 235 / 90%);
+    --box-shadow5: 0px 4px 24px rgb(0 0 0 / 25);
     /* Box shadows End */
 
 }

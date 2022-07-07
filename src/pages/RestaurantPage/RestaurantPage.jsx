@@ -1,11 +1,11 @@
 import {useState} from 'react'
 
-import css from './OrderPage.module.css'
+import css from './RestaurantPage.module.css'
 
-import NavigationBar from '../../../components/Navbars/NavigationBar2/NavigationBar2'
-import UploadPhotosModal from '../../../Modals/UploadPhotosModal/UploadPhotos'
+import NavigationBar from '../../components/Navbars/NavigationBar2/NavigationBar2'
+import UploadPhotosModal from '../../Modals/UploadPhotosModal/UploadPhotos'
 
-const OrderPage = () => {
+const RestaurantPage = () => {
 
     let [modal, setModal] = useState(true)
 
@@ -28,4 +28,4 @@ const OrderPage = () => {
   </div>
 }
 
-export default OrderPage
+export default RestaurantPage

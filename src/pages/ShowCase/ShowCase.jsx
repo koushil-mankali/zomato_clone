@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import Collections from '../../../components/HomeComponents/Collections/Collections';
+import Collections from '../../components/HomeComponents/Collections/Collections';
 
-import NavigationBar2 from '../../../components/Navbars/NavigationBar2/NavigationBar2';
-import CategorySelectionComp from '../../../utils/OrderingUtils/CategorySelectionComp/CategorySelectionComp'
-import FilterBox from '../../../utils/OrderingUtils/FilterBox/FilterBox';
-import CircleCard1 from '../../../utils/Cards/CircleCards/CircleCard1/CircleCard1';
-import CircleCard2 from '../../../utils/Cards/CircleCards/CircleCard2/CircleCard2';
-import ShowcaseCard from '../../../utils/Cards/ShowcaseCard/ShowcaseCard'
-import ExploreOptionsNearMe from '../../../components/HomeComponents/ExploreOptionsNearMe/ExploreOptionsNearMe'
-import Footer from '../../../components/Footer/Footer'
+import NavigationBar2 from '../../components/Navbars/NavigationBar2/NavigationBar2';
+import CategorySelectionComp from '../../utils/OrderingUtils/CategorySelectionComp/CategorySelectionComp'
+import FilterBox from '../../utils/OrderingUtils/FilterBox/FilterBox';
+import CircleCard1 from '../../utils/Cards/CircleCards/CircleCard1/CircleCard1';
+import CircleCard2 from '../../utils/Cards/CircleCards/CircleCard2/CircleCard2';
+import ShowcaseCard from '../../utils/Cards/ShowcaseCard/ShowcaseCard'
+import ExploreOptionsNearMe from '../../components/HomeComponents/ExploreOptionsNearMe/ExploreOptionsNearMe'
+import Footer from '../../components/Footer/Footer'
 
 import dinning1 from '/icons/dinning1.png';
 import dinning2 from '/icons/dinning2.png';
@@ -22,7 +22,7 @@ import filtersIcon from '/icons/filter.png';
 import deliveryTimeIcon from '/icons/delivery-time.png';
 import downArrowIcon from '/icons/down-arrow.png';
 
-import { orderOnlinePage, diningOutPage, nightLifePage } from '../../../helpers/constants'
+import { orderOnlinePage, diningOutPage, nightLifePage } from '../../helpers/constants'
 
 import css from './ShowCase.module.css';
 
