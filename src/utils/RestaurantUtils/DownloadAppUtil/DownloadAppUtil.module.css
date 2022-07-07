@@ -1,0 +1,53 @@
+.outerDiv{
+    width: 300px;
+    height: 170px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--bg-blackish);
+    box-shadow: var(--box-shadow5);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.left{
+    padding: 1rem;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.txt{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.btnTxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+    background-color: var(--bg-white);
+}
+
+.right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.img{
+    width: 70%;
+    height: 80%;   
+    align-self: flex-end;
+}
