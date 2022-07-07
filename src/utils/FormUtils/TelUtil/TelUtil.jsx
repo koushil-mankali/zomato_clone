@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field, ErrorMessage } from 'formik';
 
-import css from './TelComponent.module.css'
+import css from './TelUtil.module.css'
 
-const TelComponent = ({name, placeholder,}) => {
+const TelUtil = ({name, placeholder,}) => {
   return  <div className={css.fieldBox}>
     <Field name={name} type="tel" placeholder={placeholder} className={css.field} />
     <ErrorMessage name={name}>
@@ -12,4 +12,4 @@ const TelComponent = ({name, placeholder,}) => {
 </div>
 }
 
-export default TelComponent
+export default TelUtil

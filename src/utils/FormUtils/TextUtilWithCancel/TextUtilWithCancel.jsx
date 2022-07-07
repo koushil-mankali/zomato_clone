@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field, ErrorMessage, Formik } from 'formik';
 
-import css from './TextComponentWithCancel.module.css'
+import css from './TextUtilWithCancel.module.css'
 
-const TextComponentWithCancel = (props) => {
+const TextUtilWithCancel = (props) => {
   const {txt, name, placeholder, formik, changeHandler, ...restProps} = props;
 
   return  <div className={css.fieldBox}>
@@ -17,4 +17,4 @@ const TextComponentWithCancel = (props) => {
 </div>
 }
 
-export default TextComponentWithCancel
+export default TextUtilWithCancel

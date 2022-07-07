@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field, ErrorMessage } from 'formik';
 
-import css from './RadioComponent.module.css'
+import css from './RadioUtil.module.css'
 
-const RadioComponent = ({label, name, value}) => {
+const RadioUtil = ({label, name, value}) => {
 
   return <div className={css.fieldBox}>
         <label className={css.label}>
@@ -15,4 +15,4 @@ const RadioComponent = ({label, name, value}) => {
   </div>
 }
 
-export default RadioComponent
+export default RadioUtil

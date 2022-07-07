@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field, ErrorMessage } from 'formik';
 
-import css from './TextComponent.module.css'
+import css from './TextUtil.module.css'
 
-const TextComponent = (props) => {
+const TextUtil = (props) => {
   const {name, placeholder, ...restProps} = props;
   return  <div className={css.fieldBox}>
     <Field name={name} type="text" placeholder={placeholder} className={css.field} {...restProps} />
@@ -13,4 +13,4 @@ const TextComponent = (props) => {
 </div>
 }
 
-export default TextComponent
+export default TextUtil

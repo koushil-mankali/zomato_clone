@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-import TextComponent from '../../FormComponents/TextComponent/TextComponent'
-import TelComponent from '../../FormComponents/TelComponent/TelComponent'
-import TextAreaComponent from '../../FormComponents/TextAreaComponent/TextAreaComponent'
+import TextUtil from '../../FormUtils/TextUtil/TextUtil'
+import TelUtil from '../../FormUtils/TelUtil/TelUtil'
+import TextAreaUtil from '../../FormUtils/TextAreaUtil/TextAreaUtil'
 
 import css from './AddRestaurantFormCard.module.css';
 
@@ -41,10 +41,10 @@ let AddRestaurantFormCard = () => {
                 className={css.formikForm}
             >
                 <Form className={css.form}>
-                    <TextComponent name="restName" placeholder="Restaurant name*"/>
-                    <TextComponent name="location" placeholder="Restaurant location*"/>
-                    <TelComponent name="phone" placeholder="Restaurant contact number"/>
-                    <TextAreaComponent name="message" placeholder="What do you like about the Restaurant?" />
+                    <TextUtil name="restName" placeholder="Restaurant name*"/>
+                    <TextUtil name="location" placeholder="Restaurant location*"/>
+                    <TelUtil name="phone" placeholder="Restaurant contact number"/>
+                    <TextAreaUtil name="message" placeholder="What do you like about the Restaurant?" />
                     <button type='submit' className={css.btn}>Submit</button>
                 </Form>
             </Formik>

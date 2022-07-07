@@ -13,8 +13,8 @@ import profilePic from '/images/profilepic.jpg'
 
 import RedBtnHov from '../../utils/Buttons/RedBtnHov/RedBtnHov' 
 import WhiteBtnHov from '../../utils/Buttons/WhiteBtnHov/WhiteBtnHov' 
-import TextComponent from '../../utils/FormComponents/TextComponent/TextComponent'
-import TextComponentWithCancel from '../../utils/FormComponents/TextComponentWithCancel/TextComponentWithCancel'
+import TextUtil from '../../utils/FormUtils/TextUtil/TextUtil'
+import TextUtilWithCancel from '../../utils/FormUtils/TextUtilWithCancel/TextUtilWithCancel'
 import EnterOTP from '../../components/Auth/EnterOTP/EnterOTP'
 
 const EditProfileModal = ({setModal}) => {
@@ -96,16 +96,16 @@ const EditProfileModal = ({setModal}) => {
                     className={css.formikForm}
                 >{(formik) => {
                     return <Form className={css.form}>
-                        <TextComponent name="fullName" placeholder="Enter name"/>
-                        <TextComponent name="phone" placeholder="Enter phone number" disabled/>
+                        <TextUtil name="fullName" placeholder="Enter name"/>
+                        <TextUtil name="phone" placeholder="Enter phone number" disabled/>
                         <span className={css.formTxt}>You can update your phone number using the Zomato app</span>
-                        <TextComponentWithCancel txt="Change" name="email" placeholder="sample@sample.com" formik="" changeHandler={mailCahngeHandler} disabled/>
-                        <TextComponent name="address" placeholder="Enter address"/>
-                        <TextComponent name="description" placeholder="Description"/>
+                        <TextUtilWithCancel txt="Change" name="email" placeholder="sample@sample.com" formik="" changeHandler={mailCahngeHandler} disabled/>
+                        <TextUtil name="address" placeholder="Enter address"/>
+                        <TextUtil name="description" placeholder="Description"/>
                         <span className={css.formTxt}>Tell us something about yourself ({150 -formik.values.description.length} characters remaining)</span>
-                        <TextComponent name="handle" placeholder="Handle"/>
+                        <TextUtil name="handle" placeholder="Handle"/>
                         <span className={css.formTxt}>You can only change your handle once</span>
-                        <TextComponent name="website" placeholder="Website"/>
+                        <TextUtil name="website" placeholder="Website"/>
                         <div className={css.btns}>
                             <WhiteBtnHov txt="Cancel" onClick={() => setModal(val => !val)} />
                             <RedBtnHov txt="Update" onClick={updateUser}/>

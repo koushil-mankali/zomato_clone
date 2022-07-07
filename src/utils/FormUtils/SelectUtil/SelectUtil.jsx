@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field } from 'formik';
 
-import css from './SelectComponent.module.css'
+import css from './SelectUtil.module.css'
 
-const SelectComponent = ({name, defaultSelected}) => {
+const SelectUtil = ({name, defaultSelected}) => {
   return  <div className={css.fieldBox}>
     <Field name={name} component="select" className={css.field}>
         <option className={css.option} value="red">Red</option>
@@ -13,4 +13,4 @@ const SelectComponent = ({name, defaultSelected}) => {
 </div>
 }
 
-export default SelectComponent
+export default SelectUtil

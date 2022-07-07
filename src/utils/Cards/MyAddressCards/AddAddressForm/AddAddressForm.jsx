@@ -6,9 +6,9 @@ import css from './AddAddressForm.module.css'
 import closeIcon from '/icons/close.png'
 import checkMarkIcon from '/icons/check-mark.png'
 
-import RadioComponent from '../../../FormComponents/RadioComponent/RadioComponent'
-import TextComponent from '../../../FormComponents/TextComponent/TextComponent'
-import TextComponentWithCancel from '../../../FormComponents/TextComponentWithCancel/TextComponentWithCancel'
+import RadioUtil from '../../../FormUtils/RadioUtil/RadioUtil'
+import TextUtil from '../../../FormUtils/TextUtil/TextUtil'
+import TextUtilWithCancel from '../../../FormUtils/TextUtilWithCancel/TextUtilWithCancel'
 
 const AddAddressForm = ({setPage, setAddressModal, setSearchComp}) => {
    
@@ -61,20 +61,20 @@ const AddAddressForm = ({setPage, setAddressModal, setSearchComp}) => {
             >
             {(formik) => {
                 return <Form>
-                    <TextComponent name="completeAddress" placeholder="Complete address*" />
-                    <TextComponent name="floor" placeholder="Floor (Optional)" />
-                    <TextComponent name="nearBy" placeholder="Nearby landmark (Optional)" />
+                    <TextUtil name="completeAddress" placeholder="Complete address*" />
+                    <TextUtil name="floor" placeholder="Floor (Optional)" />
+                    <TextUtil name="nearBy" placeholder="Nearby landmark (Optional)" />
                     <div className={css.radioBtns}>
                         {formik.values.addressType !== "other" ? 
                         <>
-                            <RadioComponent label="Home" name="addressType" value="home" />
-                            <RadioComponent label="Work" name="addressType" value="work" />
-                            <RadioComponent label="Other" name="addressType" value="other" />
+                            <RadioUtil label="Home" name="addressType" value="home" />
+                            <RadioUtil label="Work" name="addressType" value="work" />
+                            <RadioUtil label="Other" name="addressType" value="other" />
                         </> : 
                         <div className={css.otherRadio}>
-                            <RadioComponent label="Other" name="addressType" value="other" />
+                            <RadioUtil label="Other" name="addressType" value="other" />
                             <div className={css.txtCancelField}>
-                                <TextComponentWithCancel txt="CANCEL" name="addressTypeOther" placeholder="Add tag" formik={formik} changeHandler={changeFieldValues} />
+                                <TextUtilWithCancel txt="CANCEL" name="addressTypeOther" placeholder="Add tag" formik={formik} changeHandler={changeFieldValues} />
                             </div>
                         </div>
                         }

@@ -2,7 +2,7 @@
 import React from 'react'
 import { Field } from 'formik';
 
-import css from './TextAreaComponent.module.css'
+import css from './TextAreaUtil.module.css'
 
 const CustomInputComponent = ({
     field, 
@@ -14,10 +14,10 @@ const CustomInputComponent = ({
     </div>
   );
 
-const TextAreaComponent = ({name, placeholder,}) => {
+const TextAreaUtil = ({name, placeholder,}) => {
   return  <div className={css.fieldBox}>
     <Field name={name} component={CustomInputComponent} placeholder={placeholder} className={css.textAreaField} />
 </div>
 }
 
-export default TextAreaComponent
+export default TextAreaUtil
