@@ -62,16 +62,16 @@ let ShowCase = () => {
         ]
     }
     if (page === orderOnlinePage) {
-        filterBoxes = filters?.delivery?.map(val => {
-            return <div><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
+        filterBoxes = filters?.delivery?.map((val, id) => {
+            return <div key={id}><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
         })
     } else if (page === diningOutPage) {
-        filterBoxes = filters?.dinning?.map(val => {
-            return <div><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
+        filterBoxes = filters?.dinning?.map((val, id) => {
+            return <div key={id}><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
         })
     } else if (page === nightLifePage) {
-        filterBoxes = filters?.nightLife?.map(val => {
-            return <div><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
+        filterBoxes = filters?.nightLife?.map((val, id) => {
+            return <div key={id}><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
         })
     }
 

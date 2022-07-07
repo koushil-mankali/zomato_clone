@@ -18,13 +18,13 @@ const ViewUploadedCard = ({file, id, removeFromFiles, isError, setIsError, setEr
     document.addEventListener("click", () => {
         setClicked(false)
     }, true)
-
+    
   return <div className={css.outerDiv} >
     <div className={css.innerDiv}>
-        <div className={isError[id] ? [css.imgBox, css.error]?.join(" ") : css.imgBox}>
+        <div className={Object?.entries(isError)?.map(val => val[0] === id)?.some(val => val !== true) ? [css.imgBox, css.error]?.join(" ") : css.imgBox}>
             <div className={css.cancelIconBox} onClick={() => removeFromFiles(id)}><img src={multiplyCancelIcon} alt="cancel button" className={css.cancelIcon} /></div>
             <img src={URL.createObjectURL(file)} className={css.img} />
-            {isError[id] ? <div className={css.errorTxt} title={errorMessage[id]}>{errorMessage[id]}</div> : "" }
+            {Object?.entries(isError)?.map(val => val[0] === id)?.some(val => val !== true) ? <div className={css.errorTxt} title={errorMessage[id]}>{errorMessage[id]}</div> : "" }
         </div>
         <div className={css.messageBox}>
             <label htmlFor='textArea' className={clicked ? [css.labelCaption, css.labelCaption2]?.join(" ") : css.labelCaption}>Caption</label>
