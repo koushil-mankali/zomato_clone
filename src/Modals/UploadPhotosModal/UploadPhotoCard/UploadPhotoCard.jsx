@@ -17,9 +17,11 @@ const UploadPhotoCard = ({ setAnyUpload, files, setFiles, isError, setIsError, s
   }, [files]);
 
   const fileUplaod = (e) => {
-    setFiles((val) => {
-      return [...val, e.target.files[0]];
-    });
+    if(e.target?.files[0]){
+      setFiles((val) => {
+        return [...val, e.target.files[0]];
+      });
+    }
   };
 
   const removeFromFiles = (idVal) => {
@@ -32,11 +34,11 @@ const UploadPhotoCard = ({ setAnyUpload, files, setFiles, isError, setIsError, s
     });
 
     setIsError(val => {
-      // return val?.filter(fv => fv !== idVal)
+      return { ...val, [idVal]: false}
     })
 
     setErrorMessage(val => {
-      // return val?.filter(fv => fv !== idVal)
+      return { ...val, [idVal]: null}
     })
   };
 
@@ -59,7 +61,6 @@ const UploadPhotoCard = ({ setAnyUpload, files, setFiles, isError, setIsError, s
         <div className={css.bdyBox}>
           <div className={css.viewCards}>
             {files?.map((val, id) => {
-              console.log(id, "files id")
               return <ViewUploadedCard file={val} id={id} key={id} removeFromFiles={removeFromFiles} isError={isError} setIsError={setIsError} setErrorMessage={setErrorMessage} errorMessage={errorMessage}/>;
             })}
           </div>

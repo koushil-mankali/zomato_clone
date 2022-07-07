@@ -34,8 +34,8 @@ const UploadPhotosModal = ({setModal}) => {
           <UploadPhotoCard setAnyUpload={setAnyUpload} setFiles={setFiles} files={files} isError={isError} setIsError={setIsError} setErrorMessage={setErrorMessage} errorMessage={errorMessage} />
       </div>
       <div className={css.btns}>
-          {/* {anyUpload && Object.values(isError)?.some(val => val === true) ? <RedBtnHov txt="Upload" onClick={submitFiles} /> : 
-           <GrayBtn txt="Upload" disabled /> } */}
+          {anyUpload && !Object.values(isError)?.some(val => val === true) ? <RedBtnHov txt="Upload" onClick={submitFiles} /> : 
+           <GrayBtn txt="Upload" disabled /> }
       </div>
     </div>
   </div>
