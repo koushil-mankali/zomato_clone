@@ -67,6 +67,10 @@
     cursor: pointer;
 }
 
+.Sbtn{
+    background-color: var(--color-redish1);
+}
+
 .orBreak {
     display: flex;
     justify-content: center;

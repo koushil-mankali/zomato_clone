@@ -116,3 +116,12 @@
     color: var(--color-p5-text);
     cursor: pointer;
 }
+
+.okBtn{
+    margin: 1rem;   
+    padding: 0.5rem;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

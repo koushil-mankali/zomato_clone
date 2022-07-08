@@ -8,13 +8,12 @@ import profilePic from '/images/profilepic.jpg'
 
 import Login from '../../Auth/Login/Login'
 import Signup from '../../Auth/Signup/Signup'
-import EnterOTP from '../../Auth/EnterOTP/EnterOTP'
 
 import css from './NavigationBar.module.css';
 
 let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
     let [menuDisplay, setMenuDisplay] = useState(false);
-    let [loggedIn, setLoggedIn] = useState(true);
+    let [loggedIn, setLoggedIn] = useState(localStorage.getItem('auth') || false);
     let [auth, setAuth] = useState({
         closed: true,
         login: false,
@@ -73,11 +72,11 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
                                 Settings
                             </div>
                         </Link>
-                        <Link to='/logout' className={css.menuItemLinkTxt} onClick={() => setLoggedIn(false)}>
+                        <div className={css.menuItemLinkTxt} onClick={() => setLoggedIn(false)}>
                             <div className={css.menuItemLink}>
                                 Logout
                             </div>
-                        </Link>
+                        </div>
                     </div>
                 </div>) : (<>
                     <div className={css.menuItem} onClick={() => setAuth({ closed: false, login: true, signup: false })}>Log in</div>
@@ -86,10 +85,9 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
             </div>
         </div>
         <div className={css.m}>
-            {auth?.login ? <Login setAuth={setAuth} /> : null}
+            {auth?.login ? <Login setAuth={setAuth} setLoggedIn={setLoggedIn} /> : null}
             {auth?.signup ? <Signup setAuth={setAuth} /> : null}
         </div>
-        {/* <EnterOTP /> */}
     </div>
 }
 
