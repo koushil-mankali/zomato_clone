@@ -12,7 +12,8 @@ let EnterOTP = ({setModal, setLoggedIn = () => {}, setAuth = () => {}}) => {
     const loginHandler = ()=> {
         setModal(false); 
         setLoggedIn(true);
-        setAuth(false)
+        setAuth(false);
+        localStorage.setItem("auth", true);
     }
 
     useEffect(()=>{

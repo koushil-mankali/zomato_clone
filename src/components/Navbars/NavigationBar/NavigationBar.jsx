@@ -20,6 +20,10 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
         signup: false
     });
 
+    const logoutHandler = () => {
+        setLoggedIn(false);
+        localStorage.removeItem("auth");
+    }
 
     return <div className={css.navbar}>
         <img className={css.menuBar} src={menuBar} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
@@ -72,7 +76,7 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
                                 Settings
                             </div>
                         </Link>
-                        <div className={css.menuItemLinkTxt} onClick={() => setLoggedIn(false)}>
+                        <div className={css.menuItemLinkTxt} onClick={logoutHandler}>
                             <div className={css.menuItemLink}>
                                 Logout
                             </div>
