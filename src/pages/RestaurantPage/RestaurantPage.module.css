@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.innerDiv{
+.innerDiv, .innerDiv2{
     width: 70%;
     height: 100%;
 }
@@ -16,4 +16,13 @@
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--color-p5-text);
+}
+
+@media all and (max-width: 480px){
+    .innerDiv{
+        width: 90%;
+    }
+    .innerDiv2{
+        width: 90%;
+    }
 }

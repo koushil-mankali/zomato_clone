@@ -6,6 +6,7 @@ import NavigationBar from '../../components/Navbars/NavigationBar2/NavigationBar
 import UploadPhotosModal from '../../Modals/UploadPhotosModal/UploadPhotos'
 import DownloadAppUtil from '../../utils/RestaurantUtils/DownloadAppUtil/DownloadAppUtil'
 import HeroComponent from '../../components/RestaurantComponents/HeroComponent/HeroComponent'
+import OrderTitleComponent from '../../components/RestaurantComponents/OrderTitleComponent/OrderTitleComponent'
 
 const RestaurantPage = () => {
 
@@ -28,6 +29,10 @@ const RestaurantPage = () => {
         {modal ? <UploadPhotosModal setModal={setModal} /> : ""}
     </div>
     <HeroComponent />
+    <div className={css.innerDiv2}>
+      <OrderTitleComponent />
+    </div>
+    <div style={{height: "100vh"}}></div>
     {/* <DownloadAppUtil /> */}
   </div>
 }

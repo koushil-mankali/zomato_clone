@@ -1,0 +1,120 @@
+.outerDiv{
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem 0;   
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.specials{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-p5-text);
+}
+
+.address{
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-p1-text);
+}
+
+.timings{
+    font-size: 1rem;
+    display: flex;
+}
+
+.opORclo{
+    color: var(--color-orangish);
+}
+
+.time{
+    color: var(--color-p1-text);
+}
+
+.infoIconBox{
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.infoIcon{
+    width: 100%;
+    height: 100%;
+}
+
+.infoTooltip{
+    width: 220px;
+    height: 100px;
+    display: none;
+    padding: 0.5rem;
+    border: var(--brd2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.infoIconBox:hover .infoTooltip{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.ttil{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.ttim{
+    font-size: 0.8rem;
+    margin: 10px;
+    color: var(--color-p5-text);
+}
+.ctim{
+    margin: 0 5px;
+}
+
+@media all and (max-width:480px){
+    .innerDiv{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

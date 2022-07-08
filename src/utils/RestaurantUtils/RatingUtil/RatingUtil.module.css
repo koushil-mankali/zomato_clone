@@ -1,0 +1,61 @@
+.outerDiv{
+    min-width: 150px;
+    width: max-content;
+    height: 50px;
+    overflow: hidden;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.rating{
+    width: max-content;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-greenish);
+}
+
+.ratingTxt{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.starIcon{
+    margin: 0 2px;
+    width: 13px;
+    height: 13px;
+    filter: invert(1);
+}
+
+.right{
+    width: 70%;
+    height: 100%;
+}
+
+.count{
+    font-weight: 600;
+}
+
+.txt{
+    font-size: 0.8rem;
+}
