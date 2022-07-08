@@ -1,6 +1,5 @@
 # zomato_clone
-Zomato clone using MERN Stack Technology, React, Node, Express, Redux, MongoDB
-
+Zomato clone using React Js, Zomato Frontend clone using React.
 
 #Project still in progress
 
