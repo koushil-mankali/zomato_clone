@@ -51,3 +51,28 @@
     height: 80%;   
     align-self: flex-end;
 }
+
+@media all and (max-width: 780px){
+    .outerDiv{
+        width: 200px;
+        height: 100px;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;    
+    }
+
+    .left{
+        padding: 0.5rem;
+    }
+        
+    .txt{
+        font-size: 0.7rem;
+    }
+
+    .btnTxt{
+        height: 20px;
+        width: 100%;
+        padding: 0.2rem;
+        font-size: 0.6rem;
+    }
+}

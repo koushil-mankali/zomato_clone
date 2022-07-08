@@ -1,0 +1,206 @@
+.outerDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--bg-goldish-light);
+}
+
+.innerDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.leftSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileImg {
+    width: 270px;
+    height: 330px;
+}
+
+.rightSec {}
+
+.title {
+    font-size: 3rem;
+    font-weight: 450;
+}
+
+.tag {
+    margin: 10px 0;
+    font-weight: 350;
+    width: 90%;
+    line-height: 30px;
+}
+
+.inputBoxes {
+    margin: 1rem 0;
+}
+
+.radiosBtns {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.radioBtn {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radio {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-redish1);
+    cursor: pointer;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+}
+
+.optionInputs {
+    margin-right: 10px;
+}
+
+.inputBox {}
+
+.input {
+    padding: 13px 15px;
+    border: var(--brd2);
+    border-radius: 5px;
+    font-weight: 350;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.input:focus {
+    border: 1px solid var(--color-greenish);
+}
+
+.input:invalid {
+    border: 1px solid var(--color-redish1);
+}
+
+.errMess {
+    color: var(--color-redish2);
+    font-size: 0.8rem;
+}
+
+.btn {
+    background-color: var(--bg-redish1);
+    border: none;
+    padding: 10px 20px;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: var(--bg-ash);
+    cursor: not-allowed;
+}
+
+.appLinks {
+    margin: 2rem 0;
+}
+
+.title2 {
+    margin: 1rem 0;
+    color: var(--color-p1-text);
+    font-weight: 350;
+}
+
+.appImg {
+    width: 150px;
+    height: 40px;
+    margin-right: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dnone {
+    display: none;
+}
+
+.dblock {
+    display: block;
+}
+
+@media all and (max-width: 720px) {
+    .outerDiv {
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .innerDiv {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 780px){
+    .title {
+        font-size: 2rem;
+        font-weight: 450;
+    }
+
+    .tag{
+        font-size: 0.8rem;
+    }
+
+    .label{
+        font-size: 0.9rem;
+    }
+
+    .appImg {
+        width: 120px;
+        height: 35px;
+    }
+
+    .inputs{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .optionInputs{
+        width: 100%;
+    }
+    
+    .input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .btn{
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .innerDiv{
+        height: auto;
+        padding: 1rem;
+    }
+}
