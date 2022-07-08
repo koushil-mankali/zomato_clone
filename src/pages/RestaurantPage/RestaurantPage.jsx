@@ -7,10 +7,11 @@ import UploadPhotosModal from '../../Modals/UploadPhotosModal/UploadPhotos'
 import DownloadAppUtil from '../../utils/RestaurantUtils/DownloadAppUtil/DownloadAppUtil'
 import HeroComponent from '../../components/RestaurantComponents/HeroComponent/HeroComponent'
 import OrderTitleComponent from '../../components/RestaurantComponents/OrderTitleComponent/OrderTitleComponent'
+import OrderBodyComponent from '../../components/RestaurantComponents/OrderBodyComponent/OrderBodyComponent'
 
 const RestaurantPage = () => {
 
-    let [modal, setModal] = useState(false)
+  let [modal, setModal] = useState(false)
 
   return <div className={css.outerDiv}>
     <NavigationBar />
@@ -31,6 +32,7 @@ const RestaurantPage = () => {
     <HeroComponent />
     <div className={css.innerDiv2}>
       <OrderTitleComponent />
+      <OrderBodyComponent />
     </div>
     <div style={{height: "100vh"}}></div>
     {/* <DownloadAppUtil /> */}

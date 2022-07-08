@@ -71,6 +71,8 @@
     
     --brd-redish-color: 1px solid rgb(239, 79, 95);
 
+    --brd-redish-color-2p: 2px solid rgb(239, 79, 95);
+
     --brd1-color: rgb(207, 207, 207);
     --brd2-color: rgb(206, 206, 206);
     
@@ -80,6 +82,8 @@
     --brd4: 1px solid rgb(232, 232, 232);
     --brd5: 1px solid rgb(105, 105, 105);
     --brd6: 1px solid rgb(156, 156, 156);
+
+    --brd2-2p: 2px solid rgb(207, 207, 207);
 
     /* Borders End */
 
