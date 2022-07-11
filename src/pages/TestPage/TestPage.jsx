@@ -1,6 +1,7 @@
 import React from 'react'
 
 import OverviewAboutCard from '../../utils/Cards/RestaurantBodyCards/OverviewAboutCard/OverviewAboutCard'
+import SmallSearchBarUtil from '../../utils/RestaurantUtils/SmallSearchBarUtil/SmallSearchBarUtil'
 
 const TestPage = () => {
     const data = {
@@ -12,6 +13,7 @@ const TestPage = () => {
   return <div>
     <div>TestPage</div>
     <OverviewAboutCard data={data} />
+    <SmallSearchBarUtil placeholder="Search within menu" />
   </div>
 }
 

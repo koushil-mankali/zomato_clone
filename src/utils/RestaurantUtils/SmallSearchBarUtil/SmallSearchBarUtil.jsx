@@ -2,13 +2,14 @@ import React from 'react'
 
 import css from './SmallSearchBarUtil.module.css'
 
-const SmallSearchBarUtil = () => {
+import searchIcon from '/icons/search.png'
+
+const SmallSearchBarUtil = ({placeholder}) => {
   return <div className={css.outerDiv}>
     <div className={css.innerDiv}>
       <div className={css.searchBox}>
-        <img src="" alt="cancel icon" />
-        <input type="search" placeholder="Search within menu" />
-        <img src="" alt="search icon" />
+        <img src={searchIcon} alt="cancel icon" className={css.srchIcon} />
+        <input type="search" placeholder={placeholder} className={css.inpt} />
       </div>
     </div>
   </div>
