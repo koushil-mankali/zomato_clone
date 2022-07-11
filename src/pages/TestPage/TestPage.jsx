@@ -20,6 +20,8 @@ import dropdownIcon from '/icons/down-arrow1.png';
 import menu from '/icons/menu.png';
 import star from '/icons/star.png'
 
+import GoTopArrow from '../../utils/GoTopArrow/GoTopArrow'
+
 const TestPage = () => {
     const data = {
         phone: "9988098812",
@@ -74,6 +76,7 @@ const TestPage = () => {
     <RateYourExperienceCard />
     <OverviewAboutCard data={data} />
     <SmallSearchBarUtil placeholder="Search within menu" />
+    <GoTopArrow />
   </div>
 }
 
