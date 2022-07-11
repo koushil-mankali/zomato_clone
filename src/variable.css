@@ -82,6 +82,7 @@
     --brd4: 1px solid rgb(232, 232, 232);
     --brd5: 1px solid rgb(105, 105, 105);
     --brd6: 1px solid rgb(156, 156, 156);
+    --brd7: 1px solid rgb(248, 248, 248);
 
     --brd2-2p: 2px solid rgb(207, 207, 207);
 
@@ -106,6 +107,7 @@
     --box-shadow3: 0px 3px 12px rgb(0 0 0 / 8%);
     --box-shadow4: 8px 46px 50px rgb(228 233 235 / 90%);
     --box-shadow5: 0px 4px 24px rgb(0 0 0 / 25);
+    --box-shadow6: 0px 2px 8px rgb(28 28 28 / 12%) ;
     /* Box shadows End */
 
 }

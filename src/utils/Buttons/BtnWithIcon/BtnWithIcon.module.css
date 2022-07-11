@@ -1,0 +1,31 @@
+.outerDiv{
+    min-width: 100px;
+    width: min-content;
+    max-width: 150px;
+    border-radius: 5px;
+    border: var(--brd1);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.innerDiv{
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.iconBox{
+    width: 16px;
+    height: 16px;
+    margin: 0 0.5rem;
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+}
+
+.txt{
+    font-size: 1rem;
+    color: var(--color-p5-text);
+}
