@@ -8,6 +8,7 @@ import RedBtnHovWithIcon from '../../utils/Buttons/RedBtnHovWithIcon/RedBtnHovWi
 import DropdownUtil from '../../utils/RestaurantUtils/DropdownUtil/DropdownUtil'
 
 import RestUserReviewedCard from '../../utils/RestaurantUtils/RestUserReviewedCard/RestUserReviewedCard'
+import OfferTrackUtil from '../../utils/RestaurantUtils/OfferTrackUtil/OfferTrackUtil'
 
 import profilepic from '/images/profilepic.jpg'
 
@@ -56,6 +57,7 @@ const TestPage = () => {
 
   return <div>
     <div>TestPage</div>
+    <OfferTrackUtil txt1='40% OFF up to ₹80 + 10% OFF up to ₹75 Paytm Cashback' txt2="use code PAYTMBASH" />
     <RestUserReviewedCard data={data2} />
     <DropdownUtil options={options1} icon2={dropdownIcon} filFunc={(val) => console.log(val)} />
     <DropdownUtil options={options2} icon1={menu} icon2={dropdownIcon}  filFunc={(val) => console.log(val)} />

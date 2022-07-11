@@ -1,0 +1,18 @@
+.outerDiv{
+    width: max-content;
+    color: var(--color-white);
+    background-color: var(--bg-blueish2);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.txtB{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.txt{
+    font-size: 0.7rem;
+}
