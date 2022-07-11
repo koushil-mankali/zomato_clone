@@ -1,0 +1,49 @@
+.outerDiv{
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 150px;
+    max-height: 200px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: var(--brd7);
+    box-shadow: var(--box-shadow6);
+}
+
+.innerDiv{
+    padding: 1em 0.5em;
+}
+
+.ttl{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-title-text);
+}
+
+.radioOptns{
+    width: 100%;
+}
+
+.form{
+    width: 100%;
+    margin: 0.5rem 0;
+    margin-left: -18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ratingBox{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.ratingTxt{
+    font-size: 1rem;
+    margin-left: 0.5em;
+    color: var(--color-p5-text);
+}
+
+.modalTxt{
+    color: var(--color-redish1);
+    cursor: pointer;
+}
