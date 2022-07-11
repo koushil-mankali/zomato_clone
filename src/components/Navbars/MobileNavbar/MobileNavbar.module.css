@@ -16,6 +16,8 @@
     margin: 0.5rem;
     font-size: 2.5rem;
     font-weight: 700;
+    text-decoration: none;
+    color: var(--color-title-text)
 }
 
 .menuBar {
@@ -32,6 +34,12 @@
 
 .menuItem {
     display: none;
+}
+
+.modals{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 @media all and (max-width: 480px) {

@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .modal {
@@ -149,4 +150,12 @@
     text-decoration: none;
     color: rgb(239, 79, 95);
     cursor: pointer;
+}
+
+@media all and (max-width: 420px){
+    .modal{
+        margin-top: 8rem;
+        width: 100%;
+        height: max-content;
+    }
 }

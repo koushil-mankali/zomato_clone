@@ -14,10 +14,15 @@ let AddRestaurantMobileNavbar = ({ toogleMenu, setToggleMenu }) => {
 
     let dropdownOptions = state ? css.optionsBox : `${css.optionsBox} ${css.dnone}`;
 
+    const logoutHandler = () => {
+        setLoggedIn(false);
+        localStorage.removeItem("auth");
+    }
+
     return <div className={css.navbarH}>
         <div className={css.menu}>
             <img className={css.menuBar} src={close} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
-            <div className={css.title}>Tomato</div>
+            <Link to='/' className={css.title}>Tomato</Link>
         </div>
         <div className={css.navbar} onClick={() => setState(val => !val)}>
             <span className={css.profile}>
@@ -31,10 +36,11 @@ let AddRestaurantMobileNavbar = ({ toogleMenu, setToggleMenu }) => {
                 <div className={css.profileName}>My Restaurants</div>
                 <img src={rightArrow} className={css.rightArrow} alt='right arrow' />
             </Link>
-            <Link to='/logout' className={css.options}>
-                <div className={css.profileName}>Logout</div>
-                <img src={rightArrow} className={css.rightArrow} alt='right arrow' />
-            </Link>
+            <div className={css.options} onClick={logoutHandler}>
+                <div className={css.profileName}>
+                    Logout
+                </div>
+            </div>
         </div>
     </div>
 }

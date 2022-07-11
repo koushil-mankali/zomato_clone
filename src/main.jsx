@@ -8,6 +8,7 @@ import RestaurantPage from './pages/RestaurantPage/RestaurantPage'
 import User from './pages/User/User'
 import GetTheApp from './pages/GetTheApp/GetTheApp'
 import ErrorPage from './pages/ErrorPage/ErrorPage'
+import SkipedPage from './pages/SkipedPage/SkipedPage'
 // import AddRestaurantHeader from './components/AddRestaurantHeader/AddRestaurantHeader'
 import App from './App'
 import './index.css'
@@ -21,6 +22,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/show-case" element={<ShowCase />} />
       <Route path="/user/:userId" element={<User />} />
       <Route path="/user/:userId/:hashId" element={<User />} />
+      <Route path="/user/:userId/notifications" element={<SkipedPage />} />
+      <Route path="/user/:userId/network" element={<SkipedPage />} />
+      <Route path="/user/:userId/find-friends" element={<SkipedPage />} />
+      <Route path="/user/:userId/settings" element={<h1>Need to be done</h1>}/>
       <Route path="/get-the-app" element={<GetTheApp />} />
       <Route path="/:city/:hotel" element={<RestaurantPage />} />
       <Route path="/:city/:hotel/order" element={<RestaurantPage />} />

@@ -12,7 +12,12 @@ import css from './NavigationBar2.module.css';
 
 let NavigationBar = ({ toogleMenu, setToggleMenu }) => {
     let [menuDisplay, setMenuDisplay] = useState(false);
-    let [loggedIn, setLoggedIn] = useState(true);
+    let [loggedIn, setLoggedIn] = useState(localStorage.getItem('auth') || false);
+
+    const logoutHandler = () => {
+        setLoggedIn(false);
+        localStorage.removeItem("auth");
+    }
 
     return <div className={css.navbar}>
         <img className={css.menuBar} src={menuBar} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
@@ -36,7 +41,7 @@ let NavigationBar = ({ toogleMenu, setToggleMenu }) => {
                                 Profile
                             </div>
                         </Link>
-                        <Link to='/notifications' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/notifications' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Notifications
                             </div>
@@ -51,26 +56,26 @@ let NavigationBar = ({ toogleMenu, setToggleMenu }) => {
                                 Reviews
                             </div>
                         </Link>
-                        <Link to='/network' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/network' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Network
                             </div>
                         </Link>
-                        <Link to='/find-friends' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/find-friends' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Find Friends
                             </div>
                         </Link>
-                        <Link to='/settings' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/settings' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Settings
                             </div>
                         </Link>
-                        <Link to='/logout' className={css.menuItemLinkTxt} onClick={() => setLoggedIn(false)}>
+                        <div className={css.menuItemLinkTxt} onClick={logoutHandler}>
                             <div className={css.menuItemLink}>
                                 Logout
                             </div>
-                        </Link>
+                        </div>
                     </div>
                 </div>) : (<>
                     <div className={css.menuItem} onClick={setLoggedIn}>Log in</div>

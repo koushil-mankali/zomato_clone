@@ -46,7 +46,7 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
                                 Profile
                             </div>
                         </Link>
-                        <Link to='/notifications' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/notifications' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Notifications
                             </div>
@@ -61,17 +61,17 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
                                 Reviews
                             </div>
                         </Link>
-                        <Link to='/network' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/network' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Network
                             </div>
                         </Link>
-                        <Link to='/find-friends' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/find-friends' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Find Friends
                             </div>
                         </Link>
-                        <Link to='/settings' className={css.menuItemLinkTxt}>
+                        <Link to='/user/ll/settings' className={css.menuItemLinkTxt}>
                             <div className={css.menuItemLink}>
                                 Settings
                             </div>
@@ -88,7 +88,7 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
                 </>)}
             </div>
         </div>
-        <div className={css.m}>
+        <div className={css.modals}>
             {auth?.login ? <Login setAuth={setAuth} setLoggedIn={setLoggedIn} /> : null}
             {auth?.signup ? <Signup setAuth={setAuth} /> : null}
         </div>

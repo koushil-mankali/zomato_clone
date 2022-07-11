@@ -1,0 +1,37 @@
+.outerDiv{
+    width: 100%;
+    height: 100vh;
+    background-color: crimson;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    color: yellow;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backBtn{
+    margin: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: crimson;
+    font-weight: 500;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    padding: 0.5rem;
+    background-color: var(--bg-white);
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+    transform: scale(1);
+}
+
+.backBtn:hover{
+    transition: 0.5s ease-out;
+    transform: scale(1.1);
+}
