@@ -1,0 +1,26 @@
+.fieldBox{
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.field{
+    margin: 0 1rem;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-greenish);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.labelTxt{
+    font-size: 1rem;
+    font-weight: 300;
+}

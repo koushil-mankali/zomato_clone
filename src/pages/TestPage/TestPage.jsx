@@ -1,5 +1,9 @@
 import React from 'react'
 
+import {Formik, Form} from 'formik'
+
+import CheckBoxUtil from '../../utils/FormUtils/CheckBoxUtil/CheckBoxUtil'
+
 import OverviewAboutCard from '../../utils/Cards/RestaurantBodyCards/OverviewAboutCard/OverviewAboutCard'
 import SmallSearchBarUtil from '../../utils/RestaurantUtils/SmallSearchBarUtil/SmallSearchBarUtil'
 import RateYourExperienceCard from '../../utils/Cards/RestaurantBodyCards/RateYourExperienceCard/RateYourExperienceCard'
@@ -57,12 +61,17 @@ const TestPage = () => {
 
   return <div>
     <div>TestPage</div>
+    <Formik initialValues={{veg: ""}}>
+      <Form>
+        <CheckBoxUtil label="veg Only" name="veg" />
+      </Form>
+    </Formik>
     <OfferTrackUtil txt1='40% OFF up to ₹80 + 10% OFF up to ₹75 Paytm Cashback' txt2="use code PAYTMBASH" />
     <RestUserReviewedCard data={data2} />
     <DropdownUtil options={options1} icon2={dropdownIcon} filFunc={(val) => console.log(val)} />
     <DropdownUtil options={options2} icon1={menu} icon2={dropdownIcon}  filFunc={(val) => console.log(val)} />
     <RedBtnHovWithIcon txt="Add Review" icon={star} />
-    {/* <RateYourExperienceCard /> */}
+    <RateYourExperienceCard />
     <OverviewAboutCard data={data} />
     <SmallSearchBarUtil placeholder="Search within menu" />
   </div>
