@@ -10,12 +10,17 @@ import likedImg from '/icons/liked.png'
 import comment from '/icons/message.png'
 import close from '/icons/close.png'
 
+import RatingNumberBox from '../RatingNumberBox/RatingNumberBox'
+import WhiteBtnHov from '../../Buttons/WhiteBtnHov/WhiteBtnHov'
+import RedBtnHov from '../../Buttons/RedBtnHov/RedBtnHov'
+
 const RestUserReviewedCard = (props) => {
-    let {imgSrc, title, address, stars, days, votes, comments, id, userImg} = props?.data;
+    let {imgSrc, title, address, reviews, followers, stars, days, votes, comments, id, userImg} = props?.data;
     let [alertBoxCss, setAlertBoxCss] = useState([css.alertBox, css.dnone].join(' '));
     let [liked, setLiked] = useState(false);
     let [toggleDropDown, setToggleDropDown] = useState(false);
     let [toggleCommentBox, setToggleCommentBox] = useState(false);
+    let [following, setFollowing] = useState(false);
 
     let toggleDropdown = () => {
         setToggleDropDown(val=>!val);
@@ -43,19 +48,19 @@ const RestUserReviewedCard = (props) => {
                     <div className={css.imgBox}><img className={css.hotelImg} src={imgSrc} alt='hotel image' /></div>
                     <div className={css.txtBox1}>
                         <div className={css.title}>{title}</div>
-                        <div className={css.address}>{address}</div>
+                        <div className={css.det}>
+                            <div className={css.userDet}>{reviews} Reviews</div>
+                            <div></div>
+                            <div className={css.userDet}>{followers} Followers</div>
+                        </div>
                     </div>
                 </div>
                 <div className={css.rightBox}>
-                    <div className={css.downArrow} onClick={toggleDropdown}><img className={css.downArrowImg} src={downArrowImg} alt='down arrow' /></div>
-                    {toggleDropDown ? <div className={css.dropDown}>
-                        <div className={css.opt}>Edit</div>
-                        <div className={css.opt}>Delete</div>
-                    </div>:null}
+                    {!following ? <WhiteBtnHov txt="Follow" onClick={() => setFollowing(true)} /> : <RedBtnHov txt="Following" onClick={() => setFollowing(false)} /> }
                 </div>
             </div>
             <div  className={css.sec}>
-                <span className={css.delivery}> <div className={css.starDiv}>{stars} <img src={starImg} className={css.starIcon} alt='star' /></div> <span className={css.delTxt}>Delivery</span></span>
+                <span className={css.delivery}> <RatingNumberBox stars={stars} txt={stars} iconR={false} isActive={true} /> <span className={css.delTxt}>Delivery</span></span>
                 <span className={css.days}>{days} days</span>
             </div>
             <div className={css.sec}>

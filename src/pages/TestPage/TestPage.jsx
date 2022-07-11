@@ -25,7 +25,7 @@ const TestPage = () => {
       address: "Kukatpally, Hyd",
       reviews: 0,
       followers: 0,
-      stars: 5,
+      stars: 3,
       days: 10,
       votes: 10,
       comments: 2,
@@ -37,7 +37,7 @@ const TestPage = () => {
     <div>TestPage</div>
     <RestUserReviewedCard data={data2} />
     <RedBtnHovWithIcon txt="Add Review" icon={star} />
-    <RateYourExperienceCard />
+    {/* <RateYourExperienceCard /> */}
     <OverviewAboutCard data={data} />
     <SmallSearchBarUtil placeholder="Search within menu" />
   </div>
