@@ -5,10 +5,14 @@ import SmallSearchBarUtil from '../../utils/RestaurantUtils/SmallSearchBarUtil/S
 import RateYourExperienceCard from '../../utils/Cards/RestaurantBodyCards/RateYourExperienceCard/RateYourExperienceCard'
 import RedBtnHovWithIcon from '../../utils/Buttons/RedBtnHovWithIcon/RedBtnHovWithIcon'
 
+import DropdownUtil from '../../utils/RestaurantUtils/DropdownUtil/DropdownUtil'
+
 import RestUserReviewedCard from '../../utils/RestaurantUtils/RestUserReviewedCard/RestUserReviewedCard'
 
 import profilepic from '/images/profilepic.jpg'
 
+import dropdownIcon from '/icons/down-arrow1.png';
+import menu from '/icons/menu.png';
 import star from '/icons/star.png'
 
 const TestPage = () => {
@@ -33,9 +37,28 @@ const TestPage = () => {
       userImg: profilepic,
       userId: 11,
   };
+
+  const options1 = [
+    "All Reviews",
+    "Following",
+    "Popular",
+    "Bloggers",
+    "My Reviews",
+    "Order Reviews"
+  ]
+
+  const options2 = [
+    "Newest First",
+    "Oldest First",
+    "Highest Rated",
+    "Lowest Rated"
+  ]
+
   return <div>
     <div>TestPage</div>
     <RestUserReviewedCard data={data2} />
+    <DropdownUtil options={options1} icon2={dropdownIcon} filFunc={(val) => console.log(val)} />
+    <DropdownUtil options={options2} icon1={menu} icon2={dropdownIcon}  filFunc={(val) => console.log(val)} />
     <RedBtnHovWithIcon txt="Add Review" icon={star} />
     {/* <RateYourExperienceCard /> */}
     <OverviewAboutCard data={data} />
