@@ -14,8 +14,10 @@ import DropdownUtil from '../../utils/RestaurantUtils/DropdownUtil/DropdownUtil'
 import RestUserReviewedCard from '../../utils/RestaurantUtils/RestUserReviewedCard/RestUserReviewedCard'
 import OfferTrackUtil from '../../utils/RestaurantUtils/OfferTrackUtil/OfferTrackUtil'
 import LabelUtil from '../../utils/RestaurantUtils/LabelUtil/LabelUtil'
+import MenuCard from '../../utils/Cards/RestaurantBodyCards/MenuCard/MenuCard'
 
 import profilepic from '/images/profilepic.jpg'
+import food1 from '/images/food1.jpg'
 
 import dropdownIcon from '/icons/down-arrow1.png';
 import menu from '/icons/menu.png';
@@ -70,6 +72,10 @@ const TestPage = () => {
       <LabelUtil link='/' txt="East Indian" />
       <LabelUtil link='/' txt="West Indian" />
       <LabelUtil link='/' txt="Desserts" />
+    </div>
+    <div style={{display: "flex"}}>
+      <MenuCard ttl="Food Menu" imgSrc={food1} pages="23" />
+      <MenuCard ttl="Food Menu" imgSrc={food1} pages="23" />
     </div>
     <Formik initialValues={{veg: ""}}>
       <Form>
