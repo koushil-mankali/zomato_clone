@@ -1,5 +1,6 @@
 .outerDiv{
     width: 100%;
+    min-height: 700px;
     height: 100%;
 }
 
@@ -28,6 +29,6 @@
 
 .componentsBody{
     width: 100%;
+    height: 700px;
     height: 100%;
-    overflow-y: scroll;
 }

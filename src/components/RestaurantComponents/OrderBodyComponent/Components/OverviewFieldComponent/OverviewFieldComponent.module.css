@@ -1,0 +1,153 @@
+.outerDiv{
+    width: 100%;
+    height: 100vh;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.leftBox{
+    width: 70%;
+    height: 100%;
+    margin-right: 1rem;
+    overflow-y: scroll;
+}
+
+.leftBox::-webkit-scrollbar{
+    display: none;
+}
+
+.rightBox{
+    width: 30%;
+}
+
+.ttl{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.menuSec{
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subTtl{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-title-text);
+}
+
+.secTxt{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    color: var(--color-p5-text);
+}
+
+.secTxt1{
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 0.3rem 0;
+    color: var(--color-p5-text);
+}
+
+.toolTipBox{
+    width: 100%;
+    /* position: relative; */
+}
+
+.secTxtToolTip{
+    width: max-content;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 0.3rem 0;
+    color: var(--color-p5-text);
+    cursor: pointer;
+    border-bottom: 1px dashed var(--color-p1-text);
+}
+
+/* .toolTip{
+    display: none;
+} */
+
+/* .po{
+    width: max-content;
+    position: relative;
+}
+
+.po:hover .toolTip{
+    position: absolute;
+    top: 0;
+    left: 0;   
+    right:0;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 0.3rem 0;
+    color: var(--color-white);
+    width: 300px;
+    display: block;
+    padding: 1rem;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: var(--bg-blackish);
+} */
+
+.menuLink{
+    text-decoration: none;
+    color: var(--color-redish1);
+}
+
+.rightArrowIcon{
+    width: 10px;
+    height: 10px;
+    filter: invert(21%) sepia(60%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(100%);
+}
+
+.menuSecBdy{
+    width: 100%;
+    min-height: 300px;
+    height: max-content;
+    display: flex;
+}
+
+.sec{
+    margin: 1rem 0;
+    width: 100%;
+    height: max-content;
+}
+
+.secBdy{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.labels{
+    width: 100%;
+    display: flex;
+}
+
+.sec2{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.ulList{
+    margin: 0.5rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.list{
+    width: 50%;
+    list-style-image: url('/icons/tick-green.png');
+}

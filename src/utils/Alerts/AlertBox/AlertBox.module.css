@@ -1,13 +1,14 @@
 .outerDiv{
     position: fixed;
-    top: 100px;
+    top: 50px;
     left: calc(50% - 150px);
     width: max-content;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 300px;
     height: max-content;
     max-height: auto;
     border-radius: 5px;
+    z-index: 10;
 }
 
 .innerDiv{

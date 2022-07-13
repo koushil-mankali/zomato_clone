@@ -7,6 +7,7 @@ import DownloadAppUtil from '../../utils/RestaurantUtils/DownloadAppUtil/Downloa
 import HeroComponent from '../../components/RestaurantComponents/HeroComponent/HeroComponent'
 import OrderTitleComponent from '../../components/RestaurantComponents/OrderTitleComponent/OrderTitleComponent'
 import OrderBodyComponent from '../../components/RestaurantComponents/OrderBodyComponent/OrderBodyComponent'
+import Footer from '../../components/Footer/Footer'
 
 const RestaurantPage = () => {
 
@@ -30,8 +31,7 @@ const RestaurantPage = () => {
       <OrderTitleComponent />
       <OrderBodyComponent />
     </div>
-    <div style={{height: "100vh"}}></div>
-    {/* <DownloadAppUtil /> */}
+    <Footer />
   </div>
 }
 

@@ -1,6 +1,8 @@
 .outerDiv{
-    width: 300px;
+    min-width: 300px;
+    max-width: auto;
     height: auto;
+    margin: 5px;
     border-radius: 10px;
     border: var(--brd7);
     box-shadow: var(--box-shadow6);

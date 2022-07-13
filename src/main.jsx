@@ -30,11 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/user/:userId/settings" element={<h1>Need to be done</h1>}/>
       <Route path="/get-the-app" element={<GetTheApp />} />
       <Route path="/:city/:hotel" element={<RestaurantPage />} />
-      <Route path="/:city/:hotel/order" element={<RestaurantPage />} />
-      <Route path="/:city/:hotel/reviews" element={<RestaurantPage />} />
-      <Route path="/:city/:hotel/photos" element={<RestaurantPage />} />
-      <Route path="/:city/:hotel/menu" element={<RestaurantPage />} />
-      <Route path="/:city/:hotel/book" element={<RestaurantPage />} />
+      <Route path="/:city/:hotel/:page" element={<RestaurantPage />} />
       <Route path="/test" element={<TestPage />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
