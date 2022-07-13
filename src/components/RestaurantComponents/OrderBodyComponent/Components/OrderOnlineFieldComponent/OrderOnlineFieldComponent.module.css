@@ -1,0 +1,108 @@
+.outerDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.leftBox{
+    width: 25%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: yellow;
+}
+
+.rightBox{
+    width: 75%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.rightBox::-webkit-scrollbar{
+    display: none;
+}
+
+.hSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ttl{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.tabBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.hr{
+    margin: 0 1rem;
+    border-right: 1px solid var(--color-ash);
+}
+
+.tagLine{
+    display: flex;
+    align-items: center;
+}
+
+.clockIcon{
+    width: 15px;
+    height: 15px;
+}
+
+.tabTxt{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-p1-text);
+    margin: 0 0.5rem;
+}
+
+.offersTrack{
+    width: 100%;
+    margin: 0.5rem 0;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.offersTrack::-webkit-scrollbar{
+    display: none;
+}
+
+.formBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form{
+    display: flex;
+}
+
+.itemsBox{
+    width: 100%;
+}
+
+.sec{
+    margin: 1rem 0;
+}
+
+.secTtl{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+    text-transform: capitalize;
+}
+
+.hr2{
+    border: none;
+    border-bottom: var(--brd4);
+}
