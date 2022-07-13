@@ -11,14 +11,30 @@
 
 .leftBox{
     width: 25%;
-    height: 100%;
+    height: 100vh;
     margin-right: 10px;
-    background-color: yellow;
+    padding: 1rem 0;
+}
+
+.navTab{
+    text-transform: capitalize;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-p5-text);
+}
+
+.activeNavTab{
+    font-weight: 500;
+    color: var(--color-redish1);
+    border-right: var(--brd-redish-color-2p);
+    background: var(--bg2-li);
 }
 
 .rightBox{
     width: 75%;
-    height: 100%;
+    height: 100vh;
     overflow-y: scroll;
 }
 
@@ -40,7 +56,7 @@
 
 .tabBox{
     width: 100%;
-    height: 100%;
+    height: 20px;
     display: flex;
 }
 
