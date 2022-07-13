@@ -13,6 +13,7 @@ import DropdownUtil from '../../utils/RestaurantUtils/DropdownUtil/DropdownUtil'
 
 import RestUserReviewedCard from '../../utils/RestaurantUtils/RestUserReviewedCard/RestUserReviewedCard'
 import OfferTrackUtil from '../../utils/RestaurantUtils/OfferTrackUtil/OfferTrackUtil'
+import LabelUtil from '../../utils/RestaurantUtils/LabelUtil/LabelUtil'
 
 import profilepic from '/images/profilepic.jpg'
 
@@ -63,6 +64,13 @@ const TestPage = () => {
 
   return <div>
     <div>TestPage</div>
+    <div style={{display: "flex"}}>
+      <LabelUtil link='/' txt="North Indian" />
+      <LabelUtil link='/' txt="South Indian" />
+      <LabelUtil link='/' txt="East Indian" />
+      <LabelUtil link='/' txt="West Indian" />
+      <LabelUtil link='/' txt="Desserts" />
+    </div>
     <Formik initialValues={{veg: ""}}>
       <Form>
         <CheckBoxUtil label="veg Only" name="veg" />
