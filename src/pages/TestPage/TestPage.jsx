@@ -15,13 +15,16 @@ import RestUserReviewedCard from '../../utils/RestaurantUtils/RestUserReviewedCa
 import OfferTrackUtil from '../../utils/RestaurantUtils/OfferTrackUtil/OfferTrackUtil'
 import LabelUtil from '../../utils/RestaurantUtils/LabelUtil/LabelUtil'
 import MenuCard from '../../utils/Cards/RestaurantBodyCards/MenuCard/MenuCard'
+import FoodItemProduct from '../../utils/RestaurantUtils/FoodItemProduct/FoodItemProduct'
 
 import profilepic from '/images/profilepic.jpg'
 import food1 from '/images/food1.jpg'
+import hariyalikebab from '/images/hariyalikebab.jpg'
 
 import dropdownIcon from '/icons/down-arrow1.png';
 import menu from '/icons/menu.png';
 import star from '/icons/star.png'
+import vegIcon from '/icons/veg.png'
 
 import GoTopArrow from '../../utils/GoTopArrow/GoTopArrow'
 
@@ -72,6 +75,10 @@ const TestPage = () => {
       <LabelUtil link='/' txt="East Indian" />
       <LabelUtil link='/' txt="West Indian" />
       <LabelUtil link='/' txt="Desserts" />
+    </div>
+    <div style={{}}>
+      <FoodItemProduct mustTry={true} ttl="Hariyali Kebab" votes="12" price="1400" desc="Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]" vegNonveg={vegIcon} />
+      <FoodItemProduct imgSrc={hariyalikebab} ttl="Hariyali Kebab" votes="12" price="1400" desc="Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]" vegNonveg={vegIcon} />
     </div>
     <div style={{display: "flex"}}>
       <MenuCard ttl="Food Menu" imgSrc={food1} pages="23" />
