@@ -1,5 +1,3 @@
-import {useState} from 'react'
-
 import {Link, useParams} from "react-router-dom"
 
 import css from './OverviewFieldComponent.module.css'
@@ -26,7 +24,7 @@ const OverviewFieldComponent = () => {
     lng: 18.31
   }
 
-  let [similarRest, setSimilarRest] = useState([
+  const similarRest = [
     {
       id: 1,
       imgSrc: happyHoursImg,
@@ -45,9 +43,27 @@ const OverviewFieldComponent = () => {
       address: "Kukatpally, Hyd",
       link: "#"
     }
-  ]);
+  ]
+
+  const labels = [
+    {link: "/", txt: "North Indian"},
+    {link: "/", txt: "South Indian"},
+    {link: "/", txt: "East Indian"},
+    {link: "/", txt: "West Indian"},
+    {link: "/", txt: "Desserts"}
+  ]
+
+  const menuData = [
+    {ttl: "Food Menu", imgSrc:food1, pages:"23"},
+    {ttl: "Food Menu Card", imgSrc:food1, pages:"30"}
+  ]
 
   const moreInfo = ["Breakfast", "Takeaway Available", "Family Friendly", "Home Delivery", "Indoor Seating"]
+
+  const collectionData = [
+    {imgSrc: CathTheMatachImg, title: "Catch the Match", places: "23"},
+    {imgSrc: CathTheMatachImg, title: "Catch the Match", places: "30"}
+  ]
 
   return <div className={css.outerDiv}>
     <div className={css.innerDiv}>
@@ -58,17 +74,16 @@ const OverviewFieldComponent = () => {
           <Link to={`/${city}/${hotel}/menu`} className={css.menuLink}>See all menus <img src={rightArrrow} className={css.rightArrowIcon} alt="right arrow" /></Link>
         </div>
         <div className={css.menuSecBdy}>
-          <MenuCard ttl="Food Menu" imgSrc={food1} pages="23" />
-          <MenuCard ttl="Food Menu" imgSrc={food1} pages="23" />
+          {menuData?.map(val => {
+            return <MenuCard ttl={val.ttl} imgSrc={val.imgSrc} pages={val.pages} />;
+          })}
         </div>
         <div className={css.sec}>
           <div className={css.subTtl}>Cuisines</div>
           <div className={css.labels}>
-            <LabelUtil link='/' txt="North Indian" />
-            <LabelUtil link='/' txt="South Indian" />
-            <LabelUtil link='/' txt="East Indian" />
-            <LabelUtil link='/' txt="West Indian" />
-            <LabelUtil link='/' txt="Desserts" />
+            {labels?.map(val => {
+              return <LabelUtil link={val.link} txt={val.txt} />;
+            }) }
           </div>
         </div>
         <div className={css.sec}>
@@ -97,8 +112,9 @@ const OverviewFieldComponent = () => {
         <div className={css.sec}>
             <div className={css.subTtl}>Featured In</div>
             <div className={css.secBdy}>
-              <CollectionsCard imgSrc={CathTheMatachImg} title="Catch the Match" places="30" />
-              <CollectionsCard imgSrc={CathTheMatachImg} title="Catch the Match" places="30" />
+              {collectionData?.map(val => {
+                return <CollectionsCard imgSrc={val.imgSrc} title={val.title} places={val.places} />;
+              })}
             </div>
         </div>
         <div className={css.sec}>
