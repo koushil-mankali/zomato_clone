@@ -5,9 +5,11 @@ import css from './FoodItemProduct.module.css'
 import starGIcon from '/icons/starGIcon.png'
 import starGrIcon from '/icons/starGrIcon.png'
 
-const FoodItemProduct = ({imgSrc, ttl, votes, price, desc, vegNonveg, mustTry}) => {
+const FoodItemProduct = (props) => {
+    let {imgSrc, ttl, votes, price, desc, vegNonveg, mustTry} = props.data;
+    let dataset = props?.dataset;
     const [readMore, setReadMore] = useState(false)
-  return <div className={css.outerDiv}>
+  return <div className={css.outerDiv} data-id={dataset} id={props.id}>
     <div className={css.innerDiv}>
         {imgSrc ? <div className={css.imgBox}>
             <img src={imgSrc} className={css.img} alt='food item' />
