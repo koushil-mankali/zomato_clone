@@ -12,7 +12,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "6",
+    "react-slick": "^0.29.0",
     "redux": "^4.2.0",
+    "slick-carousel": "^1.8.1",
     "yup": "^0.32.11"
   },
   "devDependencies": {

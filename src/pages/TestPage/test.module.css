@@ -1,0 +1,12 @@
+.outerDiv{
+    width: 900px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+}

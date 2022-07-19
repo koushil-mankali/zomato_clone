@@ -11,6 +11,7 @@ import CircleCard2 from '../../utils/Cards/CircleCards/CircleCard2/CircleCard2';
 import ShowcaseCard from '../../utils/Cards/ShowcaseCard/ShowcaseCard'
 import ExploreOptionsNearMe from '../../components/HomeComponents/ExploreOptionsNearMe/ExploreOptionsNearMe'
 import Footer from '../../components/Footer/Footer'
+import CarouselUtil from '../../utils/CarouselUtil/CarouselUtil'
 
 import dinning1 from '/icons/dinning1.png';
 import dinning2 from '/icons/dinning2.png';
@@ -114,43 +115,44 @@ let ShowCase = () => {
                     Inspiration for your first order
                 </div>
                 <div className={css.rollerCarosuel}>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard1 />
-                    </div>
-
+                    <CarouselUtil>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard1 />
+                        </div>
+                    </CarouselUtil>
                 </div>
             </div>
         </div> : null}
@@ -160,43 +162,44 @@ let ShowCase = () => {
                     Top brands for you
                 </div>
                 <div className={css.rollerCarosuel}>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-                    <div className={css.cardW}>
-                        <CircleCard2 />
-                    </div>
-
+                    <CarouselUtil>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                        <div className={css.cardW}>
+                            <CircleCard2 />
+                        </div>
+                    </CarouselUtil>
                 </div>
             </div>
         </div> : null}

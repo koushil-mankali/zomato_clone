@@ -1,4 +1,10 @@
 import React from 'react'
+import Slider from "react-slick";
+
+import css from './test.module.css'
+
+import "../../../node_modules/slick-carousel/slick/slick.css"; 
+import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 import {Formik, Form} from 'formik'
 
@@ -17,6 +23,8 @@ import LabelUtil from '../../utils/RestaurantUtils/LabelUtil/LabelUtil'
 import MenuCard from '../../utils/Cards/RestaurantBodyCards/MenuCard/MenuCard'
 import FoodItemProduct from '../../utils/RestaurantUtils/FoodItemProduct/FoodItemProduct'
 
+import CarouselUtil from '../../utils/CarouselUtil/CarouselUtil'
+
 import profilepic from '/images/profilepic.jpg'
 import food1 from '/images/food1.jpg'
 import hariyalikebab from '/images/hariyalikebab.jpg'
@@ -29,6 +37,13 @@ import vegIcon from '/icons/veg.png'
 import GoTopArrow from '../../utils/GoTopArrow/GoTopArrow'
 
 const TestPage = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  };
     const data = {
         phone: "9988098812",
         address: "50000, kukatpally, Hyderabad, Telangane, India",
@@ -69,6 +84,10 @@ const TestPage = () => {
 
   return <div>
     <div>TestPage</div>
+    <div className={css.outerDiv}>
+
+      <CarouselUtil />
+    </div>
     <div style={{display: "flex"}}>
       <LabelUtil link='/' txt="North Indian" />
       <LabelUtil link='/' txt="South Indian" />
