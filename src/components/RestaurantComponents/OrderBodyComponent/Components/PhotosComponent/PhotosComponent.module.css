@@ -13,6 +13,7 @@
 .btns{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .photoCards{
@@ -27,4 +28,10 @@
     width: 200px;
     height: 200px;
     margin: 0.5rem;
+}
+
+@media all and (max-width: 480px){
+    .ttl{
+        font-size: 1.2rem;
+    }
 }

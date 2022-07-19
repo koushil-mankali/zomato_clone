@@ -100,7 +100,7 @@
     margin: 0 5px;
 }
 
-@media all and (max-width:480px){
+@media all and (max-width:780px){
     .innerDiv{
         display: flex;
         flex-wrap: wrap;

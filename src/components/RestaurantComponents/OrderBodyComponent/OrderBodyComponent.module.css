@@ -12,6 +12,11 @@
 .menu{
     display: flex;
     border-bottom: var(--brd2-2p);
+    overflow-y: scroll;
+}
+
+.menu::-webkit-scrollbar{
+    display: none;
 }
 
 .menuTxt{

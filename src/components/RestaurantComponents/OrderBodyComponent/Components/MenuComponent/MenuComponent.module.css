@@ -17,3 +17,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media all and (max-width: 480px){
+    .ttl{
+        font-size: 1.2rem;
+    }
+}

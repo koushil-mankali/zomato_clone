@@ -53,3 +53,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+
+@media all and (max-width: 480px){
+    .outerDiv{
+        min-width: 250px;
+        width: 280px;
+        margin: 20px auto;
+    }
+}

@@ -71,3 +71,20 @@
 .selected{
     background-color: var(--bg-blueish5);
 }
+
+@media all and (max-width: 780px){
+    .outerDiv{
+        width: max-content;
+    }
+    .ttl{
+        font-size: 0.8rem;
+    }
+}
+@media all and (max-width: 480px){
+    .outerDiv{
+        width: 130px;
+    }
+    .ttl{
+        font-size: 0.8rem;
+    }
+}

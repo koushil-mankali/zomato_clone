@@ -122,3 +122,23 @@
     border: none;
     border-bottom: var(--brd4);
 }
+
+@media all and (max-width: 780px){    
+    .innerDiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .leftBox{
+        width: 100%;
+    }
+
+    .rightBox{
+        width: 100%;
+    }
+    
+    .hSec{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

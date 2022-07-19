@@ -34,3 +34,11 @@
     border: none;
     outline: none;
 }
+
+@media all and (max-width: 420px){
+    .outerDiv{
+        width: 250px;
+        height: 100%;
+        margin: 0.5em;
+    }
+}
