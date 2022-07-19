@@ -124,11 +124,8 @@ const OrderOnlineFieldComponent = () => {
       threshold: 0.1
     }
 
-    console.log(allTtls, 'allTtls')
-
     const handleIntersection = (entries) => {
       entries?.map(entry => {
-        console.log(entry.target.id, 'id')
           if(entry.isIntersecting){
             document.querySelector(`[data-sb-id='${entry.target.id}']`)?.classList.add(css.activeNavTab);
           }else{
@@ -140,7 +137,6 @@ const OrderOnlineFieldComponent = () => {
     const observer = new IntersectionObserver(handleIntersection, options)
 
     allTtls.forEach(post => observer.observe(post))
-    // allTtls.forEach(post => console.log(post))
   }, [])
 
   return <div className={css.outerDiv}>

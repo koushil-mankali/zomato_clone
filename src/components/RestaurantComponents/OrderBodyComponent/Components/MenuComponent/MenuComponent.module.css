@@ -1,0 +1,19 @@
+.outerDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.ttl{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+    margin: 1rem 0;
+}
+
+.menuCard{
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
