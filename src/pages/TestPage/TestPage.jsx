@@ -76,10 +76,10 @@ const TestPage = () => {
       <LabelUtil link='/' txt="West Indian" />
       <LabelUtil link='/' txt="Desserts" />
     </div>
-    <div style={{}}>
+    {/* <div style={{}}>
       <FoodItemProduct mustTry={true} ttl="Hariyali Kebab" votes="12" price="1400" desc="Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]" vegNonveg={vegIcon} />
       <FoodItemProduct imgSrc={hariyalikebab} ttl="Hariyali Kebab" votes="12" price="1400" desc="Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]" vegNonveg={vegIcon} />
-    </div>
+    </div> */}
     <div style={{display: "flex"}}>
       <MenuCard ttl="Food Menu" imgSrc={food1} pages="23" />
       <MenuCard ttl="Food Menu" imgSrc={food1} pages="23" />
