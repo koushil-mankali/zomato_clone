@@ -1,0 +1,28 @@
+.outerDiv{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.switchCheck{
+    margin: 1rem;
+}
+
+.ttl{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-title-text);
+}
+
+.tag{
+    font-size: 0.9rem;
+    color: var(--color-p1-text);
+}
