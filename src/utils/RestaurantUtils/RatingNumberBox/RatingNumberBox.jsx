@@ -5,7 +5,6 @@ import css from './RatingNumberBox.module.css'
 import starIcon from '/icons/star.png';
 
 const RatingNumberBox = (props) => {
-  console.log(props, 'props')
   const {stars = 1, txt = 1, iconR = false, isActive = true, ...restProps} = props;
 
   const bgCss = () => {
