@@ -1,14 +1,14 @@
 # Tomato (zomato clone)
 
+**Live App Demo Link:** [Zomato Clone Live App Demo](https://zomatoclone.koushilmankali.com/)
+
 It is a online food ordering application.
 
 Zomato clone made using React Js, Zomato Frontend clone using React.
 
-### started_date: june, 11, 2022
+### Started Date: june, 11, 2022
 
 ### Completed Date: july 19, 2022
-
-**Live App Demo Link:** [Zomato Clone](https://zomatoclone.koushilmankali.com/)
 
 <u>Used Tools / Libraries:</u>
 
