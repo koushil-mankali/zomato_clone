@@ -23,6 +23,30 @@ import filtersIcon from '/icons/filter.png';
 import deliveryTimeIcon from '/icons/delivery-time.png';
 import downArrowIcon from '/icons/down-arrow.png';
 
+import biryaniCImg from '/icons/Food/biryaniC.png';
+import burgerImg from '/icons/Food/burger.png';
+import chickenImg from '/icons/Food/chicken.png';
+import friesImg from '/icons/Food/fries.png';
+import homestyleImg from '/icons/Food/homestyle.png';
+import noodelsImg from '/icons/Food/noodels.png';
+import pannerImg from '/icons/Food/panner.png';
+import pizzaImg from '/icons/Food/pizza.png';
+import sandwichImg from '/icons/Food/sandwich.png';
+import shawarmaImg from '/icons/Food/shawarma.png';
+
+import kfcImg from '/icons/Brands/kfc.png';
+import pizzahutImg from '/icons/Brands/pizzahut.png';
+import scoopsImg from '/icons/Brands/scoops.png';
+
+import biryaniSCImg from '/images/Food/biryani.png';
+import biryaniSCImg2 from '/images/Food/biryani2.png';
+import chapathiImg from '/images/Food/chapathi.png';
+import chickenSCImg from '/images/Food/chicken.png';
+import fishImg from '/images/Food/fish.png';
+import icecreamImg from '/images/Food/icecream.png';
+import kfcSCImg from '/images/Food/kfc.png';
+import pizzaSCImg from '/images/Food/pizza.png';
+
 import { orderOnlinePage, diningOutPage, nightLifePage } from '../../helpers/constants'
 
 import css from './ShowCase.module.css';
@@ -76,6 +100,184 @@ let ShowCase = () => {
         })
     }
 
+    const foodCardScroll = [
+        {
+            name: "Biryani",
+            imgSrc: biryaniCImg
+        },
+        {
+            name: "Burger",
+            imgSrc: burgerImg
+        },
+        {
+            name: "Chicken",
+            imgSrc: chickenImg
+        },
+        {
+            name: "Fries",
+            imgSrc: friesImg
+        },
+        {
+            name: "Home Style",
+            imgSrc: homestyleImg
+        },
+        {
+            name: "Noodles",
+            imgSrc: noodelsImg
+        },
+        {
+            name: "Panner",
+            imgSrc: pannerImg
+        },
+        {
+            name: "Pizza",
+            imgSrc: pizzaImg
+        },
+        {
+            name: "Sandwich",
+            imgSrc: sandwichImg
+        },
+        {
+            name: "Shawarma",
+            imgSrc: shawarmaImg
+        },
+    ]
+
+    const brandsCardScroll = [
+        {
+            name: "KFC",
+            imgSrc: kfcImg,
+            time: "45"
+        },
+        {
+            name: "Pizza Hut",
+            imgSrc: pizzahutImg,
+            time: "35"
+        },
+        {
+            name: "Scoops",
+            imgSrc: scoopsImg,
+            time: "49"
+        },
+        {
+            name: "KFC",
+            imgSrc: kfcImg,
+            time: "19"
+        },
+        {
+            name: "Pizza Hut",
+            imgSrc: pizzahutImg,
+            time: "22"
+        },
+        {
+            name: "Scoops",
+            imgSrc: scoopsImg,
+            time: "33"
+        },
+    ]
+
+    const items = [
+        {
+            promoted: true,
+            time: "25",
+            offB: true,
+            proExtraB: false,
+            off: "30",
+            proExtra: "40",
+            name: "Paradise Hotel",
+            rating: '3.6',
+            imgSrc: biryaniSCImg
+        },
+        {
+            promoted: false,
+            time: "25",
+            offB: true,
+            proExtraB: false,
+            off: "30",
+            proExtra: "40",
+            name: "Mangal Hotel",
+            rating: '2.6',
+            imgSrc: biryaniSCImg2
+        },
+        {
+            promoted: true,
+            time: "30",
+            offB: false,
+            proExtraB: true,
+            off: "30",
+            proExtra: "40",
+            name: "Chapathi Hotel",
+            rating: '4.6',
+            imgSrc: chapathiImg
+        },
+        {
+            promoted: false,
+            time: "25",
+            offB: true,
+            proExtraB: false,
+            off: "30",
+            proExtra: "40",
+            name: "Fish Mandi Hotel",
+            rating: '4.9',
+            imgSrc: fishImg
+        },
+        {
+            promoted: true,
+            time: "25",
+            offB: false,
+            proExtraB: true,
+            off: "30",
+            proExtra: "40",
+            name: "MangalCaptain Hotel",
+            rating: '4.6',
+            imgSrc: icecreamImg
+        },
+        {
+            promoted: false,
+            time: "25",
+            offB: true,
+            proExtraB: false,
+            off: "30",
+            proExtra: "40",
+            name: "KFCS Hotel",
+            rating: '2.8',
+            imgSrc: kfcSCImg
+        },
+        {
+            promoted: true,
+            time: "25",
+            offB: true,
+            proExtraB: false,
+            off: "30",
+            proExtra: "40",
+            name: "Pizza Hotel",
+            rating: '3.2',
+            imgSrc: pizzaSCImg
+        },
+        {
+            promoted: false,
+            time: "25",
+            offB: true,
+            proExtraB: false,
+            off: "30",
+            proExtra: "40",
+            name: "Fish Mandi Hotel",
+            rating: '4.6',
+            imgSrc: fishImg
+        },
+        {
+            promoted: true,
+            time: "25",
+            offB: false,
+            proExtraB: true,
+            off: "30",
+            proExtra: "40",
+            name: "MangalCaptain Hotel",
+            rating: '2.6',
+            imgSrc: icecreamImg
+        },
+    ]
+
     return <div className={css.outerDiv}>
         <NavigationBar2 />
         <div className={css.innerDiv}>
@@ -116,42 +318,11 @@ let ShowCase = () => {
                 </div>
                 <div className={css.rollerCarosuel}>
                     <CarouselUtil>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard1 />
-                        </div>
+                        {foodCardScroll?.map((val, id) => {
+                            return <div className={css.cardW} key={id}>
+                                <CircleCard1 imgSrc={val.imgSrc} name={val.name} />
+                            </div>
+                        })}
                     </CarouselUtil>
                 </div>
             </div>
@@ -163,42 +334,11 @@ let ShowCase = () => {
                 </div>
                 <div className={css.rollerCarosuel}>
                     <CarouselUtil>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
-                        <div className={css.cardW}>
-                            <CircleCard2 />
-                        </div>
+                        {brandsCardScroll?.map((val, id) => {
+                            return <div className={css.cardW} key={id}>
+                                <CircleCard2 imgSrc={val.imgSrc} name={val.name} time={val.time} />
+                            </div>
+                        })}
                     </CarouselUtil>
                 </div>
             </div>
@@ -209,22 +349,9 @@ let ShowCase = () => {
                     {page === orderOnlinePage ? "Delivery Restaurants in Gachibowli" : page === diningOutPage ? "Dine-Out Restaurants in Gachibowli" : "Nightlife Restaurants in Gachibowli"}
                 </div>
                 <div className={css.innerDiv6Body}>
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
-                    <ShowcaseCard />
+                    {items?.map((item, id) => {
+                        return <ShowcaseCard key={id} promoted={item.promoted} time={item.time} offB={item.offB} proExtraB={item.proExtraB} off={item.off} proExtra={item.proExtra} name={item.name} rating={item.rating} imgSrc={item.imgSrc} />
+                    })}
                 </div>
             </div>
         </div>

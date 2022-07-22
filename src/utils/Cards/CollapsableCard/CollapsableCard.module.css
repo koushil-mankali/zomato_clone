@@ -44,6 +44,8 @@
 }
 
 .val {
+    display: inline-block;
+    text-transform: capitalize;
     margin: 10px;
 }
 

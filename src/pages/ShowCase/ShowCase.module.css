@@ -112,6 +112,7 @@
 
 .innerDiv6Body {
     width: 100%;
+    height: auto;
     margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;

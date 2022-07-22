@@ -7,6 +7,9 @@ import ExploreOptionsNearMe from './components/HomeComponents/ExploreOptionsNear
 import Footer from './components/Footer/Footer'
 
 import orderOnlineImg from '/images/orderonline.jpg'
+import diningoutImg from '/images/diningout.jpg'
+import proandproplusImg from '/images/proandproplus.jpg'
+import nightlifeandclubsImg from '/images/nightlifeandclubs.jpg'
 
 import css from './App.module.css'
 
@@ -19,9 +22,9 @@ function App() {
     <div className={css.bodySize}>
       <div className={css.chooseTypeCards}>
         <SmallCard imgSrc={orderOnlineImg} text="Order Online" link={"/show-case?page=" + orderOnlinePage} />
-        <SmallCard imgSrc={orderOnlineImg} text="Dining Out" link={'/show-case?page=' + diningOutPage} />
-        <SmallCard imgSrc={orderOnlineImg} text="Pro and Pro Plus" link={'/show-case?page=' + proAndProPlusPage} />
-        <SmallCard imgSrc={orderOnlineImg} text="Night Life and Clubs" link={'/show-case?page=' + nightLifePage} />
+        <SmallCard imgSrc={diningoutImg} text="Dining Out" link={'/show-case?page=' + diningOutPage} />
+        <SmallCard imgSrc={proandproplusImg} text="Pro and Pro Plus" link={'/show-case?page=' + proAndProPlusPage} />
+        <SmallCard imgSrc={nightlifeandclubsImg} text="Night Life and Clubs" link={'/show-case?page=' + nightLifePage} />
       </div>
       <Collections />
       <PopularPlaces />

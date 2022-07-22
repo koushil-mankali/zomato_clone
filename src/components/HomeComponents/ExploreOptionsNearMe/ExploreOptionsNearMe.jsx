@@ -9,7 +9,7 @@ let ExploreOptionsNearMe = () => {
             <div className={css.title}>Explore options near me</div>
             <div className={css.cards}>
                 <CollapsableCard title="Top Restaurant Chains" content={chain} />
-                <CollapsableCard title="Top Restaurant Chains" content={chain} />
+                <CollapsableCard title="Cities We Deliver To" content={chain} />
             </div>
         </div>
     </div>

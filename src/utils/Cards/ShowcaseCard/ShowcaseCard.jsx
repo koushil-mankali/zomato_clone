@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import css from './ShowcaseCard.module.css';
 
@@ -9,21 +9,21 @@ import safeDelivery from '/icons/safe-delivery.png';
 import star from '/icons/star.png';
 
 let ShowcaseCard = (props) => {
-    const {link2} = props;
+    const { link2, promoted, time, offB, proExtraB, off, proExtra, name, rating, imgSrc } = props;
     let link = "/" + "hyderabad/paraside/order";
     return <Link className={css.outerDiv} to={link}>
         <div className={css.innerDiv}>
             <div className={css.imgBox}>
-                <div className={css.promoted}>Promoted</div>
-                <img className={css.img} src={biryani} alt="food image" />
-                <div className={css.off}>50% OFF</div>
-                {/* <div className={css.offPro}>Pro extra 50% OFF</div> */}
-                <div className={css.duration}>28 min</div>
+                {promoted && <div className={css.promoted}>Promoted</div>}
+                <img className={css.img} src={imgSrc} alt="food image" />
+                {offB && <div className={css.off}>{off}% OFF</div>}
+                {proExtraB && <div className={css.offPro}>Pro extra {proExtra}% OFF</div>}
+                <div className={css.duration}>{time} min</div>
             </div>
             <div className={css.txtBox}>
                 <div className={css.titleBox}>
-                    <div className={css.title}>Paradise Hotel</div>
-                    <div className={css.ratingBox}> 3.6 <img className={css.star} src={star} alt="gorwing arrow" /></div>
+                    <div className={css.title}>{name}</div>
+                    <div className={css.ratingBox}> {rating} <img className={css.star} src={star} alt="gorwing arrow" /></div>
                 </div>
                 <div className={css.tagBox}>
                     <div className={css.tagTitle}>South Indian</div>
