@@ -10,18 +10,18 @@ Zomato is a online food ordering application, we made a clone (Tomato) of it usi
 
 ## Pages Developed:
 
-1. Home Page    
-2. Add a Restaurant Page    
-3. User Profile Page   
-4. Restaurant Home Page   
-5. Restaurant Order Page   
-6. Restaurant Review Page   
-7. Restaurant Photos Page   
+1. [Home Page](#home-page)    
+2. [Add a Restaurant Page](#add-a-restaurant-page)    
+3. [User Profile Page](#user-profile-page)   
+4. Restaurant Home Page 
+5. [Restaurant Order Page](#hotel-order-page)   
+6. Restaurant Review Page
+7. Restaurant Photos Page
 8. Restaurant Menu Page   
-9. Get The App Page   
-10. Order Page  
-11. Dinning Page   
-12. Nightlife Page   
+9. Get The App Page
+10. [Order Page](#order-online-page)  
+11. Dinning Page
+12. Nightlife Page
 
 ## Libraries Used:
 
@@ -68,7 +68,7 @@ Zomato is a online food ordering application, we made a clone (Tomato) of it usi
 <img src="Project Images/UserProfilePage.png" />
 
 
-# Hotel Order Page Page:
+# Hotel Order Page:
 
 <img src="Project Images/HotelOrderPage.png" />
 
