@@ -39,6 +39,14 @@ Zomato is a online food ordering application, we made a clone (Tomato) of it usi
 | ----------- | ----------- |
 | Vitejs    | Vitejs is a development environment tool |
 | Yup   | Validation tool |
+| Yarn   | Package Manager tool |
+
+### To start the project use commands: (After cloning the project)
+
+1. yarn
+2. yarn run dev
+
+## ScreenShots
 
 # Home Page:
 
